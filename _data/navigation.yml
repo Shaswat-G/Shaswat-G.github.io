@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Courses"
+    url: /courses/
+  - title: "Projects"
+    url: /projects/
+  - title: "Analyses"
+    url: /analyses/
+  - title: "CV"
+    url: /assets/files/YourName_CV.pdf

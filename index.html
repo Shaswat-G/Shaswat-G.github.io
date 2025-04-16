@@ -6,11 +6,40 @@ header:
   overlay_filter: 0.5
 ---
 
-Welcome!  
-This is my professional portfolio and learning hub, curated for clarity, elegance, and impact.
+<div class="container">
+  <div class="professional-intro">
+    <h2>Welcome</h2>
+    <p>Your professional introduction paragraph that evokes "admiration and trust while reflecting subtle elegance, assertiveness, and deep confidence."</p>
+  </div>
 
-{% include timeline-entry.html title="CV Overview" content="A brief walkthrough of my professional background and key achievements." video_id="YOUR_YOUTUBE_ID" %}
-{% include timeline-entry.html title="Academic Background" content="My educational journey and qualifications that have shaped my expertise." video_id="YOUR_YOUTUBE_ID" %}
-{% include timeline-entry.html title="Professional Experience" content="Key roles and responsibilities that demonstrate my career progression." video_id="YOUR_YOUTUBE_ID" %}
-{% include timeline-entry.html title="Extracurriculars" content="Activities beyond my professional work that showcase my well-rounded personality." video_id="YOUR_YOUTUBE_ID" %}
-{% include timeline-entry.html title="Highlight Projects" content="Showcasing the projects that best demonstrate my capabilities and impact." video_id="YOUR_YOUTUBE_ID" %}
+  <div class="timeline-container">
+    <h2>My Professional Journey</h2>
+    <div class="timeline">
+      <!-- Timeline entries will go here -->
+      {% include timeline-entry.html 
+         title="CV Overview" 
+         content="A brief walkthrough of my professional background and key achievements."
+         video_id="YOUR_YOUTUBE_ID" %}
+         
+      {% include timeline-entry.html 
+         title="Academic Background" 
+         content="My educational journey and qualifications that have shaped my expertise."
+         video_id="YOUR_YOUTUBE_ID" %}
+         
+      {% include timeline-entry.html 
+         title="Professional Experience" 
+         content="Key roles and responsibilities that demonstrate my career progression."
+         video_id="YOUR_YOUTUBE_ID" %}
+         
+      {% include timeline-entry.html 
+         title="Extracurriculars" 
+         content="Activities beyond my professional work that showcase my well-rounded personality."
+         video_id="YOUR_YOUTUBE_ID" %}
+         
+      {% include timeline-entry.html 
+         title="Highlight Projects" 
+         content="Showcasing the projects that best demonstrate my capabilities and impact."
+         video_id="YOUR_YOUTUBE_ID" %}
+    </div>
+  </div>
+</div>

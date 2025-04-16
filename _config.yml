@@ -9,6 +9,26 @@ repository: Shaswat-G/Shaswat-G.github.io
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"  # You can change to "air" for extra minimalism
 
+# Site settings
+locale: "en-US"
+search: true # As per requirements
+atom_feed:
+  hide: true # Hide RSS feed links
+
+theme_color: "#ffffff"  # Set the theme color
+enable_comments: true
+
+# Navigation
+main:
+  - title: "About"
+    url: /about/
+  - title: "Courses"
+    url: /courses/
+  - title: "Projects"
+    url: /projects/
+  - title: "Analyses"
+    url: /analyses/
+
 # Author info
 author:
   name: "Shaswat Gupta"
@@ -33,6 +53,13 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+  # Content settings
+include:
+  - _pages
+  - _courses
+  - _projects
+  - _analyses
+
 # Content folders
 collections:
   courses:
@@ -46,26 +73,37 @@ collections:
     permalink: /:collection/:path/
 
 defaults:
+  # _pages
   - scope:
       path: "_pages"
+      type: pages
     values:
       layout: single
       author_profile: true
+  # _courses
   - scope:
-      path: "_courses"
+      path: ""
+      type: courses
     values:
       layout: single
       author_profile: false
       share: true
+      classes: wide
+  # _projects
   - scope:
-      path: "_projects"
+      path: ""
+      type: projects
     values:
       layout: single
       author_profile: false
       share: true
+      classes: wide
+  # _analyses
   - scope:
-      path: "_analyses"
+      path: ""
+      type: analyses
     values:
       layout: single
       author_profile: false
       share: true
+      classes: wide

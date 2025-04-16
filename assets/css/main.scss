@@ -1,16 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom Timeline Styling
+// Custom Timeline CSS
 .timeline-container {
   margin: 4em 0;
-
+  
   h2 {
     text-align: center;
     margin-bottom: 2em;
-    font-family: serif;
+    font-family: serif; // Using serif font as per preferences
   }
 }
 
@@ -18,9 +22,9 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-
+  
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     height: 100%;
     width: 4px;
@@ -35,24 +39,24 @@
   margin: 4em 0;
   display: flex;
   align-items: center;
-
+  
   &:nth-child(odd) {
     flex-direction: row-reverse;
-
+    
     .timeline-info {
       text-align: right;
       padding-left: 0;
       padding-right: 3em;
     }
   }
-
+  
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 20px;
     height: 20px;
     background: #ffffff;
-    border: 4px solid #5b9bd5;
+    border: 4px solid #5b9bd5; // Professional blue color
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -63,11 +67,11 @@
 .timeline-info {
   flex: 1;
   padding-left: 3em;
-
+  
   h3 {
     margin-top: 0;
     color: #333;
-    font-family: serif;
+    font-family: serif; // Using serif font as per preferences
   }
 }
 
@@ -76,21 +80,21 @@
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
   iframe {
     width: 100%;
     height: 315px;
   }
 }
 
-// General typography
+// General site styling as per requirements
 body {
-  font-family: serif;
+  font-family: serif; // Using serif font as per preferences
   color: #333;
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: serif;
+  font-family: serif; // Using serif font as per preferences
 }
