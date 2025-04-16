@@ -367,3 +367,74 @@ h6 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   }
 }
+
+// Social icons
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+
+  .social-icon {
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.2s, color 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      color: #e0e0e0;
+    }
+  }
+}
+
+// Bio section
+.bio-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: var(--timeline-node-color);
+    }
+  }
+
+  .bio-content {
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .bio-cta {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+
+// Homepage sections container
+.homepage-sections {
+  padding: 2rem 0;
+}
+
+// Dark mode adjustments
+.dark-theme {
+  .bio-section {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
