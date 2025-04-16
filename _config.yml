@@ -51,9 +51,9 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-sitemap
 
-
-  # Content settings
+# Content settings
 include:
   - _pages
   - _courses
