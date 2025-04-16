@@ -1,7 +1,11 @@
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
 <script>
+  console.log("Theme toggle script is running");
+
   const themeToggle = document.createElement("button");
   themeToggle.className = "theme-toggle";
   themeToggle.setAttribute("aria-label", "Toggle dark mode");
+  themeToggle.innerHTML = "🌓"; // Add icon directly for better visibility
   document.body.appendChild(themeToggle);
 
   // Check for saved preference
@@ -15,6 +19,7 @@
   // Toggle theme on button click
   themeToggle.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark-theme");
+    console.log("Theme toggled");
 
     // Save user preference
     const isDarkTheme =

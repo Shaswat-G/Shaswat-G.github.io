@@ -1,12 +1,5 @@
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
-  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-
-<html lang="en-US" class="no-js">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -84,7 +77,7 @@
 
   </head>
 
-  <body class="layout--splash" dir="ltr">
+  <body class="layout--splash">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -112,10 +105,10 @@
               >Home</a>
             </li><li class="masthead__menu-item">
               <a
-                href="/courses/"
+                href="/cv/"
                 
                 
-              >Courses</a>
+              >CV</a>
             </li><li class="masthead__menu-item">
               <a
                 href="/projects/"
@@ -124,16 +117,16 @@
               >Projects</a>
             </li><li class="masthead__menu-item">
               <a
+                href="/courses/"
+                
+                
+              >Courses</a>
+            </li><li class="masthead__menu-item">
+              <a
                 href="/analyses/"
                 
                 
               >Analyses</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/assets/files/YourName_CV.pdf"
-                
-                
-              >CV</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -180,7 +173,7 @@
       
         <p>
         
-          <a href="/cv/" class="btn btn--light-outline btn--large">Download CV</a>
+          <a href="/assets/files/YourName_CV.pdf" class="btn btn--light-outline btn--large">Download CV</a>
         
         </p>
       
@@ -273,7 +266,6 @@
   </article>
 </div>
 
-      
     </div>
 
     
@@ -309,10 +301,14 @@
       </footer>
     </div>
 
-    <script>
+    <html lang="en" class="no-js">
+<script>
+  console.log("Theme toggle script is running");
+
   const themeToggle = document.createElement("button");
   themeToggle.className = "theme-toggle";
   themeToggle.setAttribute("aria-label", "Toggle dark mode");
+  themeToggle.innerHTML = "🌓"; // Add icon directly for better visibility
   document.body.appendChild(themeToggle);
 
   // Check for saved preference
@@ -326,6 +322,7 @@
   // Toggle theme on button click
   themeToggle.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark-theme");
+    console.log("Theme toggled");
 
     // Save user preference
     const isDarkTheme =

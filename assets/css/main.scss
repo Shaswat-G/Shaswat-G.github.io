@@ -233,3 +233,128 @@ h6 {
     }
   }
 }
+
+// CV Page Styling
+.cv-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.cv-section {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.cv-section__title {
+  font-size: $type-size-2;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+  color: var(--header-color);
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background: var(--timeline-node-color);
+  }
+
+  i {
+    color: var(--timeline-node-color);
+    margin-right: 0.75rem;
+  }
+}
+
+.cv-entry {
+  display: flex;
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.cv-entry__image {
+  flex: 0 0 120px;
+  margin-right: 2rem;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+    margin-right: 0;
+    flex: 0 0 80px;
+  }
+}
+
+.cv-entry__content {
+  flex: 1;
+
+  h3 {
+    font-size: $type-size-3;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--header-color);
+  }
+
+  .meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--muted-text-color);
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  strong {
+    color: var(--header-color);
+  }
+}
+
+.cv-download {
+  text-align: center;
+  margin: 3rem 0 1rem;
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// Dark mode adjustments
+.dark-theme {
+  .cv-entry__image img {
+    border-color: var(--border-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .cv-section__title:after {
+    background: var(--timeline-node-color);
+  }
+
+  .cv-download .btn {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+}
