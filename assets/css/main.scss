@@ -44,6 +44,15 @@ $type-size-3: 1.4rem; // Subheaders
 $type-size-2: 1.8rem; // Section headers
 $type-size-1: 2.2rem; // Page title
 
+// Additional font size customizations
+$body-font-size: 0.9rem; // Reduced base font size
+$h1-font-size: 1.8em;
+$h2-font-size: 1.5em;
+$h3-font-size: 1.3em;
+$h4-font-size: 1.1em;
+$h5-font-size: 1em;
+$h6-font-size: 0.9em;
+
 // Use CSS variables for colors
 $text-color: var(--text-color);
 $muted-text-color: var(--muted-text-color);
