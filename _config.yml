@@ -6,7 +6,7 @@ repository: Shaswat-G/Shaswat-G.github.io
 
 # Theme config
 # theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"  # You can change to "air" for extra minimalism
 
 # Author info
