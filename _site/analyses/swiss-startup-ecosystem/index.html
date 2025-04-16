@@ -28,7 +28,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-04-16T17:54:10+02:00">
+  <meta property="article:published_time" content="2025-04-16T17:58:40+02:00">
 
 
 
@@ -266,32 +266,41 @@
 
     <html lang="en" class="no-js">
 <script>
-  console.log("Theme toggle script is running");
+  // Function to initialize the theme toggle
+  function initThemeToggle() {
+    console.log("Theme toggle script is running");
 
-  const themeToggle = document.createElement("button");
-  themeToggle.className = "theme-toggle";
-  themeToggle.setAttribute("aria-label", "Toggle dark mode");
-  themeToggle.innerHTML = "🌓"; // Add icon directly for better visibility
-  document.body.appendChild(themeToggle);
-
-  // Check for saved preference
-  document.addEventListener("DOMContentLoaded", () => {
+    // Check for saved preference first
     const savedTheme = localStorage.getItem("darkTheme");
     if (savedTheme === "true") {
       document.documentElement.classList.add("dark-theme");
     }
-  });
 
-  // Toggle theme on button click
-  themeToggle.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark-theme");
-    console.log("Theme toggled");
+    // Create the toggle button
+    const themeToggle = document.createElement("button");
+    themeToggle.className = "theme-toggle";
+    themeToggle.setAttribute("aria-label", "Toggle dark mode");
+    themeToggle.innerHTML = "🌓";
+    document.body.appendChild(themeToggle);
 
-    // Save user preference
-    const isDarkTheme =
-      document.documentElement.classList.contains("dark-theme");
-    localStorage.setItem("darkTheme", isDarkTheme);
-  });
+    // Toggle theme on button click
+    themeToggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark-theme");
+      console.log("Theme toggled");
+
+      // Save user preference
+      const isDarkTheme =
+        document.documentElement.classList.contains("dark-theme");
+      localStorage.setItem("darkTheme", isDarkTheme);
+    });
+  }
+
+  // Run on DOMContentLoaded or immediately if already loaded
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
 </script>
 
   </body>
