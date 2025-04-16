@@ -1,0 +1,17 @@
+experience:
+  - company: "Tech Corp"
+    position: "Lead Engineer"
+    dates: "2020-Present"
+    location: "Zurich, CH"
+    details: |
+      - Architected distributed ML systems
+      - Led team of 15 engineers
+      - **Technologies:** Python, TensorFlow, Kubernetes
+    image: /assets/images/tech-corp.jpg
+
+education:
+  - institution: "ETH Zurich"
+    degree: "MSc Computer Science"
+    dates: "2018-2020"
+    thesis: "Advanced Neural Architectures"
+    image: /assets/images/eth.jpg

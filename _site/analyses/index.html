@@ -338,20 +338,30 @@
       </footer>
     </div>
 
-    
-  <script src="/assets/js/main.min.js"></script>
+    <script>
+  const themeToggle = document.createElement("button");
+  themeToggle.className = "theme-toggle";
+  themeToggle.setAttribute("aria-label", "Toggle dark mode");
+  document.body.appendChild(themeToggle);
 
+  // Check for saved preference
+  document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("darkTheme");
+    if (savedTheme === "true") {
+      document.documentElement.classList.add("dark-theme");
+    }
+  });
 
+  // Toggle theme on button click
+  themeToggle.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark-theme");
 
-
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
-
-
-
-
-
+    // Save user preference
+    const isDarkTheme =
+      document.documentElement.classList.contains("dark-theme");
+    localStorage.setItem("darkTheme", isDarkTheme);
+  });
+</script>
 
   </body>
 </html>

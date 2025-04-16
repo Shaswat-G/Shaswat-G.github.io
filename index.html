@@ -1,45 +1,41 @@
 ---
-layout: home
-author_profile: true
+layout: splash
 header:
-  overlay_image: /assets/images/header-background.jpg
-  overlay_filter: 0.5
+  overlay_image: /assets/images/background.jpg
+  overlay_filter: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,0.3))
+  actions:
+    - label: "Download CV"
+      url: /cv/
+author_profile: true
 ---
 
-<div class="container">
-  <div class="professional-intro">
-    <h2>Welcome</h2>
-    <p>Your professional introduction paragraph that evokes "admiration and trust while reflecting subtle elegance, assertiveness, and deep confidence."</p>
-  </div>
+<div class="hero__content">
+  <img
+    src="/assets/images/profile.jpg"
+    class="hero__profile"
+    alt="Shaswat Gupta"
+  />
+  <h1 class="hero__title">Shaswat Gupta</h1>
+  <p class="hero__subtitle">
+    MSc CS @ETH Zurich | IIT Bombay (Rank 1, Gold Medalist) | ML Engineer
+  </p>
+</div>
 
-  <div class="timeline-container">
-    <h2>My Professional Journey</h2>
-    <div class="timeline">
-      <!-- Timeline entries will go here -->
-      {% include timeline-entry.html 
-         title="CV Overview" 
-         content="A brief walkthrough of my professional background and key achievements."
-         video_id="YOUR_YOUTUBE_ID" %}
-         
-      {% include timeline-entry.html 
-         title="Academic Background" 
-         content="My educational journey and qualifications that have shaped my expertise."
-         video_id="YOUR_YOUTUBE_ID" %}
-         
-      {% include timeline-entry.html 
-         title="Professional Experience" 
-         content="Key roles and responsibilities that demonstrate my career progression."
-         video_id="YOUR_YOUTUBE_ID" %}
-         
-      {% include timeline-entry.html 
-         title="Extracurriculars" 
-         content="Activities beyond my professional work that showcase my well-rounded personality."
-         video_id="YOUR_YOUTUBE_ID" %}
-         
-      {% include timeline-entry.html 
-         title="Highlight Projects" 
-         content="Showcasing the projects that best demonstrate my capabilities and impact."
-         video_id="YOUR_YOUTUBE_ID" %}
-    </div>
+<div class="timeline-container">
+  <h2>My Professional Journey</h2>
+  <div class="timeline">
+    {% include timeline-entry.html title="CV Overview" content="A brief
+    walkthrough of my professional background and key achievements."
+    video_id="YOUR_YOUTUBE_ID" %} {% include timeline-entry.html title="Academic
+    Background" content="My educational journey and qualifications that have
+    shaped my expertise." video_id="YOUR_YOUTUBE_ID" %} {% include
+    timeline-entry.html title="Professional Experience" content="Key roles and
+    responsibilities that demonstrate my career progression."
+    video_id="YOUR_YOUTUBE_ID" %} {% include timeline-entry.html
+    title="Extracurriculars" content="Activities beyond my professional work
+    that showcase my well-rounded personality." video_id="YOUR_YOUTUBE_ID" %} {%
+    include timeline-entry.html title="Highlight Projects" content="Showcasing
+    the projects that best demonstrate my capabilities and impact."
+    video_id="YOUR_YOUTUBE_ID" %}
   </div>
 </div>

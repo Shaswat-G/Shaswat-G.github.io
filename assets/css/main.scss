@@ -2,16 +2,54 @@
 
 @charset "utf-8";
 
+// Light/Dark Theme Variables
+:root {
+  --background-color: #ffffff;
+  --text-color: #2a2a2a;
+  --header-color: #1a1a1a;
+  --muted-text-color: #404040;
+  --border-color: #e0e0e0;
+  --timeline-node-color: #5b9bd5;
+}
+
+.dark-theme {
+  --background-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --header-color: #ffffff;
+  --muted-text-color: #b0b0b0;
+  --border-color: #444444;
+  --timeline-node-color: #7baee6;
+
+  .masthead {
+    background-color: #2a2a2a;
+  }
+
+  .page__hero--overlay {
+    background-color: #2a2a2a;
+  }
+
+  .timeline:before {
+    background: var(--border-color);
+  }
+
+  .timeline-entry:after {
+    background: #2a2a2a;
+    border-color: var(--timeline-node-color);
+  }
+}
+
 // Override before theme import
 $type-size-4: 1.1rem; // Body text size
 $type-size-3: 1.4rem; // Subheaders
 $type-size-2: 1.8rem; // Section headers
 $type-size-1: 2.2rem; // Page title
 
-// Increase contrast
-$text-color: #2a2a2a; // Near-black
-$muted-text-color: #404040;
-$header-color: #1a1a1a;
+// Use CSS variables for colors
+$text-color: var(--text-color);
+$muted-text-color: var(--muted-text-color);
+$header-color: var(--header-color);
+$background-color: var(--background-color);
+$border-color: var(--border-color);
 
 $serif: "Merriweather", Georgia, "Times New Roman", serif;
 $sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -43,7 +81,7 @@ $header-font-family: $serif;
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #e0e0e0;
+    background: var(--border-color);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -70,8 +108,8 @@ $header-font-family: $serif;
     position: absolute;
     width: 20px;
     height: 20px;
-    background: #ffffff;
-    border: 4px solid #5b9bd5; // Professional blue color
+    background: var(--background-color);
+    border: 4px solid var(--timeline-node-color);
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -92,7 +130,7 @@ $header-font-family: $serif;
 
 .timeline-video {
   flex: 1;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -118,4 +156,80 @@ h5,
 h6 {
   font-family: $header-font-family;
   color: $header-color;
+}
+
+// Hero section styling
+.hero__content {
+  text-align: center;
+  padding: 4rem 0;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 0 auto 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.hero__title {
+  font-family: $header-font-family;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+// Ensure your splash layout has good spacing
+.page__hero--overlay {
+  padding: 8% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// Add theme toggle button styling
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5b9bd5;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+
+  &:before {
+    content: "☀️";
+  }
+
+  .dark-theme & {
+    background-color: #333;
+
+    &:before {
+      content: "🌙";
+    }
+  }
 }

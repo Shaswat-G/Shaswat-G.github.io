@@ -1,0 +1,19 @@
+<section class="cv-section">
+  <h2 class="cv-section__title">
+    <i class="fas fa-{{ include.icon }}"></i>
+    {{ include.title }}
+  </h2>
+  
+  {% for entry in include.entries %}
+  <div class="cv-entry">
+    <div class="cv-entry__image">
+      <img src="{{ entry.image }}" alt="{{ entry.company }}">
+    </div>
+    <div class="cv-entry__content">
+      <h3>{{ entry.company }}</h3>
+      <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
+      {{ entry.details | markdownify }}
+    </div>
+  </div>
+  {% endfor %}
+</section>
