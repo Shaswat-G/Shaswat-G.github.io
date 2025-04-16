@@ -1,0 +1,70 @@
+title: Shaswat Gupta
+subtitle: MSc CS @ETH Zurich | IIT Bombay (Rank 1, Gold Medalist) | ML Engineer | Ex-World Bank, Budweiser, ISB
+description: Professional portfolio and curated course notes
+url: https://Shaswat-G.github.io
+repository: Shaswat-G/Shaswat-G.github.io
+
+# Theme config
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"  # You can change to "air" for extra minimalism
+
+# Author info
+author:
+  name: "Shaswat Gupta"
+  bio: "Computer Science MSc | ETH Zurich"
+  location: "Zurich, Switzerland"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Shaswat-G"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/shaswat-gupta/"
+    - label: "Substack"
+      icon: "fas fa-fw fa-newspaper"
+      url: "https://shazzgo.substack.com/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Content folders
+collections:
+  courses:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  analyses:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_courses"
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: "_projects"
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  - scope:
+      path: "_analyses"
+    values:
+      layout: single
+      author_profile: false
+      share: true
