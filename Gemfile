@@ -8,12 +8,6 @@ gem "jekyll-include-cache"
 
 # Additional plugins
 group :jekyll_plugins do
-  gem "jekyll-include-cache"
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
-  gem "jekyll-paginate"
-  gem "jekyll-gist"
-  gem "jekyll-remote-theme"
-  gem "jekyll-optional-front-matter"
 end

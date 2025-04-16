@@ -47,14 +47,11 @@ author:
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-remote-theme
-  - jekyll-optional-front-matter
+
 
   # Content settings
 include:
