@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 
 # Minimal Mistakes theme gem
-gem "minimal-mistakes-jekyll"
+# gem "minimal-mistakes-jekyll"
 
 # Enable cache for includes (used in timeline)
 gem "jekyll-include-cache"
