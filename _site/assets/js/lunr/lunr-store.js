@@ -1,6 +1,6 @@
 var store = [{
-        "title": "The Swiss Startup Ecosystem: Analysis and Future Projections",
-        "excerpt":"Introduction Switzerland has emerged as one of Europe’s most dynamic startup ecosystems, combining excellent research institutions, robust funding mechanisms, and favorable regulatory frameworks. This analysis examines the key drivers behind this success and projects future developments. Historical Context Switzerland’s emergence as a startup hub didn’t happen overnight. The country’s long...","categories": [],
+        "title": "The Swiss Startup Ecosystem for AI",
+        "excerpt":"By Shaswat Gupta LinkedIn Email Executive Summary Switzerland’s startup ecosystem – particularly around ETH Zurich – is thriving, with AI at its core. ETH Zurich’s spin-offs enjoy remarkable success rates, underpinned by deep research foundations and a supportive entrepreneurial infrastructure. Google Cloud’s “Future of AI: Perspectives for Startups 2025” outlines...","categories": [],
         "tags": [],
         "url": "/analyses/swiss-startup-ecosystem/",
         "teaser": null
