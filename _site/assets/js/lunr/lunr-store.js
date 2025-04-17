@@ -1,6 +1,12 @@
 var store = [{
-        "title": "The Swiss Startup Ecosystem for AI",
-        "excerpt":"By Shaswat Gupta LinkedIn Email Executive Summary Switzerland’s startup ecosystem – particularly around ETH Zurich – is thriving, with AI at its core. ETH Zurich’s spin-offs enjoy remarkable success rates, underpinned by deep research foundations and a supportive entrepreneurial infrastructure. Google Cloud’s “Future of AI: Perspectives for Startups 2025” outlines...","categories": [],
+        "title": "Stanford's AI Index: Highlights of the 2025 report",
+        "excerpt":"By Shaswat Gupta LinkedIn Email 1. AI performance on demanding benchmarks continues to improve. In 2023, researchers introduced new benchmarks—MMMU, GPQA, and SWE-bench—to test the limits of advanced AI systems. Just a year later, performance sharply increased: scores rose by 18.8, 48.9, and 67.3 percentage points on MMMU, GPQA, and...","categories": [],
+        "tags": [],
+        "url": "/analyses/ai_ecosystem/",
+        "teaser": null
+      },{
+        "title": "The Swiss Startup Ecosystem for AI: Why ETH Zurich Leads Europe's Silicon Valley",
+        "excerpt":"By Shaswat Gupta LinkedIn Email Switzerland’s AI Revolution: From Research to Reality Switzerland’s startup ecosystem—particularly around ETH Zurich—has emerged as Europe’s most resilient innovation engine. With AI at its core, ETH Zurich’s spin-offs now enjoy a remarkable 93% five-year survival rate, underpinned by deep research foundations and a uniquely dense...","categories": [],
         "tags": [],
         "url": "/analyses/swiss-startup-ecosystem/",
         "teaser": null
