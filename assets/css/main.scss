@@ -2,49 +2,27 @@
 
 @charset "utf-8";
 
-// Light Theme Variables with elegant color scheme
+// Global scale: make everything 80% size
+html {
+  font-size: 80%;
+}
+
+// Light Theme Variables with darker, high‑contrast colors
 :root {
   --background-color: #ffffff;
-  --text-color: #2a2a2a;
-  --header-color: #1a1a1a;
-  --muted-text-color: #555555;
-  --border-color: #e0e0e0;
+  --text-color: #111111; // nearly black
+  --header-color: #000000; // pure black
+  --muted-text-color: #333333; // dark grey
+  --border-color: #444444; // very dark grey
   --timeline-node-color: #4a7aaf;
   --accent-color: #4a7aaf;
 }
 
-// Dark Theme Variables
-.dark-theme {
-  --background-color: #1a1a1a;
-  --text-color: #f0f0f0;
-  --header-color: #ffffff;
-  --muted-text-color: #b0b0b0;
-  --border-color: #444444;
-  --timeline-node-color: #7baee6;
-
-  .masthead {
-    background-color: #2a2a2a;
-  }
-
-  .page__hero--overlay {
-    background-color: #2a2a2a;
-  }
-
-  .timeline:before {
-    background: var(--border-color);
-  }
-
-  .timeline-entry:after {
-    background: #2a2a2a;
-    border-color: var(--timeline-node-color);
-  }
-}
-
 // Enhanced typography settings
-$type-size-4: 1rem; // Body text size
-$type-size-3: 1.3rem; // Subheaders
-$type-size-2: 1.65rem; // Section headers
-$type-size-1: 2rem; // Page title
+$type-size-4: 0.8rem; // Body text size (~1rem originally)
+$type-size-3: 1.04rem; // Subheaders (1.3rem × .8)
+$type-size-2: 1.32rem; // Section headers (1.65 × .8)
+$type-size-1: 1.6rem; // Page title (2rem × .8)
 
 // Refined font size customizations
 $body-font-size: 0.95rem;
@@ -63,27 +41,25 @@ $background-color: var(--background-color);
 $border-color: var(--border-color);
 $primary-color: var(--accent-color);
 
-// Elegant font stack
+// Luxe font stacks
 $serif: "Merriweather", Georgia, "Times New Roman", serif;
 $sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen, Ubuntu, sans-serif;
 $global-font-family: $sans-serif;
 $header-font-family: $serif;
 
-// Increased letter spacing for better readability
+// Tighter letter spacing for a polished, authoritative feel
 $letter-spacing: 0.02em;
 $letter-spacing-headers: 0.01em;
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Enhanced Typography
+// Enforce your fonts everywhere
 body {
   font-family: $global-font-family;
   color: $text-color;
-  line-height: 1.7;
-  letter-spacing: $letter-spacing;
-  font-kerning: normal;
+  line-height: 1.6;
 }
 
 h1,
@@ -97,19 +73,22 @@ h6 {
   letter-spacing: $letter-spacing-headers;
   font-weight: 700;
   line-height: 1.2;
-  margin: 1.5em 0 0.5em;
+  margin: 1em 0 0.5em;
 }
 
-p {
-  margin-bottom: 1.5em;
+p,
+li,
+blockquote {
+  letter-spacing: $letter-spacing;
 }
 
 a {
+  color: var(--accent-color);
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s;
 
   &:hover {
-    text-decoration: underline;
+    color: darken(var(--accent-color), 10%);
   }
 }
 
@@ -260,14 +239,6 @@ a {
   &:before {
     content: "☀️";
   }
-
-  .dark-theme & {
-    background-color: #333;
-
-    &:before {
-      content: "🌙";
-    }
-  }
 }
 
 // CV Page Styling - refined for elegance
@@ -379,22 +350,6 @@ a {
   }
 }
 
-// Dark mode adjustments
-.dark-theme {
-  .cv-entry__image img {
-    border-color: var(--border-color);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .cv-section__title:after {
-    background: var(--timeline-node-color);
-  }
-
-  .cv-download .btn {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  }
-}
-
 // Social icons - refined
 .social-icons {
   display: flex;
@@ -457,11 +412,4 @@ a {
 // Homepage sections container
 .homepage-sections {
   padding: 3rem 0;
-}
-
-// Dark mode adjustments
-.dark-theme {
-  .bio-section {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
 }
