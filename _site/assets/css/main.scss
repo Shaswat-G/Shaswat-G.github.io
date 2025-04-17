@@ -2,50 +2,30 @@
 
 @charset "utf-8";
 
-// Light/Dark Theme Variables
+// Global scale: make everything 80% size
+html {
+  font-size: 80%;
+}
+
+// Light Theme Variables with darker, high‑contrast colors
 :root {
   --background-color: #ffffff;
-  --text-color: #2a2a2a;
-  --header-color: #1a1a1a;
-  --muted-text-color: #404040;
-  --border-color: #e0e0e0;
-  --timeline-node-color: #5b9bd5;
+  --text-color: #111111; // nearly black
+  --header-color: #000000; // pure black
+  --muted-text-color: #333333; // dark grey
+  --border-color: #444444; // very dark grey
+  --timeline-node-color: #4a7aaf;
+  --accent-color: #4a7aaf;
 }
 
-.dark-theme {
-  --background-color: #1a1a1a;
-  --text-color: #f0f0f0;
-  --header-color: #ffffff;
-  --muted-text-color: #b0b0b0;
-  --border-color: #444444;
-  --timeline-node-color: #7baee6;
+// Enhanced typography settings
+$type-size-4: 0.8rem; // Body text size (~1rem originally)
+$type-size-3: 1.04rem; // Subheaders (1.3rem × .8)
+$type-size-2: 1.32rem; // Section headers (1.65 × .8)
+$type-size-1: 1.6rem; // Page title (2rem × .8)
 
-  .masthead {
-    background-color: #2a2a2a;
-  }
-
-  .page__hero--overlay {
-    background-color: #2a2a2a;
-  }
-
-  .timeline:before {
-    background: var(--border-color);
-  }
-
-  .timeline-entry:after {
-    background: #2a2a2a;
-    border-color: var(--timeline-node-color);
-  }
-}
-
-// Override before theme import
-$type-size-4: 1.1rem; // Body text size
-$type-size-3: 1.4rem; // Subheaders
-$type-size-2: 1.8rem; // Section headers
-$type-size-1: 2.2rem; // Page title
-
-// Additional font size customizations
-$body-font-size: 0.9rem; // Reduced base font size
+// Refined font size customizations
+$body-font-size: 0.95rem;
 $h1-font-size: 1.8em;
 $h2-font-size: 1.5em;
 $h3-font-size: 1.3em;
@@ -59,15 +39,58 @@ $muted-text-color: var(--muted-text-color);
 $header-color: var(--header-color);
 $background-color: var(--background-color);
 $border-color: var(--border-color);
+$primary-color: var(--accent-color);
 
+// Luxe font stacks
 $serif: "Merriweather", Georgia, "Times New Roman", serif;
 $sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen, Ubuntu, sans-serif;
 $global-font-family: $sans-serif;
 $header-font-family: $serif;
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+// Tighter letter spacing for a polished, authoritative feel
+$letter-spacing: 0.02em;
+$letter-spacing-headers: 0.01em;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'air' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Enforce your fonts everywhere
+body {
+  font-family: $global-font-family;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  color: $header-color;
+  letter-spacing: $letter-spacing-headers;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1em 0 0.5em;
+}
+
+p,
+li,
+blockquote {
+  letter-spacing: $letter-spacing;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: darken(var(--accent-color), 10%);
+  }
+}
 
 // Custom Timeline CSS
 .timeline-container {
@@ -150,23 +173,6 @@ $header-font-family: $serif;
   }
 }
 
-// General site styling as per requirements
-body {
-  font-family: $global-font-family;
-  color: $text-color;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $header-font-family;
-  color: $header-color;
-}
-
 // Hero section styling
 .hero__content {
   text-align: center;
@@ -201,7 +207,7 @@ h6 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-// Ensure your splash layout has good spacing
+// Refined splash layout spacing
 .page__hero--overlay {
   padding: 8% 0;
   display: flex;
@@ -233,17 +239,9 @@ h6 {
   &:before {
     content: "☀️";
   }
-
-  .dark-theme & {
-    background-color: #333;
-
-    &:before {
-      content: "🌙";
-    }
-  }
 }
 
-// CV Page Styling
+// CV Page Styling - refined for elegance
 .cv-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -267,8 +265,8 @@ h6 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100px;
-    height: 3px;
+    width: 80px;
+    height: 2px;
     background: var(--timeline-node-color);
   }
 
@@ -284,7 +282,7 @@ h6 {
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
   }
 
   @media (max-width: 768px) {
@@ -298,7 +296,7 @@ h6 {
 
   img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
   }
@@ -352,23 +350,7 @@ h6 {
   }
 }
 
-// Dark mode adjustments
-.dark-theme {
-  .cv-entry__image img {
-    border-color: var(--border-color);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .cv-section__title:after {
-    background: var(--timeline-node-color);
-  }
-
-  .cv-download .btn {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  }
-}
-
-// Social icons
+// Social icons - refined
 .social-icons {
   display: flex;
   justify-content: center;
@@ -387,11 +369,11 @@ h6 {
   }
 }
 
-// Bio section
+// Bio section - with enhanced typography
 .bio-section {
   max-width: 900px;
   margin: 3rem auto;
-  padding: 2rem;
+  padding: 2.5rem;
   background-color: var(--background-color);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -407,16 +389,16 @@ h6 {
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 80px;
-      height: 3px;
+      width: 60px;
+      height: 2px;
       background: var(--timeline-node-color);
     }
   }
 
   .bio-content {
     p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+      font-size: 1.05rem;
+      line-height: 1.7;
       margin-bottom: 1.25rem;
     }
   }
@@ -429,12 +411,5 @@ h6 {
 
 // Homepage sections container
 .homepage-sections {
-  padding: 2rem 0;
-}
-
-// Dark mode adjustments
-.dark-theme {
-  .bio-section {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+  padding: 3rem 0;
 }
