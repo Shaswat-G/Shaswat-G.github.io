@@ -7,7 +7,8 @@ repository: Shaswat-G/Shaswat-G.github.io
 # Theme config
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default" # You can change to "air" for extra minimalism we will change to dark theeme
+minimal_mistakes_skin: "air" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 
 # Site settings
 locale: "en-US"
