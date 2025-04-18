@@ -1,6 +1,6 @@
 ---
-title: "The Swiss Startup Ecosystem for AI: Why ETH Zurich Leads Europe's Silicon Valley"
-excerpt: "Exploring Switzerland's emergence as a hub for AI innovation and entrepreneurship in 2025"
+title: "Switzerland’s AI Engine: How ETH Zurich Became Europe’s Deeptech Powerhouse"
+excerpt: "An in-depth exploration of Switzerland’s AI ecosystem and ETH Zurich’s outsized role in it—where research excellence, entrepreneurial density, and investor discipline converge to build Europe's most resilient startup engine."
 ---
 
 **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)

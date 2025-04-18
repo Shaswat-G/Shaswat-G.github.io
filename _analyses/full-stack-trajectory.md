@@ -1,6 +1,6 @@
 ---
-title: "AI 2025–2030: The Full-Stack Trajectory (From GPUs to Agents)"
-excerpt: "Exploring the state of AI in 2025 and the future of R&D, tech and innovation"
+title: "The AI Stack 2030: From Silicon to AI Agents"
+excerpt: "From GPUs to GPTs - A full-stack, forward-looking thesis on where AI is headed—from compute hardware and model architectures to agentic apps and industry disruption."
 ---
 
 **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)

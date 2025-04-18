@@ -1,11 +1,11 @@
 main:
   - title: "Home"
     url: /
+  - title: "Executive Theses"
+    url: /analyses/
   - title: "CV"
     url: /cv/
   - title: "Projects"
     url: /projects/
-  - title: "Courses"
+  - title: "Intellectual Vault"
     url: /courses/
-  - title: "Analyses"
-    url: /analyses/

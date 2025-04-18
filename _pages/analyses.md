@@ -1,5 +1,5 @@
 ---
-title: "Thesis & Analyses"
+title: "Executive Thought Capital"
 layout: collection
 permalink: /analyses/
 collection: analyses
@@ -7,4 +7,4 @@ entries_layout: list
 classes: wide
 ---
 
-In-depth analyses and thought pieces on various topics within my field of expertise.
+A curated collection of strategic essays and research-backed perspectives on AI, startups, and deep tech. Written to deliver clarity, context, and conviction in a noisy world.

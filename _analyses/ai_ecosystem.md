@@ -1,6 +1,6 @@
 ---
-title: "Stanford's AI Index: Highlights of the 2025 report"
-excerpt: "Exploring the state of AI in 2025 and the future of R&D, tech and innovation"
+title: "AI at the Helm: Strategic Signals from the 2025 Stanford Index"
+excerpt: "Benchmark breakthroughs, investment surges, global policy shifts, and the signals shaping the future of intelligence, innovation, and influence."
 ---
 
 **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
