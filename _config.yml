@@ -34,7 +34,8 @@ enable_comments: true
 # Author info
 author:
   name: "Shaswat Gupta"
-  bio: "Computer Science MSc | ETH Zurich"
+  avatar: "/assets/images/shaswat.png"
+  bio: "MSc in Computer Science ETH Zurich"
   location: "Zurich, Switzerland"
   links:
     - label: "GitHub"
@@ -88,7 +89,7 @@ defaults:
       type: courses
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       classes: wide
   # _projects
@@ -97,7 +98,7 @@ defaults:
       type: projects
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       classes: wide
   # _analyses
@@ -106,6 +107,6 @@ defaults:
       type: analyses
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: true
       classes: wide

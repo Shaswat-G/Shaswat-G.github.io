@@ -1,11 +1,13 @@
 main:
-  - title: "Home"
-    url: /
+  # - title: "Home"
+  #   url: /
+  - title: "About Me"
+    url: /about/
   - title: "Executive Theses"
     url: /analyses/
-  - title: "CV"
-    url: /cv/
   - title: "Projects"
     url: /projects/
   - title: "Intellectual Vault"
     url: /courses/
+  - title: "CV"
+    url: /cv/
