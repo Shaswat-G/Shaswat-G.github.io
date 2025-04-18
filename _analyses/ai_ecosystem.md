@@ -63,7 +63,6 @@ excerpt: "Exploring the state of AI in 2025 and the future of R&D, tech and inno
 
 ---
 
-
 ![Author Photo](smol_profile_picture.jpg)
 
 Shaswat Gupta is an MS Computer Science student at ETH Zurich, and a rank 1 gold medalist from IIT Bombay. With hands-on experience as an ML engineer at organizations like the World Bank, AB InBev, ISB, and startups, Shaswat specializes in machine learning, scalable engineering, and data-driven solutions. Known for his analytical rigor combined with a creative flair in music, poetry, journalism, and public speaking, Shaswat loves tackling challenging problems and welcomes exciting collaborations.
@@ -123,7 +122,7 @@ Shaswat Gupta is an MS Computer Science student at ETH Zurich, and a rank 1 gold
 
 ---
 
-<img src="elon.jpeg" alt="elon" height="400">
+<img src="elon.jpg" alt="elon" height="400">
 
 ## Economy
 **1. Global private AI investment hits record high with 26% growth.** Corporate AI investment reached $252.3 billion in 2024, with private investment climbing 44.5% and mergers and acquisitions up 12.1% from the previous year. The sector has experienced dramatic expansion over the past decade, with total investment growing more than thirteenfold since 2014.

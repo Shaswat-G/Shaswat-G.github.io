@@ -20,16 +20,16 @@ atom_feed:
 theme_color: "#ffffff" # Set the theme color
 enable_comments: true
 
-# Navigation
-main:
-  - title: "About"
-    url: /about/
-  - title: "Courses"
-    url: /courses/
-  - title: "Projects"
-    url: /projects/
-  - title: "Analyses"
-    url: /analyses/
+# # Navigation
+# main:
+#   - title: "About"
+#     url: /about/
+#   - title: "Courses"
+#     url: /courses/
+#   - title: "Projects"
+#     url: /projects/
+#   - title: "Analyses"
+#     url: /analyses/
 
 # Author info
 author:

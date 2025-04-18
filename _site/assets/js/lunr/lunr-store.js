@@ -5,6 +5,12 @@ var store = [{
         "url": "/analyses/ai_ecosystem/",
         "teaser": null
       },{
+        "title": "AI 2025–2030: The Full-Stack Trajectory (From GPUs to Agents)",
+        "excerpt":"By Shaswat Gupta LinkedIn Email AI 2025–2030: The Full-Stack Trajectory (From GPUs to Agents) Introduction If 2023 was the year generative AI captured the world’s imagination, 2025 is the year it becomes ubiquitous infrastructure. We stand at an inflection point: foundation models now rival human-like capabilities in language and beyond,...","categories": [],
+        "tags": [],
+        "url": "/analyses/full-stack-trajectory/",
+        "teaser": null
+      },{
         "title": "The Swiss Startup Ecosystem for AI: Why ETH Zurich Leads Europe's Silicon Valley",
         "excerpt":"By Shaswat Gupta LinkedIn Email Switzerland’s AI Revolution: From Research to Reality Switzerland’s startup ecosystem—particularly around ETH Zurich—has emerged as Europe’s most resilient innovation engine. With AI at its core, ETH Zurich’s spin-offs now enjoy a remarkable 93% five-year survival rate, underpinned by deep research foundations and a uniquely dense...","categories": [],
         "tags": [],
