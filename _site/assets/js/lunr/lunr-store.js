@@ -17,6 +17,12 @@ var store = [{
         "url": "/analyses/swiss-startup-ecosystem/",
         "teaser": null
       },{
+        "title": "Docker and Containerization",
+        "excerpt":"Docker &amp; Containerization: The Complete Guide                  By Shaswat Gupta       LinkedIn       Email           A comprehensive, engineering-focused Docker course for students and professional developers   Link to Course: Docker Course       ","categories": [],
+        "tags": [],
+        "url": "/courses/docker/",
+        "teaser": "/assets/images/courses/docker.jpeg"
+      },{
         "title": "Git and Version Control",
         "excerpt":"# Git & Version Control: The Complete Developer's Guide **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch) A structured approach to mastering version control for developers at all levels. **Link to Course**: [Git and Version Control Course](https://github.com/Shaswat-G/git-and-version-control) ![GitHub](mind_map.png) ## Why Git Matters Version control is fundamental to modern software development. This...","categories": [],
         "tags": [],
@@ -30,7 +36,7 @@ var store = [{
         "teaser": "/assets/images/courses/python.jpeg"
       },{
         "title": "VS Code Mastery",
-        "excerpt":"VS Code Mastery: Keyboard-Driven Development By Shaswat Gupta LinkedIn Email Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required. Link to Course: VS Code Basics Why This Guide Exists You’re spending 8+ hours in your editor. Why crawl when you could fly? This...","categories": [],
+        "excerpt":"# VS Code Mastery: Keyboard-Driven Development **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch) Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required. **Link to Course**: [VS Code Basics](https://github.com/Shaswat-G/vs-code-basics) ![VSCode](vscode.jpeg) ## Why This Guide Exists You're spending 8+ hours in your editor. Why crawl...","categories": [],
         "tags": [],
         "url": "/courses/vs_code_efficiency/",
         "teaser": "/assets/images/courses/vscode.jpeg"

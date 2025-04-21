@@ -1,5 +1,6 @@
 ---
 title: "Git and Version Control"
+status: "published"
 excerpt: "Master Git for Effective Collaboration and Code Management"
 header:
   teaser: /assets/images/courses/github.jpeg

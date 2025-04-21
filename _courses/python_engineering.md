@@ -1,5 +1,6 @@
 ---
 title: "Python Engineering Mastery"
+status: "published"
 excerpt: "From Fundamentals to Advanced Engineering Applications"
 header:
   teaser: /assets/images/courses/python.jpeg

@@ -1,5 +1,6 @@
 ---
 title: "VS Code Mastery"
+status: "published"
 excerpt: "Transform your coding experience with keyboard shortcuts and advanced techniques in VS Code."
 header:
   teaser: /assets/images/courses/vscode.jpeg
