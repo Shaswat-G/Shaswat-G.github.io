@@ -7,4 +7,4 @@ entries_layout: grid
 classes: wide
 ---
 
-These comprehensive courses represent my professional learning journey. Each course contains detailed notes, examples, and implementations designed for public learning.
+The engineering education I wish I'd had. Refined notes, working examples, practical implementations. Years of learning compressed into actionable courses. The community invested in me—this is my dividend to you.

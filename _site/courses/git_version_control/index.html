@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Git and Version Control - Shaswat Gupta</title>
+<meta name="description" content="Master Git for Effective Collaboration and Code Management">
+
+
+  <meta name="author" content="Shaswat Gupta">
+  
+  <meta property="article:author" content="Shaswat Gupta">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Shaswat Gupta">
+<meta property="og:title" content="Git and Version Control">
+<meta property="og:url" content="http://localhost:4000/courses/git_version_control/">
+
+
+  <meta property="og:description" content="Master Git for Effective Collaboration and Code Management">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/courses/github.jpeg">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-04-21T18:16:35+02:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/courses/git_version_control/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+ <link
+  href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+
+  <body
+    class="layout--single wide"
+  >
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+ 
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Shaswat Gupta
+          <span class="site-subtitle">ETH Zurich | IIT Bombay Rank 1, Gold Medalist | ML Engineer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About Me</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/analyses/"
+                
+                
+              >Executive Theses</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/courses/"
+                
+                
+              >Intellectual Vault</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cv/"
+                
+                
+              >CV</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/shaswat.png" alt="Shaswat Gupta" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Shaswat Gupta</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>MSc in Computer Science ETH Zurich</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Zurich, Switzerland</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/Shaswat-G" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/shaswat-gupta/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://shazzgo.substack.com/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-newspaper" aria-hidden="true"></i><span class="label">Substack</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Git and Version Control">
+    <meta itemprop="description" content="Master Git for Effective Collaboration and Code Management">
+    <meta itemprop="datePublished" content="2025-04-21T18:16:35+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/courses/git_version_control/" itemprop="url">Git and Version Control
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#git--version-control-the-complete-developers-guide">Git &amp; Version Control: The Complete Developer’s Guide</a><ul><li><a href="#why-git-matters">Why Git Matters</a></li><li><a href="#whats-inside">What’s Inside</a></li><li><a href="#thoughtfully-designed-resources">Thoughtfully Designed Resources</a></li><li><a href="#learn-your-way">Learn Your Way</a></li><li><a href="#practical-value">Practical Value</a></li><li><a href="#contributing">Contributing</a></li><li><a href="#license">License</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <h1 id="git--version-control-the-complete-developers-guide">Git &amp; Version Control: The Complete Developer’s Guide</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>By Shaswat Gupta</strong></td>
+      <td><a href="https://www.linkedin.com/in/shaswat-gupta/">LinkedIn</a></td>
+      <td><a href="mailto:shagupta@ethz.ch">Email</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A structured approach to mastering version control for developers at all levels.</p>
+
+<p><strong>Link to Course</strong>: <a href="https://github.com/Shaswat-G/git-and-version-control">Git and Version Control Course</a></p>
+
+<p><img src="mind_map.png" alt="GitHub" /></p>
+
+<h2 id="why-git-matters">Why Git Matters</h2>
+
+<p>Version control is fundamental to modern software development. This course bridges the gap between basic Git usage and genuine proficiency—helping you:</p>
+
+<ul>
+  <li>Recover confidently when mistakes happen</li>
+  <li>Maintain a clean, meaningful project history</li>
+  <li>Collaborate effectively with other developers</li>
+  <li>Manage complex features without code conflicts</li>
+</ul>
+
+<h2 id="whats-inside">What’s Inside</h2>
+
+<p>Five carefully structured learning modules with practical applications:</p>
+
+<ul>
+  <li><strong>Getting Started</strong> - Installation, configuration, and version control fundamentals</li>
+  <li><strong>Creating Snapshots</strong> - Strategic commits, .gitignore management, and staging workflows</li>
+  <li><strong>Browsing History</strong> - Searching logs, comparing changes, and tracking code evolution</li>
+  <li><strong>Branch, Merge &amp; Conflict</strong> - Parallel development techniques and clean conflict resolution</li>
+  <li><strong>Collaboration</strong> - Remote repositories, pull requests, and team workflow integration</li>
+</ul>
+
+<h2 id="thoughtfully-designed-resources">Thoughtfully Designed Resources</h2>
+
+<p>This isn’t just documentation—it’s a complete learning system:</p>
+
+<ul>
+  <li><strong>Comprehensive Notes</strong> - Clear explanations with practical examples in each module</li>
+  <li><strong>Reference Cheat Sheet</strong> - Essential commands organized by workflow context</li>
+  <li><strong>Visual Mind Map</strong> - Connecting concepts to strengthen your mental model of Git</li>
+</ul>
+
+<h2 id="learn-your-way">Learn Your Way</h2>
+
+<p>Whether you’re new to development or looking to refine your skills:</p>
+
+<ol>
+  <li>Follow the structured path from basics to advanced techniques</li>
+  <li>Jump to specific modules to address immediate challenges</li>
+  <li>Keep the cheat sheet handy during your daily work</li>
+  <li>Revisit the mind map to reinforce how concepts interconnect</li>
+</ol>
+
+<h2 id="practical-value">Practical Value</h2>
+
+<p>This course focuses on the Git skills developers actually use daily—not just commands, but workflows and strategies that solve real problems and improve your efficiency.</p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Your insights can help improve this resource. Open an issue or submit a pull request if you have suggestions for enhancement.</p>
+
+<h2 id="license">License</h2>
+
+<p>Released under the MIT License. See <a href="LICENSE">LICENSE</a> for details.</p>
+
+<hr />
+
+<p><em>Build confidence, save time, and improve collaboration with solid Git fundamentals.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-04-21T18:16:35+02:00">April 21, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=Git+and+Version+Control%20http%3A%2F%2Flocalhost%3A4000%2Fcourses%2Fgit_version_control%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fas fa-fw fa-share-alt" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcourses%2Fgit_version_control%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/courses/git_version_control/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/courses/python_engineering/" class="pagination--pager" title="Python Engineering Mastery">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+</div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/assets/js/plugins/jquery.greedy-navigation.js"></script>
+    <!-- <script src="/assets/js/main.min.js"></script> -->
+
+     
+    
+    
+
+  </body>
+</html>

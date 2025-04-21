@@ -17,11 +17,23 @@ var store = [{
         "url": "/analyses/swiss-startup-ecosystem/",
         "teaser": null
       },{
-        "title": "Python Engineering (Beginner to Advanced)",
-        "excerpt":"Course Overview   This course provides a structured approach to mastering Python engineering, starting with basic concepts and progressing to advanced applications for real-world software development.   Section 1: Python Fundamentals   Variables and Data Types   Python offers several built-in data types:   ","categories": [],
+        "title": "Git and Version Control",
+        "excerpt":"# Git & Version Control: The Complete Developer's Guide **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch) A structured approach to mastering version control for developers at all levels. **Link to Course**: [Git and Version Control Course](https://github.com/Shaswat-G/git-and-version-control) ![GitHub](mind_map.png) ## Why Git Matters Version control is fundamental to modern software development. This...","categories": [],
+        "tags": [],
+        "url": "/courses/git_version_control/",
+        "teaser": "/assets/images/courses/github.jpeg"
+      },{
+        "title": "Python Engineering Mastery",
+        "excerpt":"Python Engineering Mastery By Shaswat Gupta LinkedIn Email A comprehensive, engineering-focused Python course for students and professional developers Link to Course: Python Engineering Course Why This Course? Master Python beyond the basics with a course tailored for real-world engineering applications. Whether you’re a CS student or a working developer, this...","categories": [],
         "tags": [],
         "url": "/courses/python_engineering/",
-        "teaser": "/assets/images/courses/python-teaser.jpg"
+        "teaser": "/assets/images/courses/python.jpeg"
+      },{
+        "title": "VS Code Mastery",
+        "excerpt":"VS Code Mastery: Keyboard-Driven Development By Shaswat Gupta LinkedIn Email Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required. Link to Course: VS Code Basics Why This Guide Exists You’re spending 8+ hours in your editor. Why crawl when you could fly? This...","categories": [],
+        "tags": [],
+        "url": "/courses/vs_code_efficiency/",
+        "teaser": "/assets/images/courses/vscode.jpeg"
       },{
         "title": "Interactive Data Visualization Platform",
         "excerpt":"Project Abstract This data visualization platform transforms complex datasets into interactive, intuitive visualizations, enabling non-technical stakeholders to derive meaningful insights with minimal effort. My Role &amp; Contribution As the lead developer, I: Architected the full-stack application from concept to deployment Implemented a modular React frontend with reusable visualization components Developed...","categories": [],
