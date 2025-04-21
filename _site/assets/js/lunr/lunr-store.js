@@ -18,10 +18,16 @@ var store = [{
         "teaser": null
       },{
         "title": "Docker and Containerization",
-        "excerpt":"Docker &amp; Containerization: The Complete Guide                  By Shaswat Gupta       LinkedIn       Email           A comprehensive, engineering-focused Docker course for students and professional developers   Link to Course: Docker Course       ","categories": [],
+        "excerpt":"# Docker & Containerization: The Complete Guide  **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)  *A comprehensive, engineering-focused Docker course for students and professional developers*  **Link to Course**: [Docker Course](https://github.com/Shaswat-G/docker-basics)      ![Docker](docker.jpeg){:height=\"400\"}  ---","categories": [],
         "tags": [],
         "url": "/courses/docker/",
         "teaser": "/assets/images/courses/docker.jpeg"
+      },{
+        "title": "DSA",
+        "excerpt":"DSA: The Complete Guide                  By Shaswat Gupta       LinkedIn       Email           A comprehensive, engineering-focused DSA course for students and professional developers   Link to Course: DSA Course     ","categories": [],
+        "tags": [],
+        "url": "/courses/dsa/",
+        "teaser": "/assets/images/courses/dsa.jpeg"
       },{
         "title": "Git and Version Control",
         "excerpt":"# Git & Version Control: The Complete Developer's Guide **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch) A structured approach to mastering version control for developers at all levels. **Link to Course**: [Git and Version Control Course](https://github.com/Shaswat-G/git-and-version-control) ![GitHub](mind_map.png) ## Why Git Matters Version control is fundamental to modern software development. This...","categories": [],
@@ -29,11 +35,29 @@ var store = [{
         "url": "/courses/git_version_control/",
         "teaser": "/assets/images/courses/github.jpeg"
       },{
+        "title": "Large Scale ML Engineering",
+        "excerpt":"# Large Scale ML Engineering: The Complete Guide  **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)  *A comprehensive, engineering-focused Large Scale ML Engineering course for students and professional developers*  **Link to Course**: [Large Scale ML Engineering Course](https://github.com/Shaswat-G/large-scale-AI-engg)      ![Large Scale ML Engineering](ml.jpeg){:height=\"400\"}","categories": [],
+        "tags": [],
+        "url": "/courses/large_scale_ml_engineering/",
+        "teaser": "/assets/images/courses/pytorch.jpeg"
+      },{
         "title": "Python Engineering Mastery",
         "excerpt":"Python Engineering Mastery By Shaswat Gupta LinkedIn Email A comprehensive, engineering-focused Python course for students and professional developers Link to Course: Python Engineering Course Why This Course? Master Python beyond the basics with a course tailored for real-world engineering applications. Whether you’re a CS student or a working developer, this...","categories": [],
         "tags": [],
         "url": "/courses/python_engineering/",
         "teaser": "/assets/images/courses/python.jpeg"
+      },{
+        "title": "SQL",
+        "excerpt":"# SQL: The Complete Guide  **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)  *A comprehensive, engineering-focused SQL course for students and professional developers*  **Link to Course**: [SQL Course](https://github.com/Shaswat-G/sql)      ![SQL](sql_.jpeg){:height=\"400\"}","categories": [],
+        "tags": [],
+        "url": "/courses/sql/",
+        "teaser": "/assets/images/courses/sql.jpeg"
+      },{
+        "title": "System Design",
+        "excerpt":"# System Design: The Complete Guide  **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)  *A comprehensive, engineering-focused System Design course for students and professional developers*  **Link to Course**: [System Design Course](https://github.com/Shaswat-G/system-design)      ![System Design](system_design.jpeg){:height=\"400\"}","categories": [],
+        "tags": [],
+        "url": "/courses/system_design/",
+        "teaser": "/assets/images/courses/system_design.jpeg"
       },{
         "title": "VS Code Mastery",
         "excerpt":"# VS Code Mastery: Keyboard-Driven Development **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch) Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required. **Link to Course**: [VS Code Basics](https://github.com/Shaswat-G/vs-code-basics) ![VSCode](vscode.jpeg) ## Why This Guide Exists You're spending 8+ hours in your editor. Why crawl...","categories": [],
