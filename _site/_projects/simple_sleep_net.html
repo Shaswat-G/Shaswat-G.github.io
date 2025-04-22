@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>SimpleSleepNet - Shaswat Gupta</title>
+<meta name="description" content="A lightweight self-supervised contrastive-learning framework for EEG-based sleep stage classification">
+
+
+  <meta name="author" content="Shaswat Gupta">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Shaswat Gupta">
+<meta property="og:title" content="SimpleSleepNet">
+<meta property="og:url" content="http://localhost:4000/_projects/simple_sleep_net.html">
+
+
+  <meta property="og:description" content="A lightweight self-supervised contrastive-learning framework for EEG-based sleep stage classification">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/projects/dnn.jpg">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/_projects/simple_sleep_net.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Shaswat Gupta Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+ <link
+  href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+  </head>
+
+  <body
+    class="layout--default"
+  >
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+ 
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt="Shaswat Gupta"></a>
+        
+        <a class="site-title" href="/">
+          Shaswat Gupta
+          <span class="site-subtitle">ETH Zurich | IIT Bombay Rank 1, Gold Medalist | ML Engineer</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About Me</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/analyses/"
+                
+                
+              >Executive Theses</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/courses/"
+                
+                
+              >Intellectual Vault</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cv/"
+                
+                
+              >CV</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content"><p><img src="/assets/images/projects/Pretraining-picture.png" alt="Project Demo" /></p>
+
+<h1 id="simplesleepnet-self-supervised-contrastive-learning-for-eeg-based-sleep-stage-classification">SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification</h1>
+
+<p><img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python" />
+<img src="https://img.shields.io/badge/PyTorch-1.12%2B-orange" alt="PyTorch" />
+<img src="https://img.shields.io/badge/License-MIT-green" alt="License" /></p>
+
+<p><strong>Author:</strong> Shaswat Gupta<br />
+<strong>Group:</strong> Medical Data Science, D-INFK, ETH Zurich<br />
+<strong>Supervisor:</strong> Prof. Dr. Julia Vogt<br />
+<strong>Contact:</strong> <a href="mailto:shagupta@ethz.ch">shagupta@ethz.ch</a><br />
+<strong>Project Repository:</strong> <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet">SimpleSleepNet</a></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage classification using self-supervised contrastive representation learning achieving 80%+ accuracy with minimal labeled data and a remarkably compact architecture (~200K parameters).</p>
+
+<div class="page__download" style="text-align:center; margin: 2em 0;">
+  <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet" class="btn btn--primary" target="_blank" rel="noopener">
+    <i class="fab fa-github"></i> View on GitHub
+  </a>
+</div>
+
+<div class="page__download" style="text-align:center; margin: 2em 0;">
+  <a href="/assets/files/SimpleSleepNet-Report.pdf" class="btn btn--primary" download="">
+    <i class="fas fa-file-pdf"></i> Download Full Report (PDF)
+  </a>
+</div>
+
+<h3 id="key-features">Key Features</h3>
+
+<ul>
+  <li><strong>Self-supervised pretraining</strong> with optimized EEG-specific augmentations</li>
+  <li><strong>Systematic augmentation evaluation</strong> across amplitude, frequency, temporal, and masking domains</li>
+  <li><strong>Modular architecture</strong> with clean separation between pretraining and supervised fine-tuning</li>
+  <li><strong>Lightweight models</strong> suitable for edge deployment (&lt; 1MB model size)</li>
+  <li><strong>Comprehensive evaluation</strong> of latent space quality via clustering metrics and dimensionality reduction</li>
+  <li><strong>Reproducible experimentation</strong> framework with configuration-driven workflows</li>
+  <li><strong>HPC-ready</strong> with Slurm job submission scripts for large-scale hyperparameter sweeps</li>
+  <li><strong>Flexible augmentation library</strong> with 13 EEG-specific augmentations across 5 categories</li>
+  <li><strong>Customizable neural architectures</strong> for encoder and classifier components</li>
+  <li><strong>Extensible configuration system</strong> for easy parameter tuning and reproducibility</li>
+  <li><strong>Detailed documentation</strong> and examples for easy onboarding and usage</li>
+  <li><strong>Open-source</strong> under the MIT License</li>
+  <li><strong>Comprehensive logging</strong> with TensorBoard support for training and evaluation metrics</li>
+  <li><strong>Multi-GPU support</strong> for efficient training on large datasets</li>
+  <li><strong>Pretrained models</strong> available for quick start and benchmarking</li>
+  <li><strong>In-depth analysis</strong> of augmentation impact on model performance and latent space quality</li>
+  <li><strong>Visualization tools</strong> for latent space evaluation and model interpretability</li>
+  <li><strong>Support for multiple EEG datasets</strong> with easy integration of new datasets and formats</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Clone the repository</span>
+git clone https://gitlab.ethz.ch/shagupta/simplesleepnet.git
+<span class="nb">cd </span>simplesleepnet
+
+<span class="c"># Create and activate conda environment</span>
+conda create <span class="nt">-n</span> sleepnet <span class="nv">python</span><span class="o">=</span>3.8
+conda activate sleepnet
+
+<span class="c"># Install dependencies</span>
+pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div></div>
+
+<h2 id="project-structure">Project Structure</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>simplesleepnet/
+├── data/                           # Data directory
+│   ├── raw/                        # Raw EEG datasets (.npz/.pkl)
+│   ├── processed/                  # Preprocessed per-channel EEG slices
+│   └── splits/                     # Train/val/test splits
+├── models/                         # Neural network architectures
+│   ├── simple_sleep_net.py         # Main encoder architecture
+│   └── sleep_stage_classifier.py   # Classifier head for fine-tuning
+├── augmentations/                  # EEG-specific augmentations
+│   └── data_augmentations.py       # Comprehensive augmentation library
+├── evaluation/                     # Evaluation utilities
+│   ├── get_predictions.py          # Inference pipeline
+│   ├── save_results.py             # Results logging and persistence
+│   └── latent_space_evaluator.py   # Embedding quality metrics
+├── utils/                          # Utility functions
+│   ├── data_loader.py              # Data ingestion pipeline
+│   ├── seeding.py                  # Reproducibility utilities
+│   ├── tensorboard_logger.py       # Logging infrastructure
+│   └── data_utils.py               # Data manipulation helpers
+├── contrastive_training.py         # Self-supervised pretraining
+├── classifier_training.py          # Supervised fine-tuning
+├── main.py                         # End-to-end workflow
+├── generate_configs.py             # Experiment configuration generator
+├── submit_experiments.sh           # HPC job submission script
+├── run_single_experiment.slurm     # Slurm job specification
+└── configs/                        # Experiment configurations
+    └── config_90.json              # Sample configuration
+</code></pre></div></div>
+
+<h2 id="quick-start">Quick Start</h2>
+
+<h3 id="running-a-complete-experiment">Running a Complete Experiment</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Run a complete experiment pipeline with default settings</span>
+python main.py <span class="nt">--config</span> configs/config_90.json
+</code></pre></div></div>
+
+<p>This will:</p>
+
+<ol>
+  <li>Load and validate the configuration</li>
+  <li>Prepare datasets and dataloaders</li>
+  <li>Perform contrastive pretraining of the encoder</li>
+  <li>Visualize and evaluate the latent space (if enabled)</li>
+  <li>Train a supervised classifier on top of the frozen encoder</li>
+  <li>Evaluate on the test set and save results</li>
+</ol>
+
+<h3 id="step-by-step-execution">Step-by-Step Execution</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># 1. Generate experiment configs for a parameter sweep</span>
+python generate_configs.py
+
+<span class="c"># 2. Run contrastive pretraining only</span>
+python contrastive_training.py <span class="nt">--config</span> configs/config_90.json
+
+<span class="c"># 3. Visualize the latent space</span>
+python visualize_latent_space.py <span class="nt">--config</span> configs/config_90.json
+
+<span class="c"># 4. Train supervised classifier on pretrained encoder</span>
+python classifier_training.py <span class="nt">--config</span> configs/config_90.json
+
+<span class="c"># 5. Generate predictions and evaluate</span>
+python evaluate.py <span class="nt">--config</span> configs/config_90.json
+</code></pre></div></div>
+
+<h2 id="key-components">Key Components</h2>
+
+<h3 id="1-data-augmentations">1. Data Augmentations</h3>
+
+<p>SimpleSleepNet implements 13 EEG-specific augmentations across 5 categories:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Augmentations</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Amplitude</strong></td>
+      <td>RandomAmplitudeScaling, RandomDCShift, SignFlip</td>
+      <td>Manipulate signal amplitude while preserving frequency characteristics</td>
+    </tr>
+    <tr>
+      <td><strong>Frequency</strong></td>
+      <td>RandomBandStopFilter, TailoredMixup</td>
+      <td>Modify frequency components to simulate noise or artifacts</td>
+    </tr>
+    <tr>
+      <td><strong>Masking/Cropping</strong></td>
+      <td>CutoutResize, RandomZeroMasking</td>
+      <td>Create temporal discontinuities to enforce invariance</td>
+    </tr>
+    <tr>
+      <td><strong>Noise/Filtering</strong></td>
+      <td>AverageFiltering, RandomAdditiveGaussianNoise</td>
+      <td>Add calibrated noise or smoothing</td>
+    </tr>
+    <tr>
+      <td><strong>Temporal</strong></td>
+      <td>TimeReversal, TimeWarping, Permutation, RandomTimeShift</td>
+      <td>Apply non-linear temporal transformations</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/images/projects/SSLCRL.png" alt="SSLCRL" /></p>
+
+<p>Example implementation of <code class="language-plaintext highlighter-rouge">TailoredMixup</code> augmentation:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">TailoredMixup</span><span class="p">(</span><span class="n">BaseAugmentation</span><span class="p">):</span>
+    <span class="s">"""
+    Frequency-domain mixup that interpolates magnitude and phase spectra separately
+    between the original signal and a randomly sampled signal.
+    """</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha</span>
+
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x_random</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="p">.</span><span class="n">_should_apply</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">x</span>
+
+        <span class="k">if</span> <span class="n">x_random</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">x</span>
+
+        <span class="c1"># Apply mixup in frequency domain
+</span>        <span class="n">x_fft</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">fft</span><span class="p">.</span><span class="n">rfft</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x_random_fft</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">fft</span><span class="p">.</span><span class="n">rfft</span><span class="p">(</span><span class="n">x_random</span><span class="p">)</span>
+
+        <span class="c1"># Separate magnitude and phase
+</span>        <span class="n">x_mag</span><span class="p">,</span> <span class="n">x_phase</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">x_fft</span><span class="p">),</span> <span class="n">np</span><span class="p">.</span><span class="n">angle</span><span class="p">(</span><span class="n">x_fft</span><span class="p">)</span>
+        <span class="n">x_random_mag</span><span class="p">,</span> <span class="n">x_random_phase</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">x_random_fft</span><span class="p">),</span> <span class="n">np</span><span class="p">.</span><span class="n">angle</span><span class="p">(</span><span class="n">x_random_fft</span><span class="p">)</span>
+
+        <span class="c1"># Sample mixing coefficients
+</span>        <span class="n">lam_mag</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">beta</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">alpha</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">alpha</span><span class="p">)</span>
+        <span class="n">lam_phase</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">beta</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">alpha</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">alpha</span><span class="p">)</span>
+
+        <span class="c1"># Mix magnitude and phase separately
+</span>        <span class="n">mixed_mag</span> <span class="o">=</span> <span class="n">lam_mag</span> <span class="o">*</span> <span class="n">x_mag</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">lam_mag</span><span class="p">)</span> <span class="o">*</span> <span class="n">x_random_mag</span>
+        <span class="n">mixed_phase</span> <span class="o">=</span> <span class="n">lam_phase</span> <span class="o">*</span> <span class="n">x_phase</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">lam_phase</span><span class="p">)</span> <span class="o">*</span> <span class="n">x_random_phase</span>
+
+        <span class="c1"># Reconstruct signal
+</span>        <span class="n">mixed_fft</span> <span class="o">=</span> <span class="n">mixed_mag</span> <span class="o">*</span> <span class="n">np</span><span class="p">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">1j</span> <span class="o">*</span> <span class="n">mixed_phase</span><span class="p">)</span>
+        <span class="n">mixed_signal</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">fft</span><span class="p">.</span><span class="n">irfft</span><span class="p">(</span><span class="n">mixed_fft</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">mixed_signal</span>
+</code></pre></div></div>
+<p><img src="/assets/images/projects/TailoredMixup.png" alt="TailoredMixup" /></p>
+
+<h3 id="2-neural-architectures">2. Neural Architectures</h3>
+
+<h4 id="encoder-simplesleepnet">Encoder: SimpleSleepNet</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">SimpleSleepNet</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="s">"""
+    Lightweight 1D CNN encoder for EEG signals with dilated convolutions
+    and L2 normalization for contrastive learning.
+    """</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latent_dim</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Conv1d</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+            <span class="n">Mish</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">),</span>
+
+            <span class="n">nn</span><span class="p">.</span><span class="n">Conv1d</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">dilation</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="mi">64</span><span class="p">),</span>
+            <span class="n">Mish</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">),</span>
+
+            <span class="n">nn</span><span class="p">.</span><span class="n">Conv1d</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">dilation</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="mi">128</span><span class="p">),</span>
+            <span class="n">Mish</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">),</span>
+
+            <span class="n">nn</span><span class="p">.</span><span class="n">AdaptiveAvgPool1d</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Flatten</span><span class="p">()</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">projector</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">latent_dim</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="n">latent_dim</span><span class="p">),</span>
+            <span class="n">Mish</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">encoder</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">z</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">projector</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+        <span class="c1"># L2 normalize embeddings for cosine similarity
+</span>        <span class="n">z_norm</span> <span class="o">=</span> <span class="n">F</span><span class="p">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">z_norm</span>
+</code></pre></div></div>
+
+<p><img src="/assets/images/projects/Linear-eval.png" alt="Classifier" /></p>
+
+<h4 id="classifier-sleepstageclassifier">Classifier: SleepStageClassifier</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">SleepStageClassifier</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="s">"""
+    MLP classifier for sleep stage classification using embeddings
+    from the pretrained encoder.
+    """</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_dim</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">dropout_probs</span><span class="o">=</span><span class="mf">0.4</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_dim</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="mi">256</span><span class="p">),</span>
+            <span class="n">Mish</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout_probs</span><span class="p">),</span>
+
+            <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">BatchNorm1d</span><span class="p">(</span><span class="mi">128</span><span class="p">),</span>
+            <span class="n">Mish</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout_probs</span><span class="p">),</span>
+
+            <span class="n">nn</span><span class="p">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">classifier</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="3-contrastive-learning-framework">3. Contrastive Learning Framework</h3>
+
+<p>Our implementation follows the SimCLR paradigm with the NT-Xent loss function:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">nt_xent_loss</span><span class="p">(</span><span class="n">embedding_1</span><span class="p">,</span> <span class="n">embedding_2</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="s">"""
+    NT-Xent loss for contrastive learning as introduced in SimCLR.
+
+    Args:
+        embedding_1: First view embeddings [batch_size, embedding_dim]
+        embedding_2: Second view embeddings [batch_size, embedding_dim]
+        temperature: Temperature parameter controlling sharpness
+
+    Returns:
+        NT-Xent loss value
+    """</span>
+    <span class="c1"># Concatenate embeddings from both views
+</span>    <span class="n">embeddings</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">cat</span><span class="p">([</span><span class="n">embedding_1</span><span class="p">,</span> <span class="n">embedding_2</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">batch_size</span> <span class="o">=</span> <span class="n">embedding_1</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># Compute similarity matrix (cosine similarity)
+</span>    <span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">.</span><span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="n">temperature</span>
+
+    <span class="c1"># Mask out self-similarities
+</span>    <span class="n">mask</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">embedding_1</span><span class="p">.</span><span class="n">device</span><span class="p">)</span>
+    <span class="n">mask</span> <span class="o">=</span> <span class="n">mask</span><span class="p">.</span><span class="nb">bool</span><span class="p">()</span>
+    <span class="n">similarity_matrix</span><span class="p">.</span><span class="n">masked_fill_</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="o">-</span><span class="nb">float</span><span class="p">(</span><span class="s">'inf'</span><span class="p">))</span>
+
+    <span class="c1"># Define positive pairs
+</span>    <span class="n">pos_mask</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span> <span class="o">*</span> <span class="n">batch_size</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">batch_size</span><span class="p">),</span> <span class="n">device</span><span class="o">=</span><span class="n">embedding_1</span><span class="p">.</span><span class="n">device</span><span class="p">)</span>
+    <span class="n">pos_mask</span><span class="p">[:</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">:]</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">eye</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
+    <span class="n">pos_mask</span><span class="p">[</span><span class="n">batch_size</span><span class="p">:,</span> <span class="p">:</span><span class="n">batch_size</span><span class="p">]</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">eye</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
+    <span class="n">pos_mask</span> <span class="o">=</span> <span class="n">pos_mask</span><span class="p">.</span><span class="nb">bool</span><span class="p">()</span>
+
+    <span class="c1"># Get positive similarities
+</span>    <span class="n">pos_similarities</span> <span class="o">=</span> <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">].</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">batch_size</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># Compute log-softmax over similarities
+</span>    <span class="n">logits</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">cat</span><span class="p">([</span><span class="n">pos_similarities</span><span class="p">,</span> <span class="n">similarity_matrix</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">loss</span> <span class="o">=</span> <span class="o">-</span><span class="n">torch</span><span class="p">.</span><span class="n">nn</span><span class="p">.</span><span class="n">LogSoftmax</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)(</span><span class="n">logits</span><span class="p">)[:,</span> <span class="mi">0</span><span class="p">].</span><span class="n">mean</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">loss</span>
+</code></pre></div></div>
+
+<h3 id="4-configuration-system">4. Configuration System</h3>
+
+<p>SimpleSleepNet uses a flexible JSON-based configuration system for experiment reproducibility:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"seed"</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dataset"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"dset_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"data/processed/"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"max_files"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"montage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fpz-Cz"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"pretraining_params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"batch_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"temperature"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.07</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"latent_dim"</span><span class="p">:</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"learning_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1e-4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"max_epochs"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"check_interval"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"min_improvement"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.01</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"augmentations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"RandomZeroMasking"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"masking_ratio"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"p"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"TimeWarping"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"sigma"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"knot_points"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"p"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.7</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"TailoredMixup"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"alpha"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"p"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"RandomAdditiveGaussianNoise"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"scale"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"p"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"latent_space_params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"tsne_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"umap_enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"n_clusters"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"visualization_fraction"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"sup_training_params"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"dropout_rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"learning_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1e-3</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"max_epochs"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"experiment_num"</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="training-pipeline">Training Pipeline</h2>
+
+<h3 id="1-self-supervised-contrastive-pretraining">1. Self-Supervised Contrastive Pretraining</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load augmentations from config
+</span><span class="n">augmentations</span> <span class="o">=</span> <span class="n">load_augmentations_from_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+
+<span class="c1"># Create datasets and dataloaders
+</span><span class="n">train_dataset</span> <span class="o">=</span> <span class="n">ContrastiveEEGDataset</span><span class="p">(</span><span class="n">eeg_signals</span><span class="p">,</span> <span class="n">augmentations</span><span class="p">)</span>
+<span class="n">train_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'batch_size'</span><span class="p">])</span>
+
+<span class="c1"># Create model and optimizer
+</span><span class="n">model</span> <span class="o">=</span> <span class="n">SimpleSleepNet</span><span class="p">(</span><span class="n">latent_dim</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'latent_dim'</span><span class="p">])</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'learning_rate'</span><span class="p">])</span>
+
+<span class="c1"># Train contrastive model
+</span><span class="n">train_contrastive_model</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+    <span class="n">train_dataloader</span><span class="o">=</span><span class="n">train_loader</span><span class="p">,</span>
+    <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">,</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'temperature'</span><span class="p">],</span>
+    <span class="n">num_epochs</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'max_epochs'</span><span class="p">],</span>
+    <span class="n">check_interval</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'check_interval'</span><span class="p">],</span>
+    <span class="n">min_improvement</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'min_improvement'</span><span class="p">],</span>
+    <span class="n">device</span><span class="o">=</span><span class="s">'cuda'</span> <span class="k">if</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s">'cpu'</span><span class="p">,</span>
+    <span class="n">best_model_path</span><span class="o">=</span><span class="sa">f</span><span class="s">"checkpoints/encoder_</span><span class="si">{</span><span class="n">config</span><span class="p">[</span><span class="s">'experiment_num'</span><span class="p">]</span><span class="si">}</span><span class="s">.pth"</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="2-supervised-fine-tuning">2. Supervised Fine-Tuning</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load pretrained encoder
+</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">SimpleSleepNet</span><span class="p">(</span><span class="n">latent_dim</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'latent_dim'</span><span class="p">])</span>
+<span class="n">encoder</span><span class="p">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="sa">f</span><span class="s">"checkpoints/encoder_</span><span class="si">{</span><span class="n">config</span><span class="p">[</span><span class="s">'experiment_num'</span><span class="p">]</span><span class="si">}</span><span class="s">.pth"</span><span class="p">))</span>
+<span class="n">encoder</span><span class="p">.</span><span class="nb">eval</span><span class="p">()</span>  <span class="c1"># Freeze encoder
+</span>
+<span class="c1"># Create supervised dataset and dataloader
+</span><span class="n">train_dataset</span> <span class="o">=</span> <span class="n">SupervisedEEGDataset</span><span class="p">(</span><span class="n">eeg_signals</span><span class="p">)</span>
+<span class="n">train_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'sup_training_params'</span><span class="p">][</span><span class="s">'batch_size'</span><span class="p">])</span>
+
+<span class="c1"># Create classifier and optimizer
+</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">SleepStageClassifier</span><span class="p">(</span>
+    <span class="n">input_dim</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'pretraining_params'</span><span class="p">][</span><span class="s">'latent_dim'</span><span class="p">],</span>
+    <span class="n">num_classes</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">dropout_probs</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'sup_training_params'</span><span class="p">][</span><span class="s">'dropout_rate'</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">Adam</span><span class="p">(</span><span class="n">classifier</span><span class="p">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'sup_training_params'</span><span class="p">][</span><span class="s">'learning_rate'</span><span class="p">])</span>
+<span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span>
+
+<span class="c1"># Train classifier
+</span><span class="n">train_classifier</span><span class="p">(</span>
+    <span class="n">encoder</span><span class="o">=</span><span class="n">encoder</span><span class="p">,</span>
+    <span class="n">classifier</span><span class="o">=</span><span class="n">classifier</span><span class="p">,</span>
+    <span class="n">train_dataloader</span><span class="o">=</span><span class="n">train_loader</span><span class="p">,</span>
+    <span class="n">criterion</span><span class="o">=</span><span class="n">criterion</span><span class="p">,</span>
+    <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">,</span>
+    <span class="n">num_epochs</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s">'sup_training_params'</span><span class="p">][</span><span class="s">'max_epochs'</span><span class="p">],</span>
+    <span class="n">device</span><span class="o">=</span><span class="s">'cuda'</span> <span class="k">if</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s">'cpu'</span><span class="p">,</span>
+    <span class="n">save_path</span><span class="o">=</span><span class="sa">f</span><span class="s">"checkpoints/classifier_</span><span class="si">{</span><span class="n">config</span><span class="p">[</span><span class="s">'experiment_num'</span><span class="p">]</span><span class="si">}</span><span class="s">.pth"</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="hpc-deployment">HPC Deployment</h2>
+
+<p>For large-scale experimentation, we provide scripts for running on HPC clusters with Slurm:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Generate multiple configs for a hyperparameter sweep</span>
+python generate_configs.py <span class="nt">--grid</span> <span class="s2">"latent_dim=64,128,256"</span> <span class="nt">--seeds</span> <span class="s2">"0,1,2"</span> <span class="se">\</span>
+                          <span class="nt">--out</span> configs/sweep/
+
+<span class="c"># Submit all experiments to Slurm</span>
+bash submit_experiments.sh configs/sweep/
+</code></pre></div></div>
+
+<p>The Slurm job script (<code class="language-plaintext highlighter-rouge">run_single_experiment.slurm</code>) handles resource allocation and environment setup:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c">#SBATCH --job-name=SleepNet</span>
+<span class="c">#SBATCH --nodes=1</span>
+<span class="c">#SBATCH --ntasks=1</span>
+<span class="c">#SBATCH --cpus-per-task=8</span>
+<span class="c">#SBATCH --mem-per-cpu=4G</span>
+<span class="c">#SBATCH --time=12:00:00</span>
+<span class="c">#SBATCH --gpus=1</span>
+<span class="c">#SBATCH --mail-type=END,FAIL</span>
+<span class="c">#SBATCH --mail-user=your.email@example.com</span>
+<span class="c">#SBATCH --output=logs/SleepNet_Run_%j.out</span>
+<span class="c">#SBATCH --error=logs/SleepNet_Run_%j.err</span>
+
+<span class="c"># Set up environment</span>
+<span class="nb">source</span> /path/to/conda/bin/activate
+conda activate sleepnet
+
+<span class="c"># Ensure project directory is properly set</span>
+<span class="nv">PROJECT_DIR</span><span class="o">=</span><span class="si">$(</span><span class="nb">dirname</span> <span class="si">$(</span><span class="nb">readlink</span> <span class="nt">-f</span> <span class="nv">$0</span><span class="si">))</span>
+
+<span class="c"># Run the experiment with the config file passed from submit_experiments.sh</span>
+python <span class="nv">$PROJECT_DIR</span>/main.py <span class="nt">--config</span> <span class="s2">"</span><span class="nv">$CONFIG_FILE</span><span class="s2">"</span>
+
+<span class="c"># Exit with the same code as the Python script</span>
+<span class="nb">exit</span> <span class="nv">$?</span>
+</code></pre></div></div>
+
+<h2 id="experimental-results">Experimental Results</h2>
+
+<p>Our systematic evaluation of EEG augmentations reveals several key findings:</p>
+
+<ol>
+  <li>
+    <p><strong>Top-performing augmentations:</strong></p>
+
+    <ul>
+      <li><strong>Masking-Cropping</strong>: RandomZeroMasking, CutoutResize</li>
+      <li><strong>Frequency-Based</strong>: TailoredMixup</li>
+      <li><strong>Temporal</strong>: TimeWarping, Permutation</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Augmentation severity analysis:</strong> Applying 3-4 well-chosen augmentations provides optimal balance between under- and over-distortion.</p>
+  </li>
+  <li>
+    <p><strong>Performance metrics:</strong></p>
+
+    <ul>
+      <li><strong>Linear Evaluation</strong>: ~75% accuracy, ~65% Macro-F1</li>
+      <li><strong>Fine-tuned Evaluation</strong>: &gt;80% accuracy, &gt;70% Macro-F1</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Latent space quality:</strong> Our contrastive pretraining produces well-separated clusters that align with sleep stage labels, as evidenced by high Adjusted Rand Index (ARI) scores.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/images/projects/confusion_matrix_49.png" alt="Evaluation" /></p>
+
+<h2 id="extending-simplesleepnet">Extending SimpleSleepNet</h2>
+
+<h3 id="adding-new-augmentations">Adding New Augmentations</h3>
+
+<p>Create a new augmentation by inheriting from the <code class="language-plaintext highlighter-rouge">BaseAugmentation</code> class:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MyCustomAugmentation</span><span class="p">(</span><span class="n">BaseAugmentation</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">param1</span> <span class="o">=</span> <span class="n">param1</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">param2</span> <span class="o">=</span> <span class="n">param2</span>
+
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x_random</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="p">.</span><span class="n">_should_apply</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">x</span>
+
+        <span class="c1"># Implement your augmentation logic here
+</span>        <span class="n">augmented_x</span> <span class="o">=</span> <span class="p">...</span>
+
+        <span class="k">return</span> <span class="n">augmented_x</span>
+</code></pre></div></div>
+
+<p>Then add it to your configuration:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"augmentations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"MyCustomAugmentation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"param1"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.7</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"param2"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"p"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="adding-new-model-architectures">Adding New Model Architectures</h3>
+
+<p>Create a new encoder by implementing the required interface:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">MyCustomEncoder</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latent_dim</span><span class="o">=</span><span class="mi">128</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">()</span>
+        <span class="c1"># Define your architecture
+</span>
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="c1"># Process input and produce embeddings
+</span>        <span class="c1"># Make sure to normalize output for contrastive learning
+</span>        <span class="k">return</span> <span class="n">F</span><span class="p">.</span><span class="n">normalize</span><span class="p">(</span><span class="n">embeddings</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="citation">Citation</h2>
+
+<p>If you use SimpleSleepNet in your research, please cite:</p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@misc</span><span class="p">{</span><span class="nl">gupta2025selfsupervised</span><span class="p">,</span>
+  <span class="na">title</span><span class="p">=</span><span class="s">{Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Gupta, Shaswat}</span><span class="p">,</span>
+  <span class="na">year</span><span class="p">=</span><span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">publisher</span><span class="p">=</span><span class="s">{ETH Zurich}</span><span class="p">,</span>
+  <span class="na">howpublished</span><span class="p">=</span><span class="s">{\url{https://gitlab.ethz.ch/shagupta/simplesleepnet}}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<p>This work was conducted as part of a semester project at the Medical Data Science Group, D-INFK, ETH Zurich, under the supervision of Prof. Dr. Julia Vogt.</p>
+</div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/Shaswat-G" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/shaswat-gupta/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://shazzgo.substack.com/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-newspaper" aria-hidden="true"></i> Substack</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Shaswat Gupta</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/assets/js/plugins/jquery.greedy-navigation.js"></script>
+    <!-- <script src="/assets/js/main.min.js"></script> -->
+
+     
+    
+    
+
+  </body>
+</html>

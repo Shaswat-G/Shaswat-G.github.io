@@ -13,9 +13,15 @@ minimal_mistakes_skin: "air" # "default" # "air", "aqua", "contrast", "dark", "d
 
 # Site settings
 locale: "en-US"
+
+# lunr:
+#   search_within_pages: true
+#   search_full_content: true # Search full content of posts and pages
+
 search: false # As per requirements
+
 atom_feed:
-  hide: true # Hide RSS feed links
+  hide: false # Hide RSS feed links
 
 theme_color: "#ffffff" # Set the theme color
 enable_comments: true

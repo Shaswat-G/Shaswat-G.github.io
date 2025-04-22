@@ -65,9 +65,9 @@ var store = [{
         "url": "/courses/vs_code_efficiency/",
         "teaser": "/assets/images/courses/vscode.jpeg"
       },{
-        "title": "Interactive Data Visualization Platform",
-        "excerpt":"Project Abstract This data visualization platform transforms complex datasets into interactive, intuitive visualizations, enabling non-technical stakeholders to derive meaningful insights with minimal effort. My Role &amp; Contribution As the lead developer, I: Architected the full-stack application from concept to deployment Implemented a modular React frontend with reusable visualization components Developed...","categories": [],
+        "title": "SimpleSleepNet",
+        "excerpt":"SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification Author: Shaswat Gupta Group: Medical Data Science, D-INFK, ETH Zurich Supervisor: Prof. Dr. Julia Vogt Contact: shagupta@ethz.ch Project Repository: SimpleSleepNet Overview SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage classification using self-supervised contrastive representation learning achieving 80%+ accuracy...","categories": [],
         "tags": [],
-        "url": "/projects/sample-project/",
-        "teaser": "/assets/images/projects/dataviz-teaser.gif"
+        "url": "/projects/simple_sleep_net/",
+        "teaser": "/assets/images/projects/dnn.jpg"
       }]
