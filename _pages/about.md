@@ -18,7 +18,7 @@ author_profile: true
 
 **My academic research at ETH Zurich further underscores my robust expertise in large-scale AI and data-intensive computing.** Undertaking a 6-month project at ETH’s Institute for Machine Learning, I built a self-supervised contrastive learning framework for EEG-based automatic sleep stage classification. Navigating intensive computational requirements, I leveraged HPC clusters (using SLURM for distributed computing), extensively tested CNN architectures, and systematically evaluated data augmentations, achieving notable performance (80%+ accuracy and 70% Macro-F1) with extremely lightweight models (~200k parameters).
 
-![Research and Collaboration](assets/images/research_collaboration_placeholder.jpg){:height="300"}
+![Research and Collaboration](assets/stanford.webp){:.align-center}
 
 **My international experiences have broadened my perspectives, equipping me to thrive in global, collaborative settings.** My initial semester exchange at ETH Zurich solidified my decision to return for graduate studies. Further, my roles as a delegate at Harvard HPAIR and Princeton Business Today enhanced my capability to collaborate internationally, adapting seamlessly to diverse professional contexts.
 

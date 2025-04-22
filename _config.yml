@@ -48,6 +48,24 @@ author:
       icon: "fas fa-fw fa-newspaper"
       url: "https://shazzgo.substack.com/"
 
+
+# Footer info
+footer:
+  name: "Shaswat Gupta"
+  avatar: "/assets/images/shaswat.png"
+  bio: "MSc in Computer Science ETH Zurich"
+  location: "Zurich, Switzerland"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Shaswat-G"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/shaswat-gupta/"
+    - label: "Substack"
+      icon: "fas fa-fw fa-newspaper"
+      url: "https://shazzgo.substack.com/"
+
 # Plugins
 plugins:
   - jekyll-feed
