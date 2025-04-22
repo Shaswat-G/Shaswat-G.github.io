@@ -8,8 +8,16 @@ sidebar:
   nav: "vs_code_efficiency"
 toc: true
 toc_sticky: true
+related: true
+categories:
+  - Tools
+  - Development
+tags:
+  - vs-code
+  - productivity
+  - ide
+  - development-tools
 ---
-
 
 # VS Code Mastery: Keyboard-Driven Development
 
@@ -46,26 +54,31 @@ This course transforms VS Code beginners into keyboard ninjas and helps intermed
 ## Course Structure
 
 ### Module 1: The Basics (But You'll Still Learn Something)
+
 - File operations (opening, saving)
 - Navigation shortcuts that'll make you question your life choices so far
 - Command Palette: the gateway to keyboard-driven development
 
 ### Module 2: Editing That Makes Sense
+
 - Multi-cursor techniques to edit 10 lines at once
 - Code folding, snippets, and rapid commenting
 - Selection expansion and column edits
 
 ### Module 3: Next-Level Navigation
+
 - Symbol navigation (jump to functions/classes)
 - Split-editor workflows
 - Focus management between terminal, editor, and sidebar
 
 ### Module 4: Debugging Like You Mean It
+
 - Keyboard-driven breakpoints
 - Step-through shortcuts
 - Variable inspection without clicking
 
 ### Module 5: Extension Ecosystem
+
 - Productivity boosters for various languages
 - GitHub integration (Copilot, Pull Requests)
 - Custom keybinding creation
@@ -80,7 +93,7 @@ As one student put it: "My coworkers now think I'm a wizard. I don't correct the
 
 Commit to one week of keyboard-first development. Your future self will thank you.
 
-*Estimated course completion time: 8 hours (spread over 2 weeks for optimal retention)*
+_Estimated course completion time: 8 hours (spread over 2 weeks for optimal retention)_
 
 ---
 

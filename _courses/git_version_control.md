@@ -8,6 +8,15 @@ sidebar:
   nav: "git-and-version-control"
 toc: true
 toc_sticky: true
+related: true
+categories:
+  - Development
+  - Tools
+tags:
+  - git
+  - version-control
+  - collaboration
+  - github
 ---
 
 # Git & Version Control: The Complete Developer's Guide
@@ -17,7 +26,6 @@ toc_sticky: true
 A structured approach to mastering version control for developers at all levels.
 
 **Link to Course**: [Git and Version Control Course](https://github.com/Shaswat-G/git-and-version-control)
-
 
 ![GitHub](mind_map.png)
 

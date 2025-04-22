@@ -4,6 +4,7 @@ subtitle: ETH Zurich | IIT Bombay Rank 1, Gold Medalist | ML Engineer
 description: Professional portfolio and curated course notes
 url: https://Shaswat-G.github.io
 repository: Shaswat-G/Shaswat-G.github.io
+logo: /assets/images/logo.png
 
 # Theme config
 # theme: minimal-mistakes-jekyll
@@ -117,6 +118,7 @@ defaults:
       author_profile: true
       share: true
       classes: wide
+      related: true
   # _projects
   - scope:
       path: ""
@@ -126,6 +128,7 @@ defaults:
       author_profile: true
       share: true
       classes: wide
+      related: true
   # _analyses
   - scope:
       path: ""
@@ -135,3 +138,4 @@ defaults:
       author_profile: true
       share: true
       classes: wide
+      related: true
