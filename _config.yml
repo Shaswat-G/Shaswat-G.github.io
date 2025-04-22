@@ -10,7 +10,6 @@ repository: Shaswat-G/Shaswat-G.github.io
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-
 # Site settings
 locale: "en-US"
 search: false # As per requirements
@@ -48,6 +47,14 @@ author:
       icon: "fas fa-fw fa-newspaper"
       url: "https://shazzgo.substack.com/"
 
+# Social profiles for search engines
+social:
+  type: Person # Person or Organization
+  name: "Shaswat Gupta"
+  links:
+    - "https://github.com/Shaswat-G"
+    - "https://www.linkedin.com/in/shaswat-gupta/"
+    - "https://shazzgo.substack.com/"
 
 # Footer info
 footer:
