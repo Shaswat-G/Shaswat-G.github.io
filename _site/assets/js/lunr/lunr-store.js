@@ -65,8 +65,14 @@ var store = [{
         "url": "/courses/vs_code_efficiency/",
         "teaser": "/assets/images/courses/vscode.jpeg"
       },{
+        "title": "DeepSleepBench",
+        "excerpt":"![DeepSleepBench Framework](/assets/images/projects/bench-framework-diagram.svg) # Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/) [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/) [![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard) ## Overview Sleep stage classification (SSC) is fundamental for diagnosing sleep disorders and understanding sleep physiology. However, the effectiveness of self-supervised learning (SSL) paradigms for electroencephalogram (EEG) data remains incompletely explored....","categories": [],
+        "tags": [],
+        "url": "/projects/neural_latent_representations/",
+        "teaser": "/assets/images/projects/latent.jpg"
+      },{
         "title": "SimpleSleepNet",
-        "excerpt":"SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification Author: Shaswat Gupta Group: Medical Data Science, D-INFK, ETH Zurich Supervisor: Prof. Dr. Julia Vogt Contact: shagupta@ethz.ch Project Repository: SimpleSleepNet Overview SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage classification using self-supervised contrastive representation learning achieving 80%+ accuracy...","categories": [],
+        "excerpt":"![Project Demo](/assets/images/projects/simplesleepnet-architecture.svg) # SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/) [![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard) ![License](https://img.shields.io/badge/License-MIT-green) **Author:** Shaswat Gupta **Group:** Medical Data Science, D-INFK, ETH Zurich **Supervisor:** Prof. Dr. Julia Vogt **Contact:** [shagupta@ethz.ch](mailto:shagupta@ethz.ch) **Project Repository:** [SimpleSleepNet](https://gitlab.ethz.ch/shagupta/simplesleepnet) ## Overview SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage...","categories": [],
         "tags": [],
         "url": "/projects/simple_sleep_net/",
         "teaser": "/assets/images/projects/dnn.jpg"

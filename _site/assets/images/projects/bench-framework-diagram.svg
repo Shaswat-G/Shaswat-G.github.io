@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+  <!-- Background -->
+  <rect x="0" y="0" width="1000" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">DeepSleepBench Framework Architecture</text>
+  
+  <!-- Data Processing Pipeline -->
+  <rect x="50" y="80" width="900" height="100" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565c0">Data Processing Pipeline</text>
+  
+  <!-- Data Processing Components -->
+  <rect x="80" y="130" width="160" height="40" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" rx="5" ry="5"/>
+  <text x="160" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">Raw EEG Data</text>
+  
+  <rect x="280" y="130" width="160" height="40" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" rx="5" ry="5"/>
+  <text x="360" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">Preprocessing</text>
+  
+  <rect x="480" y="130" width="160" height="40" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" rx="5" ry="5"/>
+  <text x="560" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">Augmentations</text>
+  
+  <rect x="680" y="130" width="210" height="40" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" rx="5" ry="5"/>
+  <text x="785" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">Dataset Factory</text>
+  
+  <!-- Arrows for Data Processing -->
+  <line x1="240" y1="150" x2="280" y2="150" stroke="#1e88e5" stroke-width="2"/>
+  <polygon points="278,145 290,150 278,155" fill="#1e88e5"/>
+  
+  <line x1="440" y1="150" x2="480" y2="150" stroke="#1e88e5" stroke-width="2"/>
+  <polygon points="478,145 490,150 478,155" fill="#1e88e5"/>
+  
+  <line x1="640" y1="150" x2="680" y2="150" stroke="#1e88e5" stroke-width="2"/>
+  <polygon points="678,145 690,150 678,155" fill="#1e88e5"/>
+  
+  <!-- Self-Supervised Learning Paradigms -->
+  <rect x="50" y="200" width="900" height="130" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="230" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">Self-Supervised Learning Paradigms</text>
+  
+  <!-- SSL Paradigms -->
+  <rect x="80" y="260" width="260" height="50" fill="#c8e6c9" stroke="#43a047" stroke-width="1" rx="5" ry="5"/>
+  <text x="210" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">Contrastive Learning (CRL)</text>
+  
+  <rect x="370" y="260" width="260" height="50" fill="#c8e6c9" stroke="#43a047" stroke-width="1" rx="5" ry="5"/>
+  <text x="500" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">Masked Prediction (MP)</text>
+  
+  <rect x="660" y="260" width="260" height="50" fill="#c8e6c9" stroke="#43a047" stroke-width="1" rx="5" ry="5"/>
+  <text x="790" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">Hybrid Approach</text>
+  
+  <!-- Model Architectures -->
+  <rect x="50" y="350" width="900" height="130" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="380" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">Model Architectures</text>
+  
+  <!-- Architecture Components -->
+  <rect x="80" y="410" width="260" height="50" fill="#ffe0b2" stroke="#fb8c00" stroke-width="1" rx="5" ry="5"/>
+  <text x="210" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#e65100">CNN</text>
+  
+  <rect x="370" y="410" width="260" height="50" fill="#ffe0b2" stroke="#fb8c00" stroke-width="1" rx="5" ry="5"/>
+  <text x="500" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#e65100">CNN + Attention</text>
+  
+  <rect x="660" y="410" width="260" height="50" fill="#ffe0b2" stroke="#fb8c00" stroke-width="1" rx="5" ry="5"/>
+  <text x="790" y="440" font-family="Arial" font-size="14" text-anchor="middle" fill="#e65100">Transformer</text>
+  
+  <!-- Evaluation Pipeline -->
+  <rect x="50" y="500" width="900" height="80" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5" ry="5"/>
+  <text x="500" y="530" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#6a1b9a">Latent Space Evaluation</text>
+  
+  <!-- Evaluation Components -->
+  <rect x="80" y="550" width="120" height="20" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" rx="5" ry="5"/>
+  <text x="140" y="564" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a148c">Reducers</text>
+  
+  <rect x="230" y="550" width="120" height="20" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" rx="5" ry="5"/>
+  <text x="290" y="564" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a148c">Metrics</text>
+  
+  <rect x="380" y="550" width="120" height="20" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" rx="5" ry="5"/>
+  <text x="440" y="564" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a148c">Visualization</text>
+  
+  <rect x="530" y="550" width="120" height="20" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" rx="5" ry="5"/>
+  <text x="590" y="564" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a148c">Clustering</text>
+  
+  <rect x="680" y="550" width="210" height="20" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" rx="5" ry="5"/>
+  <text x="785" y="564" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a148c">Performance Benchmarking</text>
+  
+  <!-- Vertical Connections -->
+  <line x1="210" y1="180" x2="210" y2="200" stroke="#333" stroke-width="2"/>
+  <polygon points="205,198 210,210 215,198" fill="#333"/>
+  
+  <line x1="500" y1="180" x2="500" y2="200" stroke="#333" stroke-width="2"/>
+  <polygon points="495,198 500,210 505,198" fill="#333"/>
+  
+  <line x1="790" y1="180" x2="790" y2="200" stroke="#333" stroke-width="2"/>
+  <polygon points="785,198 790,210 795,198" fill="#333"/>
+  
+  <line x1="210" y1="310" x2="210" y2="350" stroke="#333" stroke-width="2"/>
+  <polygon points="205,348 210,360 215,348" fill="#333"/>
+  
+  <line x1="500" y1="310" x2="500" y2="350" stroke="#333" stroke-width="2"/>
+  <polygon points="495,348 500,360 505,348" fill="#333"/>
+  
+  <line x1="790" y1="310" x2="790" y2="350" stroke="#333" stroke-width="2"/>
+  <polygon points="785,348 790,360 795,348" fill="#333"/>
+  
+  <line x1="210" y1="460" x2="210" y2="500" stroke="#333" stroke-width="2"/>
+  <polygon points="205,498 210,510 215,498" fill="#333"/>
+  
+  <line x1="500" y1="460" x2="500" y2="500" stroke="#333" stroke-width="2"/>
+  <polygon points="495,498 500,510 505,498" fill="#333"/>
+  
+  <line x1="790" y1="460" x2="790" y2="500" stroke="#333" stroke-width="2"/>
+  <polygon points="785,498 790,510 795,498" fill="#333"/>
+</svg>

@@ -137,12 +137,13 @@
 </div>
 
 
-    <div class="initial-content"><p><img src="/assets/images/projects/Pretraining-picture.png" alt="Project Demo" /></p>
+    <div class="initial-content"><p><img src="/assets/images/projects/simplesleepnet-architecture.svg" alt="Project Demo" /></p>
 
 <h1 id="simplesleepnet-self-supervised-contrastive-learning-for-eeg-based-sleep-stage-classification">SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification</h1>
 
 <p><img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python" />
-<img src="https://img.shields.io/badge/PyTorch-1.12%2B-orange" alt="PyTorch" />
+<a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-2.0.0+-red.svg" alt="PyTorch 2.0+" /></a>
+<a href="https://www.tensorflow.org/tensorboard"><img src="https://img.shields.io/badge/TensorBoard-Enabled-green.svg" alt="TensorBoard" /></a>
 <img src="https://img.shields.io/badge/License-MIT-green" alt="License" /></p>
 
 <p><strong>Author:</strong> Shaswat Gupta<br />
@@ -362,6 +363,8 @@ python evaluate.py <span class="nt">--config</span> configs/config_90.json
 <h3 id="2-neural-architectures">2. Neural Architectures</h3>
 
 <h4 id="encoder-simplesleepnet">Encoder: SimpleSleepNet</h4>
+
+<p><img src="/assets/images/projects/Pretraining-picture.png" alt="Project Demo" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">SimpleSleepNet</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="s">"""

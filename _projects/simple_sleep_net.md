@@ -5,12 +5,13 @@ header:
   teaser: /assets/images/projects/dnn.jpg
 ---
 
-![Project Demo](/assets/images/projects/Pretraining-picture.png)
+![Project Demo](/assets/images/projects/simplesleepnet-architecture.svg)
 
 # SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-orange)
+[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/)
+[![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 **Author:** Shaswat Gupta  
@@ -203,6 +204,8 @@ class TailoredMixup(BaseAugmentation):
 ### 2. Neural Architectures
 
 #### Encoder: SimpleSleepNet
+
+![Project Demo](/assets/images/projects/Pretraining-picture.png)
 
 ```python
 class SimpleSleepNet(nn.Module):
