@@ -5,6 +5,7 @@ permalink: /cv/
 header:
   overlay_image: /assets/images/cv-header.png
 #   overlay_filter: rgba(0, 0, 0, 0.6)
+author_profile: true
 ---
 
 ## Table of Contents

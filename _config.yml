@@ -41,7 +41,7 @@ enable_comments: true
 author:
   name: "Shaswat Gupta"
   avatar: "/assets/images/shaswat.png"
-  bio: "MSc in Computer Science ETH Zurich"
+  bio: "MSc in Computer Science ETH Zurich<br>IIT Bombay, Rank 1, Gold Medalist<br>ML Engineer"
   location: "Zurich, Switzerland"
   links:
     - label: "GitHub"
@@ -53,6 +53,9 @@ author:
     - label: "Substack"
       icon: "fas fa-fw fa-newspaper"
       url: "https://shazzgo.substack.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:shagupta@ethz.ch"
 
 # Social profiles for search engines
 social:
@@ -79,6 +82,9 @@ footer:
     - label: "Substack"
       icon: "fas fa-fw fa-newspaper"
       url: "https://shazzgo.substack.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:shagupta@ethz.ch"
 
 # Plugins
 plugins:

@@ -5,6 +5,11 @@
 <html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
   <head>
     {% include head.html %} {% include head/custom.html %}
+    <style>
+      body {
+        font-size: 0.9em;
+      }
+    </style>
   </head>
 
   <body
@@ -22,8 +27,7 @@
 
     <div id="footer" class="page__footer">
       <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
+        {% include footer/custom.html %} {% include_cached footer.html %}
       </footer>
     </div>
 
@@ -35,13 +39,9 @@
     <script src="{{ '/assets/js/lunr/lunr.min.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/lunr/lunr-store.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/lunr/lunr-en.js' | relative_url }}"></script>
-    {% endif %} 
-    
-    {% if site.footer_scripts %} 
-    {% for script in site.footer_scripts %}
+    {% endif %} {% if site.footer_scripts %} {% for script in
+    site.footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
-    {% endfor %} 
-    {% endif %}
-
+    {% endfor %} {% endif %}
   </body>
 </html>
