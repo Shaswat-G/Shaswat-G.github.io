@@ -281,58 +281,113 @@
     <i class="fas fa-graduation-cap"></i>
     Education
   </h2>
-
+  <div class="cv-section__divider"></div>
    
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/eth.jpg" alt="ETH Zürich" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>ETH Zürich</h3>
-      <p class="meta">Sept 2023 - Present | Zurich, Switzerland</p>
-      <ul>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/eth.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>ETH Zürich</h3>
+        
+        <p class="meta">Sept 2023 - Present | Zurich, Switzerland</p>
+        <ul>
   <li><strong>GPA:</strong> 5.25/6</li>
   <li><strong>Major:</strong> Machine Intelligence</li>
   <li><strong>Minor:</strong> Data Management Systems</li>
   <li><strong>Courses:</strong> Large Scale AI Engineering, Cloud Computing Architecture, Big Data, Machine Learning, Deep Learning, Machine Perception, Computational Intelligence Lab, System Security</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/iitb.jpg" alt="Indian Institute of Technology Bombay (IIT Bombay)" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Indian Institute of Technology Bombay (IIT Bombay)</h3>
-      <p class="meta">July 2018 - Aug 2022 | Mumbai, India</p>
-      <ul>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/iitb.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>Indian Institute of Technology Bombay (IIT Bombay)</h3>
+        
+        <p class="meta">July 2018 - Aug 2022 | Mumbai, India</p>
+        <ul>
   <li><strong>GPA:</strong> 9.6/10 - Highest Cumulative GPA in batch</li>
   <li><strong>Activities:</strong> Journalism, Public Speaking, Tech Competitions and Debating</li>
 </ul>
 
+      </div>
     </div>
   </div>
    
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -356,6 +411,37 @@
   .cv-skills__content strong {
     color: #333;
     font-weight: 600;
+  }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
   }
 </style>
 
@@ -364,112 +450,185 @@
     <i class="fas fa-award"></i>
     Scholarships, Medals &amp; Distinctions
   </h2>
-
+  <div class="cv-section__divider"></div>
    
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>🏅 Department Rank 1 &amp; Gold Medalist</h3>
-      <p class="meta">
-        IIT Bombay | 2022
-      </p>
-      <p>Graduated with Rank 1 out of 165 students - The Highest CGPA in the 2022 class of Bachelors in Mechanical Engineering</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Department Rank 1 &amp; Gold Medalist</h3>
+        <p class="meta">
+          IIT Bombay | 2022
+        </p>
+        <p>Graduated with Rank 1 out of 165 students - The Highest CGPA in the 2022 class of Bachelors in Mechanical Engineering</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>🏅 Institute Academic Award</h3>
-      <p class="meta">
-        IIT Bombay | 2021
-      </p>
-      <p>Awarded to only 2 students for the highest grade point scores of the academic year</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Institute Academic Award</h3>
+        <p class="meta">
+          IIT Bombay | 2021
+        </p>
+        <p>Awarded to only 2 students for the highest grade point scores of the academic year</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>🏅 KC Mahindra Scholarship</h3>
-      <p class="meta">
-        Mahindra and Mahindra | July 2023
-      </p>
-      <p>Prestigious scholarship awarded to meritorious Indian students for graduate studies abroad. Associated with ETH Zurich</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>KC Mahindra Scholarship</h3>
+        <p class="meta">
+          Mahindra and Mahindra | July 2023
+        </p>
+        <p>Prestigious scholarship awarded to meritorious Indian students for graduate studies abroad. Associated with ETH Zurich</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>Heyning-Roelli Scholarship</h3>
-      <p class="meta">
-        Heyning Roelli Foundation | February 2022
-      </p>
-      <p>Recipient of ETH Zurich's merit and need-based international exchange scholarship</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Heyning-Roelli Scholarship</h3>
+        <p class="meta">
+          Heyning Roelli Foundation | February 2022
+        </p>
+        <p>Recipient of ETH Zurich's merit and need-based international exchange scholarship</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>Mensa International High IQ Society</h3>
-      <p class="meta">
-        Mensa International | April 2025
-      </p>
-      <p>Member of the high IQ society</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Mensa International High IQ Society</h3>
+        <p class="meta">
+          Mensa International | April 2025
+        </p>
+        <p>Member of the high IQ society</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>🏅 AB InBev 'Pint' &amp; 'Pitcher' Award</h3>
-      <p class="meta">
-        AB InBev | 
-      </p>
-      <p>Award for Excellence during one year of work experience as a data scientist</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>AB InBev 'Pint' &amp; 'Pitcher' Award</h3>
+        <p class="meta">
+          AB InBev | 
+        </p>
+        <p>Award for Excellence during one year of work experience as a data scientist</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>🏅 OPJEMS Scholarship</h3>
-      <p class="meta">
-        Jindal Group | November 2021
-      </p>
-      <p>Awarded to only 3 top-performing, entrepreneurial students from among 1100+ students at IIT Bombay</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>OPJEMS Scholarship</h3>
+        <p class="meta">
+          Jindal Group | November 2021
+        </p>
+        <p>Awarded to only 3 top-performing, entrepreneurial students from among 1100+ students at IIT Bombay</p>
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>🏅 IIT Bombay Journalism Color Award</h3>
-      <p class="meta">
-        IIT Bombay | August 2022
-      </p>
-      <p>Awarded the Institute's most prestigious Journalism Award for exemplary contribution. One of only 2 students selected from among 10,000+</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>IIT Bombay Journalism Color Award</h3>
+        <p class="meta">
+          IIT Bombay | August 2022
+        </p>
+        <p>Awarded the Institute's most prestigious Journalism Award for exemplary contribution. One of only 2 students selected from among 10,000+</p>
+      </div>
     </div>
   </div>
    
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -494,6 +653,37 @@
     color: #333;
     font-weight: 600;
   }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
+  }
 </style>
 
 <section class="cv-section">
@@ -501,10 +691,10 @@
     <i class="fas fa-laptop-code"></i>
     Technical Skills
   </h2>
-
+  <div class="cv-section__divider"></div>
    
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">Programming &amp; Development</h3>
       <p><strong>Advanced:</strong> Python (ML/Data Engineering), SQL (Snowflake/Postgres/Oracle), Bash/Linux CLI</p>
@@ -515,7 +705,7 @@
   </div>
     
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">Machine Learning &amp; AI</h3>
       <p><strong>Frameworks:</strong> PyTorch, TensorFlow/Keras, scikit-learn, Hugging Face Transformers</p>
@@ -528,7 +718,7 @@
   </div>
     
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">Data Engineering &amp; Analysis</h3>
       <p><strong>Data Processing:</strong> Pandas, NumPy, Polars, PySpark, PyArrow/Parquet, DuckDB</p>
@@ -541,7 +731,7 @@
   </div>
     
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">MLOps &amp; Deployment</h3>
       <p><strong>Experimentation:</strong> MLflow, Weights &amp; Biases, TensorBoard, experiment design</p>
@@ -554,7 +744,7 @@
   </div>
     
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">Optimization &amp; Quantitative Methods</h3>
       <p><strong>Mathematical Optimization:</strong> Gurobi, PuLP, OR-Tools, Linear/Integer Programming</p>
@@ -567,7 +757,7 @@
   </div>
     
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">Visualization &amp; Domain Tools</h3>
       <p><strong>Data Visualization:</strong> Plotly/Dash, Matplotlib, Seaborn, Tableau</p>
@@ -582,19 +772,68 @@
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -619,6 +858,37 @@
     color: #333;
     font-weight: 600;
   }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
+  }
 </style>
 
 <section class="cv-section">
@@ -626,17 +896,21 @@
     <i class="fas fa-briefcase"></i>
     Experience
   </h2>
-
+  <div class="cv-section__divider"></div>
    
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/budweiser.jpg" alt="AB InBev — Growth Analytics Center" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>AB InBev — Growth Analytics Center</h3>
-      <p class="meta">Aug 2022 - Present | Bangalore, India</p>
-      <p>Led data science solutions for supply chain optimization in the US market, focusing on forecasting and logistics cost reduction.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/budweiser.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>AB InBev — Growth Analytics Center</h3>
+        
+        <div class="cv-entry__position">Data Scientist</div>
+        
+        <p class="meta">Aug 2022 - Present | Bangalore, India</p>
+        <p>Led data science solutions for supply chain optimization in the US market, focusing on forecasting and logistics cost reduction.</p>
 
 <p><strong>Logistics Forecasting &amp; Cost-to-Serve Optimizer</strong></p>
 <ul>
@@ -648,18 +922,23 @@
   <li><strong>Tech</strong>: Python, Gurobi, PuLP, Plotly, Snowflake, AWS CodePipeline/EC2</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/budweiser.jpg" alt="AB InBev — Growth Analytics Center" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>AB InBev — Growth Analytics Center</h3>
-      <p class="meta">May 2021 - Jul 2021 | Bangalore, India</p>
-      <p><strong>Product Recommendation Engine</strong></p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/budweiser.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>AB InBev — Growth Analytics Center</h3>
+        
+        <div class="cv-entry__position">Data Science Intern</div>
+        
+        <p class="meta">May 2021 - Jul 2021 | Bangalore, India</p>
+        <p><strong>Product Recommendation Engine</strong></p>
 <ul>
   <li>Designed a latent-factor recommender system using SVD and NMF collaborative filtering for cross-selling opportunities among 50 SKUs to 18,500+ Tanzanian retailers</li>
   <li>Created 15 custom interaction scoring mechanisms combining recency, frequency, monetary values, and product affinities</li>
@@ -669,18 +948,21 @@
   <li><strong>Tech</strong>: Python, scikit-learn, SciPy, Pandas, Azure</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="" alt="Glenmark Pharmaceuticals — Demand Planning" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Glenmark Pharmaceuticals — Demand Planning</h3>
-      <p class="meta">Dec 2020 - Jan 2021 | Mumbai, India</p>
-      <p><strong>Global Demand-Planning Automation</strong></p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Glenmark Pharmaceuticals — Demand Planning</h3>
+        
+        <div class="cv-entry__position">Analytics Associate</div>
+        
+        <p class="meta">Dec 2020 - Jan 2021 | Mumbai, India</p>
+        <p><strong>Global Demand-Planning Automation</strong></p>
 <ul>
   <li>Reengineered 5 KPI calculation frameworks for improved outlier resilience and accuracy</li>
   <li>Automated reporting pipelines for 5,000+ SKUs across 20+ countries with cloud-based data storage and validation</li>
@@ -690,18 +972,21 @@
   <li><strong>Tech</strong>: Python, SQL, Tableau, Dropbox API</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="" alt="Growth Source Financial Technologies (Protium)" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Growth Source Financial Technologies (Protium)</h3>
-      <p class="meta">Apr 2020 - Jul 2020 | Mumbai, India</p>
-      <p><strong>Debt-Refinancing Optimizer &amp; Loan Recommender</strong></p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Growth Source Financial Technologies (Protium)</h3>
+        
+        <div class="cv-entry__position">Data Science Intern</div>
+        
+        <p class="meta">Apr 2020 - Jul 2020 | Mumbai, India</p>
+        <p><strong>Debt-Refinancing Optimizer &amp; Loan Recommender</strong></p>
 <ul>
   <li>Formulated a linear programming optimization framework to consolidate MSME debt, leveraging collateral appreciation</li>
   <li>Developed a loan recommendation system that ranks feasible refinancing options based on dual-benefit scoring</li>
@@ -712,18 +997,21 @@
   <li><strong>Tech</strong>: Python, PuLP, NumPy, Pandas, scikit-learn, Google Maps API</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="" alt="Rephrase.AI" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Rephrase.AI</h3>
-      <p class="meta">Dec 2019 - Jan 2020 | Bangalore, India</p>
-      <p>Contributed to this Lightspeed-funded, Forbes 30-Under-30 startup specializing in AI-generated synthetic video from text input.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Rephrase.AI</h3>
+        
+        <div class="cv-entry__position">Winter Intern, Artificial Intelligence</div>
+        
+        <p class="meta">Dec 2019 - Jan 2020 | Bangalore, India</p>
+        <p>Contributed to this Lightspeed-funded, Forbes 30-Under-30 startup specializing in AI-generated synthetic video from text input.</p>
 
 <ul>
   <li>Represented Rephrase.AI at the Amazon AWS AI Conclave ‘19, presenting to an audience of 100+ CXOs and 50+ startups</li>
@@ -733,25 +1021,75 @@
   <li><strong>Exposure</strong>: AI video synthesis, public speaking, user testing methodologies</li>
 </ul>
 
+      </div>
     </div>
   </div>
    
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -776,6 +1114,37 @@
     color: #333;
     font-weight: 600;
   }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
+  }
 </style>
 
 <section class="cv-section">
@@ -783,17 +1152,21 @@
     <i class="fas fa-flask"></i>
     Research
   </h2>
-
+  <div class="cv-section__divider"></div>
    
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/eth.jpg" alt="Medical Data Science Group, D-INFK, ETH Zurich" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Medical Data Science Group, D-INFK, ETH Zurich</h3>
-      <p class="meta">January 2025 | Zurich, Switzerland</p>
-      <p>Developed a lightweight self-supervised framework for sleep stage classification from EEG data, achieving 80%+ accuracy with just 200K parameters. This research addressed the challenge of limited labeled medical data through innovative contrastive representation learning approaches.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/eth.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>Medical Data Science Group, D-INFK, ETH Zurich</h3>
+        
+        <div class="cv-entry__position">Semester Thesis</div>
+        
+        <p class="meta">January 2025 | Zurich, Switzerland</p>
+        <p>Developed a lightweight self-supervised framework for sleep stage classification from EEG data, achieving 80%+ accuracy with just 200K parameters. This research addressed the challenge of limited labeled medical data through innovative contrastive representation learning approaches.</p>
 
 <p><strong>Key Contributions:</strong></p>
 <ul>
@@ -807,18 +1180,23 @@
 
 <p><strong>Impact:</strong> Demonstrated that targeted self-supervised learning can dramatically reduce the annotation burden in medical contexts while maintaining high classification performance. The compact model architecture enables potential deployment to resource-constrained medical devices.</p>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/eth.jpg" alt="ETH Zurich" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>ETH Zurich</h3>
-      <p class="meta">Spring 2024 | Zurich, Switzerland</p>
-      <p>Led a systematic benchmark study comparing different self-supervised learning paradigms and neural architectures for EEG-based sleep stage classification, establishing clear guidelines for optimal model design in this domain.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/eth.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>ETH Zurich</h3>
+        
+        <div class="cv-entry__position">Deep Learning Course Project</div>
+        
+        <p class="meta">Spring 2024 | Zurich, Switzerland</p>
+        <p>Led a systematic benchmark study comparing different self-supervised learning paradigms and neural architectures for EEG-based sleep stage classification, establishing clear guidelines for optimal model design in this domain.</p>
 
 <p><strong>Key Contributions:</strong></p>
 <ul>
@@ -832,18 +1210,23 @@
 
 <p><strong>Impact:</strong> Established clear evidence-based guidelines for selecting optimal combinations of self-supervised learning paradigms and backbone architectures for EEG analysis. Findings suggest CNN+Attention with contrastive or hybrid learning objectives consistently outperform alternatives for short EEG segments.</p>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/eth.jpg" alt="Chair of Technology and Innovation Management, ETH Zurich" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Chair of Technology and Innovation Management, ETH Zurich</h3>
-      <p class="meta">March 2024 - Present | Zurich, Switzerland</p>
-      <p><strong>Enterprise Machine Learning Research Project</strong>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/eth.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>Chair of Technology and Innovation Management, ETH Zurich</h3>
+        
+        <div class="cv-entry__position">Research Assistant</div>
+        
+        <p class="meta">March 2024 - Present | Zurich, Switzerland</p>
+        <p><strong>Enterprise Machine Learning Research Project</strong>
 <em>Large-scale collaboration between Zühlke and ETH Zurich examining ML/AI adoption patterns across 600+ enterprises</em></p>
 
 <p><strong>Key Contributions:</strong></p>
@@ -892,18 +1275,21 @@
 
 <p><strong>Technologies:</strong> Python, aiohttp, pandas, BERTopic, Sentence Transformers, UMAP, HDBSCAN, PyTorch, GPT-4o-mini</p>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="" alt="World Bank Group x KPMG India" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>World Bank Group x KPMG India</h3>
-      <p class="meta">April-May 2021 | Mumbai, India</p>
-      <p>Led strategic research on capital investment opportunities in green hydrogen technologies across three nations as part of an international collaboration between the World Bank Group and KPMG India.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>World Bank Group x KPMG India</h3>
+        
+        <div class="cv-entry__position">Summer Associate</div>
+        
+        <p class="meta">April-May 2021 | Mumbai, India</p>
+        <p>Led strategic research on capital investment opportunities in green hydrogen technologies across three nations as part of an international collaboration between the World Bank Group and KPMG India.</p>
 
 <ul>
   <li><strong>Demand Forecasting</strong>: Developed comprehensive 10-year hydrogen demand models by analyzing 10 end-use industries across manufacturing, energy, and mobility sectors</li>
@@ -913,18 +1299,21 @@
 
 <p><strong>Skills</strong>: Energy Market Analysis, Economic Modeling, Quantitative Analytics, Policy Research, Sustainability Assessment</p>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="" alt="Capital Foods Pvt. Ltd." />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Capital Foods Pvt. Ltd.</h3>
-      <p class="meta">January-March 2021 | Mumbai, India</p>
-      <p>Spearheaded research on food and beverage warehousing automation technologies, culminating in executive presentations to C-suite leadership.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>Capital Foods Pvt. Ltd.</h3>
+        
+        <div class="cv-entry__position">Research Intern</div>
+        
+        <p class="meta">January-March 2021 | Mumbai, India</p>
+        <p>Spearheaded research on food and beverage warehousing automation technologies, culminating in executive presentations to C-suite leadership.</p>
 
 <ul>
   <li><strong>Competitive Intelligence</strong>: Analyzed modern warehousing practices of global food and beverage FMCG companies through comprehensive review of 5+ industry conferences, 10+ market reports, and 50+ specialist articles</li>
@@ -934,18 +1323,23 @@
 
 <p><strong>Skills</strong>: Industry Research, FMCG Supply Chain, Automation Technology Assessment, Executive Communication</p>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/iitb.jpg" alt="Indian School of Business" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Indian School of Business</h3>
-      <p class="meta">August-November 2020 | Mumbai, India</p>
-      <p>Conducted advanced modeling of SARS-CoV-2 transmission dynamics in agricultural markets under guidance of Prof. Sarang Deo, Executive Director of Max Institute of Healthcare Management.</p>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/iitb.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>Indian School of Business</h3>
+        
+        <div class="cv-entry__position">Research Assistant</div>
+        
+        <p class="meta">August-November 2020 | Mumbai, India</p>
+        <p>Conducted advanced modeling of SARS-CoV-2 transmission dynamics in agricultural markets under guidance of Prof. Sarang Deo, Executive Director of Max Institute of Healthcare Management.</p>
 
 <ul>
   <li><strong>Data Analysis</strong>: Performed exhaustive exploratory analysis on grain movement patterns across 3,200 agricultural markets serving 12,800 villages</li>
@@ -957,18 +1351,23 @@
 
 <p><strong>Skills</strong>: Epidemiological Modeling, Geospatial Analysis, Python, Statistical Modeling, Research Methodology</p>
 
+      </div>
     </div>
   </div>
     
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/iitb.jpg" alt="Various Institutions" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Various Institutions</h3>
-      <p class="meta">2018-2021 | India</p>
-      <ul>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/iitb.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>Various Institutions</h3>
+        
+        <div class="cv-entry__position">Research Projects</div>
+        
+        <p class="meta">2018-2021 | India</p>
+        <ul>
   <li><strong>Vertical Farming Optimization</strong> (2021): Designed computational model for biomass optimization in vertical farms using computer vision, hydroponics variables, and spectral lighting analysis</li>
   <li><strong>Biomedical Materials Research</strong> (2021): Conducted comparative analysis of manufacturing techniques for metal-polymer biomedical stents</li>
   <li><strong>PPE Manufacturing Analysis</strong> (2020): Researched and documented production processes for N-95-certified respirators during global shortage</li>
@@ -979,25 +1378,75 @@
 
 <p><strong>Technical Skills</strong>: Mathematical Modeling, API Integration, Simulink, Robotics, Computer Vision, Statistical Analysis</p>
 
+      </div>
     </div>
   </div>
    
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -1021,6 +1470,37 @@
   .cv-skills__content strong {
     color: #333;
     font-weight: 600;
+  }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
   }
 </style>
 
@@ -1029,76 +1509,137 @@
     <i class="fas fa-users"></i>
     Extracurricular Activities
   </h2>
-
+  <div class="cv-section__divider"></div>
    
-  <!-- Extracurriculars entry format -->
-  <div class="cv-entry skills-entry">
-    <div class="cv-skills__content">
-      <h3 class="skill-category">Leadership</h3>
-      <ul>
+  <!-- Extracurriculars entry format (with thumbnail if present) -->
+  <div class="cv-entry skills-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-skills__content">
+        <h3 class="skill-category">Leadership</h3>
+        <ul>
   <li><strong>Editor, Student Journalism Wing, IIT Bombay</strong>: Led 200+ student journalists in official body serving 10,000+ campus community with 0.9M+ global readership; published author at ETH D-INFK’s Visionen magazine</li>
   <li><strong>Project Leader, Data Analytics Team</strong>: Published influential institute-level reports on graduate admissions and COVID-19 impact; developed interactive online dashboard</li>
   <li><strong>Student Alumni Relations Cell</strong>: Core team member organizing flagship “Alumination” event connecting 200+ alumni with 1,000+ students</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Extracurriculars entry format -->
-  <div class="cv-entry skills-entry">
-    <div class="cv-skills__content">
-      <h3 class="skill-category">Mentorship &amp; Community Impact</h3>
-      <ul>
+  <!-- Extracurriculars entry format (with thumbnail if present) -->
+  <div class="cv-entry skills-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-skills__content">
+        <h3 class="skill-category">Mentorship &amp; Community Impact</h3>
+        <ul>
   <li><strong>Corporate Mentorship</strong>: Guided 70+ AB-InBev interns; conducted analytics interview preparation workshop (100+ attendees)</li>
   <li><strong>Academic Mentorship</strong>: Currently mentoring 2 undergraduates during ETH Zurich exchange; led undergraduate team in building remote-control rover for XLR8 competition</li>
   <li><strong>National Service Scheme</strong>: Dedicated 80+ hours teaching sustainability to underprivileged students; created educational content for NSS YouTube channel</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Extracurriculars entry format -->
-  <div class="cv-entry skills-entry">
-    <div class="cv-skills__content">
-      <h3 class="skill-category">Communication &amp; Cultural Exchange</h3>
-      <ul>
+  <!-- Extracurriculars entry format (with thumbnail if present) -->
+  <div class="cv-entry skills-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-skills__content">
+        <h3 class="skill-category">Communication &amp; Cultural Exchange</h3>
+        <ul>
   <li><strong>Institute Newsletter</strong>: Co-authored “The Knowledge Tree” and 18 articles reaching 60,000+ global alumni</li>
   <li><strong>Public Speaking</strong>: Interviewed nobroker.com CEO; secured 3rd in Debating Championship; organized “Indian Night” cultural showcase in Zurich</li>
   <li><strong>Leadership Role</strong>: Elected School Vice-Captain, coordinated 11 captains and 1,000+ students for annual events</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Extracurriculars entry format -->
-  <div class="cv-entry skills-entry">
-    <div class="cv-skills__content">
-      <h3 class="skill-category">Achievements &amp; Creative Pursuits</h3>
-      <ul>
+  <!-- Extracurriculars entry format (with thumbnail if present) -->
+  <div class="cv-entry skills-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-skills__content">
+        <h3 class="skill-category">Achievements &amp; Creative Pursuits</h3>
+        <ul>
   <li><strong>Member, Mensa International</strong>: Active member of the High IQ society, India chapter</li>
   <li><strong>Entrepreneurship</strong>: Designed computer vision-optimized vertical farm with hydroponics and spectral lighting</li>
   <li><strong>Performing Arts</strong>: Active spoken word artist and stand-up comedian</li>
 </ul>
 
+      </div>
     </div>
   </div>
    
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -1122,6 +1663,37 @@
   .cv-skills__content strong {
     color: #333;
     font-weight: 600;
+  }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
   }
 </style>
 
@@ -1130,57 +1702,112 @@
     <i class="fas fa-globe"></i>
     International Exposure &amp; Conferences
   </h2>
-
+  <div class="cv-section__divider"></div>
    
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img src="/assets/images/eth.jpg" alt="Swiss Federal Institute of Technology (ETH Zurich)" />
-    </div>
-    <div class="cv-entry__content">
-      <h3>Swiss Federal Institute of Technology (ETH Zurich)</h3>
-      <p class="meta">Feb 2022 - Aug 2022 | Zurich, Switzerland</p>
-      <ul>
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <img class="cv-entry__thumb" src="/assets/images/eth.jpg" alt="thumbnail" />
+      
+      <div class="cv-entry__content">
+        <h3>Swiss Federal Institute of Technology (ETH Zurich)</h3>
+        
+        <p class="meta">Feb 2022 - Aug 2022 | Zurich, Switzerland</p>
+        <ul>
   <li>Pursued 6-month long International Exchange at the Department of Mechanical and Process Engineering; QS Rank 8</li>
   <li>One of only 2 Indian students handpicked, recommended by Dean Prof. Agrawal and HoD Prof. Sheshadri</li>
   <li>Interacted with 200+ international students; Achieved A1 German proficiency; visited 10+ EU countries</li>
 </ul>
 
+      </div>
     </div>
   </div>
     
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>International Conferences 2021</h3>
-      <p class="meta">
-        Various Global Institutions | 2021
-      </p>
-      <p>Handpicked to contribute as an International Student Delegate from India to the following global conferences:
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      
+      <div class="cv-entry__content">
+        <h3>International Conferences 2021</h3>
+        <p class="meta">
+          Various Global Institutions | 2021
+        </p>
+        <p>Handpicked to contribute as an International Student Delegate from India to the following global conferences:
 - Harvard Project for Asian &amp; International Relations
 - South American Business Forum
 - Princeton University Business Today Conference
 - AUA and ICGS Academic Conference
 </p>
+      </div>
     </div>
   </div>
    
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -1204,6 +1831,37 @@
   .cv-skills__content strong {
     color: #333;
     font-weight: 600;
+  }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
   }
 </style>
 

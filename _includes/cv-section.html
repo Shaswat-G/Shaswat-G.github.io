@@ -3,67 +3,128 @@
     <i class="fas fa-{{ include.icon }}"></i>
     {{ include.title }}
   </h2>
-
+  <div class="cv-section__divider"></div>
   {% for entry in include.entries %} {% if entry.category and entry.skills %}
   <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry">
+  <div class="cv-entry skills-entry cv-section__entry">
     <div class="cv-skills__content">
       <h3 class="skill-category">{{ entry.category }}</h3>
       {{ entry.skills | markdownify }}
     </div>
   </div>
   {% elsif entry.category and entry.details %}
-  <!-- Extracurriculars entry format -->
-  <div class="cv-entry skills-entry">
-    <div class="cv-skills__content">
-      <h3 class="skill-category">{{ entry.category }}</h3>
-      {{ entry.details | markdownify }}
+  <!-- Extracurriculars entry format (with thumbnail if present) -->
+  <div class="cv-entry skills-entry cv-section__entry">
+    <div class="cv-entry__row">
+      {% if entry.image %}
+      <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+      {% endif %}
+      <div class="cv-skills__content">
+        <h3 class="skill-category">{{ entry.category }}</h3>
+        {{ entry.details | markdownify }}
+      </div>
     </div>
   </div>
   {% elsif entry.title %}
-  <!-- Awards entry format -->
-  <div class="cv-entry award-entry">
-    <div class="cv-entry__content">
-      <h3>{{ entry.title }}</h3>
-      <p class="meta">
-        {{ entry.organization }} {% if entry.date %}| {{ entry.date }}{% endif
-        %}
-      </p>
-      <p>{{ entry.details }}</p>
+  <!-- Awards entry format (with thumbnail if present) -->
+  <div class="cv-entry award-entry cv-section__entry">
+    <div class="cv-entry__row">
+      {% if entry.image %}
+      <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+      {% endif %}
+      <div class="cv-entry__content">
+        <h3>{{ entry.title }}</h3>
+        <p class="meta">
+          {{ entry.organization }} {% if entry.date %}| {{ entry.date }}{% endif
+          %}
+        </p>
+        <p>{{ entry.details }}</p>
+      </div>
     </div>
   </div>
   {% else %}
-  <!-- Experience/Education entry format -->
-  <div class="cv-entry">
-    <div class="cv-entry__image">
-      <img
-        src="{{ entry.image }}"
-        alt="{{ entry.company | default: entry.institution }}"
-      />
-    </div>
-    <div class="cv-entry__content">
-      <h3>{{ entry.company | default: entry.institution }}</h3>
-      <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
-      {{ entry.details | markdownify }}
+  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+  <div class="cv-entry cv-section__entry">
+    <div class="cv-entry__row">
+      {% if entry.image %}
+      <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+      {% endif %}
+      <div class="cv-entry__content">
+        <h3>{{ entry.company | default: entry.institution }}</h3>
+        {% if entry.position %}
+        <div class="cv-entry__position">{{ entry.position }}</div>
+        {% endif %}
+        <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
+        {{ entry.details | markdownify }}
+      </div>
     </div>
   </div>
   {% endif %} {% endfor %}
 </section>
 
 <style>
+  /* Section container styling */
+  .cv-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 2.5rem;
+    padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+    transition: box-shadow 0.2s;
+  }
+
+  /* Section title styling */
+  .cv-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a2233;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .cv-section__divider {
+    height: 3px;
+    width: 48px;
+    background: linear-gradient(90deg, #2a7ae2 60%, #e7eaf1 100%);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  /* Section entry container */
+  .cv-section__entry {
+    background: #f8fafd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(42, 122, 226, 0.03);
+    border: 1px solid #e7eaf1;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem 1.3rem 1rem 1.3rem;
+    transition: box-shadow 0.2s, background 0.2s;
+  }
+  .cv-section__entry:hover {
+    background: #f3f7fb;
+    box-shadow: 0 4px 16px rgba(42, 122, 226, 0.08);
+  }
+
   /* Styles for the technical skills section */
   .skills-entry {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     border-left: 3px solid #2a7ae2;
     padding-left: 1rem;
-    background-color: rgba(42, 122, 226, 0.05);
+    background-color: transparent;
     border-radius: 0 4px 4px 0;
     padding: 1rem 1rem 0.5rem 1.5rem;
     transition: all 0.3s ease;
+    border: none;
+    box-shadow: none;
   }
 
   .skills-entry:hover {
-    background-color: rgba(42, 122, 226, 0.1);
+    background-color: #f3f7fb;
     transform: translateX(3px);
   }
 
@@ -87,5 +148,36 @@
   .cv-skills__content strong {
     color: #333;
     font-weight: 600;
+  }
+
+  .cv-entry__row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .cv-entry__thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f0f2f5;
+    border: 1px solid #e7eaf1;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* Remove old image block styling if any */
+  .cv-entry__image {
+    display: none !important;
+  }
+
+  .cv-entry__position {
+    font-size: 1rem;
+    color: #2a7ae2;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    margin-top: -0.2rem;
+    letter-spacing: 0.01em;
   }
 </style>

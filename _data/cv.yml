@@ -91,17 +91,17 @@ education:
     image: /assets/images/iitb.jpg
 
 awards:
-  - title: "🏅 Department Rank 1 & Gold Medalist"
+  - title: "Department Rank 1 & Gold Medalist"
     organization: "IIT Bombay"
     date: "2022"
     details: "Graduated with Rank 1 out of 165 students - The Highest CGPA in the 2022 class of Bachelors in Mechanical Engineering"
 
-  - title: "🏅 Institute Academic Award"
+  - title: "Institute Academic Award"
     organization: "IIT Bombay"
     date: "2021"
     details: "Awarded to only 2 students for the highest grade point scores of the academic year"
 
-  - title: "🏅 KC Mahindra Scholarship"
+  - title: "KC Mahindra Scholarship"
     organization: "Mahindra and Mahindra"
     date: "July 2023"
     details: "Prestigious scholarship awarded to meritorious Indian students for graduate studies abroad. Associated with ETH Zurich"
@@ -116,17 +116,17 @@ awards:
     date: "April 2025"
     details: "Member of the high IQ society"
 
-  - title: "🏅 AB InBev 'Pint' & 'Pitcher' Award"
+  - title: "AB InBev 'Pint' & 'Pitcher' Award"
     organization: "AB InBev"
     date: ""
     details: "Award for Excellence during one year of work experience as a data scientist"
 
-  - title: "🏅 OPJEMS Scholarship"
+  - title: "OPJEMS Scholarship"
     organization: "Jindal Group"
     date: "November 2021"
     details: "Awarded to only 3 top-performing, entrepreneurial students from among 1100+ students at IIT Bombay"
 
-  - title: "🏅 IIT Bombay Journalism Color Award"
+  - title: "IIT Bombay Journalism Color Award"
     organization: "IIT Bombay"
     date: "August 2022"
     details: "Awarded the Institute's most prestigious Journalism Award for exemplary contribution. One of only 2 students selected from among 10,000+"
