@@ -1,6 +1,6 @@
 ---
 layout: cv
-title:
+title: Shazz's CV
 permalink: /cv/
 header:
   overlay_image: /assets/images/cv-header.png
