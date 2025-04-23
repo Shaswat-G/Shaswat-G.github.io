@@ -66,13 +66,13 @@ var store = [{
         "teaser": "/assets/images/courses/vscode.jpeg"
       },{
         "title": "DeepSleepBench",
-        "excerpt":"![DeepSleepBench Framework](/assets/images/projects/bench-framework-diagram.svg) # Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/) [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/) [![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard) ## Overview Sleep stage classification (SSC) is fundamental for diagnosing sleep disorders and understanding sleep physiology. However, the effectiveness of self-supervised learning (SSL) paradigms for electroencephalogram (EEG) data remains incompletely explored....","categories": [],
+        "excerpt":"Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification Overview Sleep stage classification (SSC) is fundamental for diagnosing sleep disorders and understanding sleep physiology. However, the effectiveness of self-supervised learning (SSL) paradigms for electroencephalogram (EEG) data remains incompletely explored. DeepSleepBench provides a systematic benchmark of three SSL paradigms paired with...","categories": [],
         "tags": [],
         "url": "/projects/neural_latent_representations/",
         "teaser": "/assets/images/projects/latent.jpg"
       },{
         "title": "Research at ETH Zurich",
-        "excerpt":"I presently work part-time as a research assistant at the [Chair of Technology and Innovation Management](https://timgroup.ethz.ch/) at ETH Zurich, under the supervision of [Prof. Dr. Stefano Brusoni](https://timgroup.ethz.ch/people/group-leadership/stefano-brusoni.html). My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and...","categories": [],
+        "excerpt":"I presently work part-time as a research assistant at the Chair of Technology and Innovation Management at ETH Zurich, under the supervision of Prof. Dr. Stefano Brusoni. My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and...","categories": [],
         "tags": [],
         "url": "/projects/research_assitantship/",
         "teaser": "/assets/images/projects/ethz.jpg"

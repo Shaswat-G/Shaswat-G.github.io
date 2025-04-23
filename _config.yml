@@ -21,7 +21,7 @@ locale: "en-US"
 search: false # As per requirements
 
 atom_feed:
-  hide: false # Hide RSS feed links
+  hide: true # Hide RSS feed links
 
 theme_color: "#ffffff" # Set the theme color
 enable_comments: true

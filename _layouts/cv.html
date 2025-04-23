@@ -4,6 +4,84 @@ classes:
   - wide
 ---
 
+<style>
+  .cv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cv-intro {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    border-left: 4px solid #4e73df;
+    padding-left: 1em;
+  }
+
+  .cv-download {
+    margin: 2em 0;
+    text-align: center;
+  }
+
+  /* Extracurriculars styling */
+  .cv-section-extracurricular-activities .cv-entry {
+    border-left: 3px solid #4287f5;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+    transition: transform 0.2s ease;
+  }
+
+  .cv-section-extracurricular-activities .cv-entry:hover {
+    transform: translateX(5px);
+  }
+
+  .cv-section-extracurricular-activities h4 {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+
+  .cv-section-extracurricular-activities ul {
+    margin-top: 0.5em;
+  }
+
+  /* Make sure content in extracurriculars is visible */
+  .cv-section-extracurricular-activities .cv-entry .details ul {
+    display: block !important;
+  }
+
+  .cv-section-extracurricular-activities .cv-entry .details li {
+    display: list-item !important;
+    margin-bottom: 0.4em;
+  }
+
+  .cv-section-extracurricular-activities .cv-entry .details p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Extracurriculars styling - using same approach as technical skills */
+  .cv-section-extracurricular-activities .cv-entry-details ul,
+  .cv-section-technical-skills .cv-entry-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .cv-section-extracurricular-activities .cv-entry-details li,
+  .cv-section-technical-skills .cv-entry-details li {
+    display: list-item;
+    margin-bottom: 5px;
+  }
+
+  .cv-section-extracurricular-activities .cv-entry-details p,
+  .cv-section-technical-skills .cv-entry-details p {
+    margin-bottom: 10px;
+  }
+
+  /* Ensure markdown content renders properly */
+  .cv-section-extracurricular-activities strong,
+  .cv-section-technical-skills strong {
+    font-weight: bold;
+  }
+</style>
+
 <div class="cv-container">
   <div class="cv-intro">
     <p>

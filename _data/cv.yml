@@ -1,17 +1,382 @@
 experience:
-  - company: "Tech Corp"
-    position: "Lead Engineer"
-    dates: "2020-Present"
-    location: "Zurich, CH"
+  - company: "AB InBev — Growth Analytics Center"
+    position: "Data Scientist"
+    dates: "Aug 2022 - Present"
+    location: "Bangalore, India"
     details: |
-      - Architected distributed ML systems
-      - Led team of 15 engineers
-      - **Technologies:** Python, TensorFlow, Kubernetes
+      Led data science solutions for supply chain optimization in the US market, focusing on forecasting and logistics cost reduction.
+
+      **Logistics Forecasting & Cost-to-Serve Optimizer**
+      - Engineered an ensemble forecasting pipeline combining Prophet, SARIMAX, XGBoost, and traditional time series models
+      - Developed a Gurobi-powered integer programming optimizer using PuLP for route optimization across 2,000+ US distribution routes
+      - Built an interactive scenario planning simulator with parameterized carrier behaviors and demand shock modeling
+      - **Impact**: Achieved 15% forecast accuracy improvement, delivering $2.4M annual savings
+      - **Leadership**: Led a 3-analyst enhancement squad, managing weekly refreshes and documentation
+      - **Tech**: Python, Gurobi, PuLP, Plotly, Snowflake, AWS CodePipeline/EC2
     image: /assets/images/budweiser.jpg
 
+  - company: "AB InBev — Growth Analytics Center"
+    position: "Data Science Intern"
+    dates: "May 2021 - Jul 2021"
+    location: "Bangalore, India"
+    details: |
+      **Product Recommendation Engine**
+      - Designed a latent-factor recommender system using SVD and NMF collaborative filtering for cross-selling opportunities among 50 SKUs to 18,500+ Tanzanian retailers
+      - Created 15 custom interaction scoring mechanisms combining recency, frequency, monetary values, and product affinities
+      - Developed comprehensive evaluation framework with metrics for precision, recall, diversity, novelty, and coverage
+      - **Impact**: Outperformed existing recommendation models by 30%, supporting $6M projected annual sales growth
+      - **Recognition**: Selected as Best Intern among 100+ peers and offered full-time position
+      - **Tech**: Python, scikit-learn, SciPy, Pandas, Azure
+    image: /assets/images/budweiser.jpg
+
+  - company: "Glenmark Pharmaceuticals — Demand Planning"
+    position: "Analytics Associate"
+    dates: "Dec 2020 - Jan 2021"
+    location: "Mumbai, India"
+    details: |
+      **Global Demand-Planning Automation**
+      - Reengineered 5 KPI calculation frameworks for improved outlier resilience and accuracy
+      - Automated reporting pipelines for 5,000+ SKUs across 20+ countries with cloud-based data storage and validation
+      - Developed 3 Tableau dashboards with executive and business unit drill-downs
+      - **Impact**: Reduced reporting cycle time by 75%, saving approximately 1,000 hours annually
+      - **Recognition**: Received full-time offer upon project completion
+      - **Tech**: Python, SQL, Tableau, Dropbox API
+
+  - company: "Growth Source Financial Technologies (Protium)"
+    position: "Data Science Intern"
+    dates: "Apr 2020 - Jul 2020"
+    location: "Mumbai, India"
+    details: |
+      **Debt-Refinancing Optimizer & Loan Recommender**
+      - Formulated a linear programming optimization framework to consolidate MSME debt, leveraging collateral appreciation
+      - Developed a loan recommendation system that ranks feasible refinancing options based on dual-benefit scoring
+      - Prototyped a sales territory realignment system using Google Maps API and K-means clustering for 6 metropolitan areas
+      - Built analytics pipeline for yield tracking across 600+ bond securities
+      - **Impact**: Successfully validated approach on 350+ loan portfolios
+      - **Recognition**: Received partner-signed Letter of Recommendation
+      - **Tech**: Python, PuLP, NumPy, Pandas, scikit-learn, Google Maps API
+
+  - company: "Rephrase.AI"
+    position: "Winter Intern, Artificial Intelligence"
+    dates: "Dec 2019 - Jan 2020"
+    location: "Bangalore, India"
+    details: |
+      Contributed to this Lightspeed-funded, Forbes 30-Under-30 startup specializing in AI-generated synthetic video from text input.
+
+      - Represented Rephrase.AI at the Amazon AWS AI Conclave '19, presenting to an audience of 100+ CXOs and 50+ startups
+      - Recorded 20+ hours of training audio to develop a custom-voice Text-to-Speech engine
+      - Designed and executed a comprehensive feature validation study on Amazon Mechanical Turk with 160+ respondents
+      - **Tech**: Voice synthesis, Natural Language Processing, Amazon Mechanical Turk
+      - **Exposure**: AI video synthesis, public speaking, user testing methodologies
+
 education:
-  - institution: "ETH Zurich"
+  - institution: "ETH Zürich"
     degree: "MSc Computer Science"
-    dates: "2018-2020"
-    thesis: "Advanced Neural Architectures"
+    dates: "Sept 2023 - Present"
+    location: "Zurich, Switzerland"
+    details: |
+      - **GPA:** 5.25/6
+      - **Major:** Machine Intelligence
+      - **Minor:** Data Management Systems
+      - **Courses:** Large Scale AI Engineering, Cloud Computing Architecture, Big Data, Machine Learning, Deep Learning, Machine Perception, Computational Intelligence Lab, System Security
     image: /assets/images/eth.jpg
+
+  - institution: "Indian Institute of Technology Bombay (IIT Bombay)"
+    degree: "Bachelor of Technology in Mechanical Engineering"
+    dates: "July 2018 - Aug 2022"
+    location: "Mumbai, India"
+    details: |
+      - **GPA:** 9.6/10 - Highest Cumulative GPA in batch
+      - **Activities:** Journalism, Public Speaking, Tech Competitions and Debating
+    image: /assets/images/iitb.jpg
+
+awards:
+  - title: "🏅 Department Rank 1 & Gold Medalist"
+    organization: "IIT Bombay"
+    date: "2022"
+    details: "Graduated with Rank 1 out of 165 students - The Highest CGPA in the 2022 class of Bachelors in Mechanical Engineering"
+
+  - title: "🏅 Institute Academic Award"
+    organization: "IIT Bombay"
+    date: "2021"
+    details: "Awarded to only 2 students for the highest grade point scores of the academic year"
+
+  - title: "🏅 KC Mahindra Scholarship"
+    organization: "Mahindra and Mahindra"
+    date: "July 2023"
+    details: "Prestigious scholarship awarded to meritorious Indian students for graduate studies abroad. Associated with ETH Zurich"
+
+  - title: "Heyning-Roelli Scholarship"
+    organization: "Heyning Roelli Foundation"
+    date: "February 2022"
+    details: "Recipient of ETH Zurich's merit and need-based international exchange scholarship"
+
+  - title: "Mensa International High IQ Society"
+    organization: "Mensa International"
+    date: "April 2025"
+    details: "Member of the high IQ society"
+
+  - title: "🏅 AB InBev 'Pint' & 'Pitcher' Award"
+    organization: "AB InBev"
+    date: ""
+    details: "Award for Excellence during one year of work experience as a data scientist"
+
+  - title: "🏅 OPJEMS Scholarship"
+    organization: "Jindal Group"
+    date: "November 2021"
+    details: "Awarded to only 3 top-performing, entrepreneurial students from among 1100+ students at IIT Bombay"
+
+  - title: "🏅 IIT Bombay Journalism Color Award"
+    organization: "IIT Bombay"
+    date: "August 2022"
+    details: "Awarded the Institute's most prestigious Journalism Award for exemplary contribution. One of only 2 students selected from among 10,000+"
+
+international:
+  - institution: "Swiss Federal Institute of Technology (ETH Zurich)"
+    activity: "International Exchange"
+    dates: "Feb 2022 - Aug 2022"
+    location: "Zurich, Switzerland"
+    details: |
+      - Pursued 6-month long International Exchange at the Department of Mechanical and Process Engineering; QS Rank 8
+      - One of only 2 Indian students handpicked, recommended by Dean Prof. Agrawal and HoD Prof. Sheshadri
+      - Interacted with 200+ international students; Achieved A1 German proficiency; visited 10+ EU countries
+    image: /assets/images/eth.jpg
+
+  - title: "International Conferences 2021"
+    organization: "Various Global Institutions"
+    date: "2021"
+    details: |
+      Handpicked to contribute as an International Student Delegate from India to the following global conferences:
+      - Harvard Project for Asian & International Relations
+      - South American Business Forum
+      - Princeton University Business Today Conference
+      - AUA and ICGS Academic Conference
+
+research:
+  - institution: "Medical Data Science Group, D-INFK, ETH Zurich"
+    position: "Semester Thesis"
+    project: "Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification"
+    dates: "January 2025"
+    location: "Zurich, Switzerland"
+    details: |
+      Developed a lightweight self-supervised framework for sleep stage classification from EEG data, achieving 80%+ accuracy with just 200K parameters. This research addressed the challenge of limited labeled medical data through innovative contrastive representation learning approaches.
+
+      **Key Contributions:**
+      - Systematically evaluated 13 domain-specific EEG signal augmentations across 5 categories (amplitude, frequency, masking-cropping, noise-filtering, temporal)
+      - Discovered optimal augmentation combinations and severity levels that maximize downstream performance
+      - Designed an extremely lightweight CNN architecture optimized for edge deployment (<1MB)
+      - Created a modular framework with clean separation between pretraining and fine-tuning components
+
+      **Technologies:** PyTorch, TensorBoard, Slurm HPC, Configuration Management, Advanced Signal Processing
+
+      **Impact:** Demonstrated that targeted self-supervised learning can dramatically reduce the annotation burden in medical contexts while maintaining high classification performance. The compact model architecture enables potential deployment to resource-constrained medical devices.
+    links:
+      - text: "SimpleSleepNet Repository"
+        url: "https://gitlab.ethz.ch/shagupta/simplesleepnet"
+    supervisor: "Prof. Dr. Julia Vogt"
+    image: /assets/images/eth.jpg
+
+  - institution: "ETH Zurich"
+    position: "Deep Learning Course Project"
+    project: "Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification"
+    dates: "Spring 2024"
+    location: "Zurich, Switzerland"
+    details: |
+      Led a systematic benchmark study comparing different self-supervised learning paradigms and neural architectures for EEG-based sleep stage classification, establishing clear guidelines for optimal model design in this domain.
+
+      **Key Contributions:**
+      - Evaluated three self-supervised learning paradigms (Contrastive, Masked Prediction, Hybrid) across multiple neural backbone architectures
+      - Conducted comprehensive ablation studies on CNN, CNN+Attention, and Transformer architectures
+      - Designed novel metrics for latent space quality assessment specific to neurophysiological signals
+      - Demonstrated that CNN+Attention architectures paired with contrastive learning objectives create the most discriminative latent representations for this task
+
+      **Technologies:** Python, PyTorch, TensorBoard, Advanced Neural Architectures, Latent Space Analysis
+
+      **Impact:** Established clear evidence-based guidelines for selecting optimal combinations of self-supervised learning paradigms and backbone architectures for EEG analysis. Findings suggest CNN+Attention with contrastive or hybrid learning objectives consistently outperform alternatives for short EEG segments.
+    links:
+      - text: "DeepSleepBench Repository"
+        url: "https://github.com/RaphaelKreft/DeepLearningProject"
+    image: /assets/images/eth.jpg
+
+  - institution: "Chair of Technology and Innovation Management, ETH Zurich"
+    position: "Research Assistant"
+    project: "Enterprise ML and Technical Standards Research"
+    dates: "March 2024 - Present"
+    location: "Zurich, Switzerland"
+    details: |
+      **Enterprise Machine Learning Research Project**
+      *Large-scale collaboration between Zühlke and ETH Zurich examining ML/AI adoption patterns across 600+ enterprises*
+
+      **Key Contributions:**
+      - Designed end-to-end data processing pipeline integrating multiple survey sources with robust cleaning, standardization, and anonymization processes
+      - Developed automated statistical analysis framework executing 10,000+ tests (t-tests, ANOVA, Chi-Square, etc.) for comprehensive pattern detection
+      - Created dynamic visualization system generating 2,600+ charts intelligently selected based on data characteristics
+      - Integrated NLP techniques and OpenAI's LLM APIs for text categorization and analysis
+      - Transformed complex statistical outputs into business-friendly reporting for non-technical stakeholders
+
+      **Impact:** Reduced analysis time by 80%, identified significant ML adoption patterns across regions/industries, and created a reproducible research framework now used for ongoing studies at the Chair.
+
+      **Technologies:** Python, pandas, scipy, statsmodels, matplotlib, seaborn, OpenAI API
+
+      **Unicode Technical Consortium Document Analysis Project**
+      *Comprehensive analysis of 20,000+ standardization documents spanning a decade of technical development*
+
+      **Key Contributions:**
+      - Engineered robust web crawlers with concurrent HTTP handling achieving 94% download success rate
+      - Built multi-format document processing pipeline for PDF, HTML, and plaintext with specialized parsing
+      - Developed hierarchical document classifier with 96% accuracy across 30+ categories and 100+ subcategories
+      - Created parallel keyword extraction framework producing 150,000+ unique technical terms
+      - Implemented LSA-based document summarization with length-adaptive output
+      - Engineered optimized LLM integration reducing API costs by 42% while maintaining extraction quality
+
+      **Impact:** Enabled unprecedented analysis of Unicode standardization patterns, revealing emoji adoption trends and contributor influence networks across a decade of technical development.
+
+      **Technologies:** Python, BeautifulSoup4, PyPDF2, NLTK, OpenAI API, concurrent.futures, matplotlib
+
+      **Patent Analysis and Technological Shift Detection Project**
+      *Identification of technological trends across 10,000+ semiconductor industry patents*
+
+      **Key Contributions:**
+      - Built high-performance patent data acquisition system with asyncio achieving 20× faster processing
+      - Engineered intelligent token optimization pipeline preserving critical technical information within embedding constraints
+      - Deployed BERTopic modeling with Sentence Transformers identifying 80+ distinct technology clusters
+      - Created sophisticated patent selection criteria with LLM integration (GPT-4o-mini) achieving 95% accuracy
+      - Implemented visualization and analysis of topic trends revealing 5 major technological shifts over 40+ years
+
+      **Impact:** Provided unprecedented visibility into semiconductor industry innovation patterns, enabling strategic research direction planning and competitive technology landscape analysis.
+
+      **Technologies:** Python, aiohttp, pandas, BERTopic, Sentence Transformers, UMAP, HDBSCAN, PyTorch, GPT-4o-mini
+    image: /assets/images/eth.jpg
+
+  - institution: "World Bank Group x KPMG India"
+    position: "Summer Associate"
+    project: "Green Hydrogen Investment Strategy"
+    dates: "April-May 2021"
+    location: "Mumbai, India"
+    details: |
+      Led strategic research on capital investment opportunities in green hydrogen technologies across three nations as part of an international collaboration between the World Bank Group and KPMG India.
+
+      - **Demand Forecasting**: Developed comprehensive 10-year hydrogen demand models by analyzing 10 end-use industries across manufacturing, energy, and mobility sectors
+      - **Alternative Fuel Analysis**: Conducted comparative assessment of 5 conventional fuels against 4 cleaner alternatives, evaluating technical feasibility and economic viability
+      - **Policy & Readiness Assessment**: Synthesized national renewable energy policies, planned industrial capacity expansions, and corporate sustainability initiatives to quantify green hydrogen technology adoption readiness
+
+      **Skills**: Energy Market Analysis, Economic Modeling, Quantitative Analytics, Policy Research, Sustainability Assessment
+
+  - institution: "Capital Foods Pvt. Ltd."
+    position: "Research Intern"
+    project: "Industry 4.0: Warehousing Automation"
+    dates: "January-March 2021"
+    location: "Mumbai, India"
+    details: |
+      Spearheaded research on food and beverage warehousing automation technologies, culminating in executive presentations to C-suite leadership.
+
+      - **Competitive Intelligence**: Analyzed modern warehousing practices of global food and beverage FMCG companies through comprehensive review of 5+ industry conferences, 10+ market reports, and 50+ specialist articles
+      - **Strategic Recommendations**: Developed and presented 50+ automation proposals tailored to Capital Foods' operational needs and growth strategy
+      - **Internal Publications**: Authored two comprehensive reports documenting findings and implementation frameworks for warehouse modernization
+
+      **Skills**: Industry Research, FMCG Supply Chain, Automation Technology Assessment, Executive Communication
+
+  - institution: "Indian School of Business"
+    position: "Research Assistant"
+    project: "Epidemiological Modeling for Agricultural Markets"
+    dates: "August-November 2020"
+    location: "Mumbai, India"
+    details: |
+      Conducted advanced modeling of SARS-CoV-2 transmission dynamics in agricultural markets under guidance of Prof. Sarang Deo, Executive Director of Max Institute of Healthcare Management.
+
+      - **Data Analysis**: Performed exhaustive exploratory analysis on grain movement patterns across 3,200 agricultural markets serving 12,800 villages
+      - **Geospatial Mapping**: Created custom geographical dataset of village boundaries and centroids using Google Maps API to enable spatial epidemiological modeling
+      - **Mathematical Modeling**: Implemented polynomial regression to quantify grain procurement volumes and adapted SIR (Susceptible, Infectious, Recovered) models to predict viral transmission patterns
+      - **Impact**: Research informed safer grain procurement strategies for public institutions and policymakers during COVID-19 pandemic
+      - **Recognition**: Received Letter of Recommendation for exceptional research contributions
+
+      **Skills**: Epidemiological Modeling, Geospatial Analysis, Python, Statistical Modeling, Research Methodology
+    image: /assets/images/iitb.jpg
+
+  - institution: "Various Institutions"
+    position: "Research Projects"
+    project: "Additional Research Projects"
+    dates: "2018-2021"
+    location: "India"
+    details: |
+      - **Vertical Farming Optimization** (2021): Designed computational model for biomass optimization in vertical farms using computer vision, hydroponics variables, and spectral lighting analysis
+      - **Biomedical Materials Research** (2021): Conducted comparative analysis of manufacturing techniques for metal-polymer biomedical stents
+      - **PPE Manufacturing Analysis** (2020): Researched and documented production processes for N-95-certified respirators during global shortage
+      - **Urban Digital Archive** (2020): Developed digital catalogue of performing arts venues in Milan using Foursquare APIs and geospatial mapping
+      - **Vehicle Dynamics Simulation** (2019): Engineered 2-wheel simulation model using Simulink for IITB Racing Team
+      - **Robotics Competition** (2018): Designed and built remote-controlled obstacle-navigating robot, achieving 4th place among 100+ teams in XLR8 competition
+
+      **Technical Skills**: Mathematical Modeling, API Integration, Simulink, Robotics, Computer Vision, Statistical Analysis
+    image: /assets/images/iitb.jpg
+
+technical_skills:
+  - category: "Programming & Development"
+    skills: |
+      **Advanced:** Python (ML/Data Engineering), SQL (Snowflake/Postgres/Oracle), Bash/Linux CLI
+
+      **Proficient:** C/C++ (CUDA/high-perf computing), R (statistical analysis), JavaScript/TypeScript (dashboards)
+
+  - category: "Machine Learning & AI"
+    skills: |
+      **Frameworks:** PyTorch, TensorFlow/Keras, scikit-learn, Hugging Face Transformers
+
+      **Specialized ML:** XGBoost/LightGBM/CatBoost, Prophet/statsforecast (Time-Series), BERTopic/UMAP (Topic Modeling)
+
+      **NLP & LLMs:** OpenAI API, LangChain, RAG Pipelines, Sentence-Transformers, BERT
+
+  - category: "Data Engineering & Analysis"
+    skills: |
+      **Data Processing:** Pandas, NumPy, Polars, PySpark, PyArrow/Parquet, DuckDB
+
+      **Statistical Analysis:** SciPy, statsmodels, Bayesian inference (PyMC), hypothesis testing
+
+      **Databases:** Snowflake, PostgreSQL, BigQuery, Redshift, SQLite
+
+  - category: "MLOps & Deployment"
+    skills: |
+      **Experimentation:** MLflow, Weights & Biases, TensorBoard, experiment design
+
+      **Containerization & Cloud:** Docker, Kubernetes, AWS (EC2/S3/Lambda), Azure ML
+
+      **Automation:** GitHub Actions, CI/CD pipelines, Airflow, Prefect
+
+  - category: "Optimization & Quantitative Methods"
+    skills: |
+      **Mathematical Optimization:** Gurobi, PuLP, OR-Tools, Linear/Integer Programming
+
+      **Time-Series Forecasting:** ARIMA/SARIMAX, Prophet, Ensemble methods
+
+      **High-Performance Computing:** SLURM, parallel processing, concurrent.futures, asyncio, Ray
+
+  - category: "Visualization & Domain Tools"
+    skills: |
+      **Data Visualization:** Plotly/Dash, Matplotlib, Seaborn, Tableau
+
+      **Specialized Tools:** GeoPandas (Geospatial), BeautifulSoup/Scrapy (Web Scraping), FastAPI/Flask (API Development)
+
+      **Developer Tools:** Git, pytest, black/flake8, JupyterLab, VS Code, LaTeX
+
+extracurriculars:
+  - category: "Leadership"
+    details: |
+      - **Editor, Student Journalism Wing, IIT Bombay**: Led 200+ student journalists in official body serving 10,000+ campus community with 0.9M+ global readership; published author at ETH D-INFK's Visionen magazine
+      - **Project Leader, Data Analytics Team**: Published influential institute-level reports on graduate admissions and COVID-19 impact; developed interactive online dashboard
+      - **Student Alumni Relations Cell**: Core team member organizing flagship "Alumination" event connecting 200+ alumni with 1,000+ students
+
+  - category: "Mentorship & Community Impact"
+    details: |
+      - **Corporate Mentorship**: Guided 70+ AB-InBev interns; conducted analytics interview preparation workshop (100+ attendees)
+      - **Academic Mentorship**: Currently mentoring 2 undergraduates during ETH Zurich exchange; led undergraduate team in building remote-control rover for XLR8 competition
+      - **National Service Scheme**: Dedicated 80+ hours teaching sustainability to underprivileged students; created educational content for NSS YouTube channel
+
+  - category: "Communication & Cultural Exchange"
+    details: |
+      - **Institute Newsletter**: Co-authored "The Knowledge Tree" and 18 articles reaching 60,000+ global alumni
+      - **Public Speaking**: Interviewed nobroker.com CEO; secured 3rd in Debating Championship; organized "Indian Night" cultural showcase in Zurich
+      - **Leadership Role**: Elected School Vice-Captain, coordinated 11 captains and 1,000+ students for annual events
+
+  - category: "Achievements & Creative Pursuits"
+    details: |
+      - **Member, Mensa International**: Active member of the High IQ society, India chapter
+      - **Entrepreneurship**: Designed computer vision-optimized vertical farm with hydroponics and spectral lighting
+      - **Performing Arts**: Active spoken word artist and stand-up comedian

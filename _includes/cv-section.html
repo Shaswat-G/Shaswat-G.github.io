@@ -3,17 +3,89 @@
     <i class="fas fa-{{ include.icon }}"></i>
     {{ include.title }}
   </h2>
-  
-  {% for entry in include.entries %}
+
+  {% for entry in include.entries %} {% if entry.category and entry.skills %}
+  <!-- Technical Skills entry format -->
+  <div class="cv-entry skills-entry">
+    <div class="cv-skills__content">
+      <h3 class="skill-category">{{ entry.category }}</h3>
+      {{ entry.skills | markdownify }}
+    </div>
+  </div>
+  {% elsif entry.category and entry.details %}
+  <!-- Extracurriculars entry format -->
+  <div class="cv-entry skills-entry">
+    <div class="cv-skills__content">
+      <h3 class="skill-category">{{ entry.category }}</h3>
+      {{ entry.details | markdownify }}
+    </div>
+  </div>
+  {% elsif entry.title %}
+  <!-- Awards entry format -->
+  <div class="cv-entry award-entry">
+    <div class="cv-entry__content">
+      <h3>{{ entry.title }}</h3>
+      <p class="meta">
+        {{ entry.organization }} {% if entry.date %}| {{ entry.date }}{% endif
+        %}
+      </p>
+      <p>{{ entry.details }}</p>
+    </div>
+  </div>
+  {% else %}
+  <!-- Experience/Education entry format -->
   <div class="cv-entry">
     <div class="cv-entry__image">
-      <img src="{{ entry.image }}" alt="{{ entry.company }}">
+      <img
+        src="{{ entry.image }}"
+        alt="{{ entry.company | default: entry.institution }}"
+      />
     </div>
     <div class="cv-entry__content">
-      <h3>{{ entry.company }}</h3>
+      <h3>{{ entry.company | default: entry.institution }}</h3>
       <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
       {{ entry.details | markdownify }}
     </div>
   </div>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </section>
+
+<style>
+  /* Styles for the technical skills section */
+  .skills-entry {
+    margin-bottom: 2rem;
+    border-left: 3px solid #2a7ae2;
+    padding-left: 1rem;
+    background-color: rgba(42, 122, 226, 0.05);
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 1rem 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .skills-entry:hover {
+    background-color: rgba(42, 122, 226, 0.1);
+    transform: translateX(3px);
+  }
+
+  .skill-category {
+    color: #2a7ae2;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(42, 122, 226, 0.3);
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+  }
+
+  .cv-skills__content {
+    width: 100%;
+  }
+
+  .cv-skills__content p {
+    margin-bottom: 0.75rem;
+  }
+
+  .cv-skills__content strong {
+    color: #333;
+    font-weight: 600;
+  }
+</style>
