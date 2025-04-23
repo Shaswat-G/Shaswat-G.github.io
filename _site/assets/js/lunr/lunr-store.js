@@ -71,8 +71,14 @@ var store = [{
         "url": "/projects/neural_latent_representations/",
         "teaser": "/assets/images/projects/latent.jpg"
       },{
+        "title": "Research at ETH Zurich",
+        "excerpt":"I presently work part-time as a research assistant at the [Chair of Technology and Innovation Management](https://timgroup.ethz.ch/) at ETH Zurich, under the supervision of [Prof. Dr. Stefano Brusoni](https://timgroup.ethz.ch/people/group-leadership/stefano-brusoni.html). My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and...","categories": [],
+        "tags": [],
+        "url": "/projects/research_assitantship/",
+        "teaser": "/assets/images/projects/ethz.jpg"
+      },{
         "title": "SimpleSleepNet",
-        "excerpt":"![Project Demo](/assets/images/projects/simplesleepnet-architecture.svg) # SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) [![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/) [![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard) ![License](https://img.shields.io/badge/License-MIT-green) **Author:** Shaswat Gupta **Group:** Medical Data Science, D-INFK, ETH Zurich **Supervisor:** Prof. Dr. Julia Vogt **Contact:** [shagupta@ethz.ch](mailto:shagupta@ethz.ch) **Project Repository:** [SimpleSleepNet](https://gitlab.ethz.ch/shagupta/simplesleepnet) ## Overview SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage...","categories": [],
+        "excerpt":"SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification Author: Shaswat Gupta Group: Medical Data Science, D-INFK, ETH Zurich Supervisor: Prof. Dr. Julia Vogt Contact: shagupta@ethz.ch Project Repository: SimpleSleepNet Overview SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage classification using self-supervised contrastive representation learning achieving 80%+ accuracy...","categories": [],
         "tags": [],
         "url": "/projects/simple_sleep_net/",
         "teaser": "/assets/images/projects/dnn.jpg"

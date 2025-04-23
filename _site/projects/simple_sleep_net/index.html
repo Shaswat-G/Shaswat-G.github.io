@@ -30,7 +30,7 @@
 
 
 
-  <meta property="article:published_time" content="2025-04-22T17:39:00+02:00">
+  <meta property="article:published_time" content="2025-04-23T06:11:59+02:00">
 
 
 
@@ -260,6 +260,27 @@
 </div>
 
   
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+    
+  </ul>
+</nav>
+
+    
+  
   </div>
 
 
@@ -267,7 +288,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="SimpleSleepNet">
     <meta itemprop="description" content="A lightweight self-supervised contrastive-learning framework for EEG-based sleep stage classification">
-    <meta itemprop="datePublished" content="2025-04-22T17:39:00+02:00">
+    <meta itemprop="datePublished" content="2025-04-23T06:11:59+02:00">
     
 
     <div class="page__inner-wrap">
@@ -284,6 +305,13 @@
       
 
       <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#simplesleepnet-self-supervised-contrastive-learning-for-eeg-based-sleep-stage-classification">SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification</a><ul><li><a href="#overview">Overview</a><ul><li><a href="#key-features">Key Features</a></li></ul></li><li><a href="#installation">Installation</a></li><li><a href="#project-structure">Project Structure</a></li><li><a href="#quick-start">Quick Start</a><ul><li><a href="#running-a-complete-experiment">Running a Complete Experiment</a></li><li><a href="#step-by-step-execution">Step-by-Step Execution</a></li></ul></li><li><a href="#key-components">Key Components</a><ul><li><a href="#1-data-augmentations">1. Data Augmentations</a></li><li><a href="#2-neural-architectures">2. Neural Architectures</a><ul><li><a href="#encoder-simplesleepnet">Encoder: SimpleSleepNet</a></li><li><a href="#classifier-sleepstageclassifier">Classifier: SleepStageClassifier</a></li></ul></li><li><a href="#3-contrastive-learning-framework">3. Contrastive Learning Framework</a></li><li><a href="#4-configuration-system">4. Configuration System</a></li></ul></li><li><a href="#training-pipeline">Training Pipeline</a><ul><li><a href="#1-self-supervised-contrastive-pretraining">1. Self-Supervised Contrastive Pretraining</a></li><li><a href="#2-supervised-fine-tuning">2. Supervised Fine-Tuning</a></li></ul></li><li><a href="#hpc-deployment">HPC Deployment</a></li><li><a href="#experimental-results">Experimental Results</a></li><li><a href="#extending-simplesleepnet">Extending SimpleSleepNet</a><ul><li><a href="#adding-new-augmentations">Adding New Augmentations</a></li><li><a href="#adding-new-model-architectures">Adding New Model Architectures</a></li></ul></li><li><a href="#citation">Citation</a></li><li><a href="#license">License</a></li><li><a href="#acknowledgments">Acknowledgments</a></li></ul></li></ul>
+            </nav>
+          </aside>
         
         <p><img src="/assets/images/projects/simplesleepnet-architecture.svg" alt="Project Demo" /></p>
 
@@ -306,7 +334,7 @@
 
 <div class="page__download" style="text-align:center; margin: 2em 0;">
   <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet" class="btn btn--primary" target="_blank" rel="noopener">
-    <i class="fab fa-github"></i> View on GitHub
+    <i class="fab fa-github"></i> View on GitLab
   </a>
 </div>
 
@@ -885,7 +913,7 @@ python <span class="nv">$PROJECT_DIR</span>/main.py <span class="nt">--config</s
 
 <h2 id="acknowledgments">Acknowledgments</h2>
 
-<p>This work was conducted as part of a semester project at the Medical Data Science Group, D-INFK, ETH Zurich, under the supervision of Prof. Dr. Julia Vogt.</p>
+<p>This work was conducted as part of a semester project at the <a href="https://mds.inf.ethz.ch/">Medical Data Science Group</a>, D-INFK, ETH Zurich, under the supervision of <a href="https://mds.inf.ethz.ch/team/detail/julia-vogt">Prof. Dr. Julia Vogt</a>.</p>
 
         
       </section>
@@ -897,7 +925,7 @@ python <span class="nv">$PROJECT_DIR</span>/main.py <span class="nt">--config</s
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-04-22T17:39:00+02:00">April 22, 2025</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-04-23T06:11:59+02:00">April 23, 2025</time></p>
 
       </footer>
 
@@ -915,13 +943,17 @@ python <span class="nv">$PROJECT_DIR</span>/main.py <span class="nt">--config</s
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/projects/simple_sleep_net/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
     <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
   </a>
+
+  <a href="https://bsky.app/intent/compose?text=SimpleSleepNet%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fsimple_sleep_net%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/projects/neural_latent_representations/" class="pagination--pager" title="Neural Latent Representations">Previous</a>
+      <a href="/projects/research_assitantship/" class="pagination--pager" title="Research at ETH Zurich">Previous</a>
     
     
       <a href="#" class="pagination--pager disabled">Next</a>

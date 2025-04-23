@@ -1,6 +1,10 @@
 ---
 title: "DeepSleepBench"
 excerpt: "Benchmarking Neural Latent Representations on EEG data for Sleep Stage Classification"
+sidebar:
+  nav: "DeepSleepBench"
+toc: true
+toc_sticky: true
 header:
   teaser: /assets/images/projects/latent.jpg
 ---
@@ -52,8 +56,6 @@ Sleep stage classification (SSC) is fundamental for diagnosing sleep disorders a
 | Hybrid         | Transformer  | 56.4        | 41.6     | 0.374     |
 
 Our findings reveal that **CNN+Attention with Contrastive Learning** achieves superior performance, while hybrid approaches provide a balanced alternative for EEG-based sleep staging.
-
-![Latent Space](/assets/images/projects/latent_space.png)
 
 ## Installation
 
@@ -193,7 +195,7 @@ python latent_space_evaluator.py --config configs/DLPROJ_pretrain_CRL_CNN_Sleep-
 
 Sample visualization of latent spaces for different model architectures:
 
-![Latent Space Visualization](assets/latent_visualization.png)
+![Latent Space](/assets/images/projects/latent_space.png)
 
 ## Advanced Usage
 

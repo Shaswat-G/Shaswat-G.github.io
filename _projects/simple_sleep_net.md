@@ -1,6 +1,10 @@
 ---
 title: "SimpleSleepNet"
 excerpt: "A lightweight self-supervised contrastive-learning framework for EEG-based sleep stage classification"
+sidebar:
+  nav: "SimpleSleepNet"
+toc: true
+toc_sticky: true
 header:
   teaser: /assets/images/projects/dnn.jpg
 ---
@@ -26,7 +30,7 @@ SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-
 
 <div class="page__download" style="text-align:center; margin: 2em 0;">
   <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet" class="btn btn--primary" target="_blank" rel="noopener">
-    <i class="fab fa-github"></i> View on GitHub
+    <i class="fab fa-github"></i> View on GitLab
   </a>
 </div>
 
@@ -580,4 +584,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-This work was conducted as part of a semester project at the Medical Data Science Group, D-INFK, ETH Zurich, under the supervision of Prof. Dr. Julia Vogt.
+This work was conducted as part of a semester project at the [Medical Data Science Group](https://mds.inf.ethz.ch/), D-INFK, ETH Zurich, under the supervision of [Prof. Dr. Julia Vogt](https://mds.inf.ethz.ch/team/detail/julia-vogt).
