@@ -35,4 +35,3 @@ author_profile: true
 {: .notice--success}
 
 **Reach out, and let's innovate together.**
-
