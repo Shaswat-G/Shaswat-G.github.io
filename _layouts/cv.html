@@ -16,6 +16,40 @@ classes:
     margin: 0 auto;
   }
 
+  /* Accordion styles */
+  details {
+    margin-bottom: 1.5em;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fafbfc;
+    padding: 0.5em 1em;
+    transition: box-shadow 0.2s;
+  }
+  details[open] {
+    box-shadow: 0 2px 8px rgba(80,120,200,0.07);
+    background: #f5f8ff;
+  }
+  summary {
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: #2c3e50;
+    padding: 0.3em 0;
+    margin-bottom: 0.5em;
+    user-select: none;
+  }
+
+  /* Add summary styling */
+  .cv-section-summary {
+    font-size: 0.95em;
+    font-style: italic;
+    color: #6c757d;
+    margin-left: 0.7em;
+    font-weight: 400;
+    vertical-align: middle;
+  }
+
   .cv-intro {
     font-size: 1.1em;
     margin-bottom: 2em;

@@ -24,7 +24,13 @@ author_profile: true
    </a>
 </div>
 
-_High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT Bombay (9.6/10 GPA, Gold Medalist), with a strong foundation in machine learning and data-driven problem solving._
+<details id="section-education" open>
+  <summary>
+    <strong>Education</strong>
+    <span class="cv-section-summary">
+      High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT Bombay (9.6/10 GPA, Gold Medalist), with a strong foundation in machine learning and data-driven problem solving.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Education"
@@ -32,7 +38,15 @@ _High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT 
    anchor="section-education"
    entries=site.data.cv.education %}
 
-_Recognized for academic excellence and leadership through competitive scholarships, awards, and distinctions at national and international levels._
+</details>
+
+<details id="section-awards">
+  <summary>
+    <strong>Scholarships, Medals & Distinctions</strong>
+    <span class="cv-section-summary">
+      Recognized for academic excellence and leadership through competitive scholarships, awards, and distinctions at national and international levels.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Scholarships, Medals & Distinctions"
@@ -40,7 +54,15 @@ _Recognized for academic excellence and leadership through competitive scholarsh
    anchor="section-awards"
    entries=site.data.cv.awards %}
 
-_Proficient in modern machine learning, data engineering, and cloud technologies, combining theoretical depth with hands-on implementation across diverse technical stacks._
+</details>
+
+<details id="section-skills">
+  <summary>
+    <strong>Technical Skills</strong>
+    <span class="cv-section-summary">
+      Proficient in modern machine learning, data engineering, and cloud technologies, combining theoretical depth with hands-on implementation across diverse technical stacks.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Technical Skills"
@@ -48,7 +70,15 @@ _Proficient in modern machine learning, data engineering, and cloud technologies
    anchor="section-skills"
    entries=site.data.cv.technical_skills %}
 
-_Experienced in delivering measurable business impact through advanced analytics and machine learning, consistently translating complex challenges into actionable solutions._
+</details>
+
+<details id="section-experience">
+  <summary>
+    <strong>Professional Experience</strong>
+    <span class="cv-section-summary">
+      Experienced in delivering measurable business impact through advanced analytics and machine learning, consistently translating complex challenges into actionable solutions.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Experience"
@@ -57,7 +87,15 @@ _Experienced in delivering measurable business impact through advanced analytics
    entries=site.data.cv.experience
    entry_prefix="exp" %}
 
-_Applied ML researcher at ETH Zurich, leveraging quantitative methods to address real-world challenges across technical standardization, green energy, and epidemiological modeling._
+</details>
+
+<details id="section-research">
+  <summary>
+    <strong>Research Experience</strong>
+    <span class="cv-section-summary">
+      Applied ML researcher at ETH Zurich, leveraging quantitative methods to address real-world challenges across technical standardization, green energy, and epidemiological modeling.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Research"
@@ -66,7 +104,15 @@ _Applied ML researcher at ETH Zurich, leveraging quantitative methods to address
    entries=site.data.cv.research
    entry_prefix="res" %}
 
-_Active student leader and mentor, with a record of impactful contributions in journalism, analytics, and community engagement, alongside creative pursuits and Mensa membership._
+</details>
+
+<details id="section-extracurriculars">
+  <summary>
+    <strong>Extracurricular Activities</strong>
+    <span class="cv-section-summary">
+      Active student leader and mentor, with a record of impactful contributions in journalism, analytics, and community engagement, alongside creative pursuits and Mensa membership.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Extracurricular Activities"
@@ -74,10 +120,20 @@ _Active student leader and mentor, with a record of impactful contributions in j
    anchor="section-extracurriculars"
    entries=site.data.cv.extracurriculars %}
 
-_Selected for international exchanges and global conferences at ETH Zurich, Harvard, and Princeton, demonstrating adaptability and a strong cross-cultural perspective._
+</details>
+
+<details id="section-international">
+  <summary>
+    <strong>International Exposure & Conferences</strong>
+    <span class="cv-section-summary">
+      Selected for international exchanges and global conferences at ETH Zurich, Harvard, and Princeton, demonstrating adaptability and a strong cross-cultural perspective.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="International Exposure & Conferences"
    icon="globe"
    anchor="section-international"
    entries=site.data.cv.international %}
+
+</details>
