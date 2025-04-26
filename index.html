@@ -1,29 +1,21 @@
 ---
 layout: splash
-title: Shaswat Gupta
+title: ""
 header:
   overlay_image: /assets/images/background.jpg
-  overlay_filter: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1))
+  overlay_filter: 0.2
   actions:
     - label: "Download CV"
       url: /assets/files/Shazz_CV.pdf
+excerpt: >
+  Engineering intelligence through code and cognition — turning data into decisions.
 ---
 
-<div class="hero__content">
-  <img
-    src="/assets/images/profile.png"
-    class="hero__profile"
-    alt="Shaswat Gupta"
-  />
-  <h1 class="hero__title">Shaswat Gupta</h1>
-  <p class="hero__subtitle">
-    Hello and welcome to my digital home! Feel free to explore, discover what
-    inspires me, and maybe find something that sparks your curiosity too. Glad
-    you stopped by!
-  </p>
+<!-- Wide, minimal hero card block -->
+{% include hero-card.html %}
 
-  {% include social-icons.html %}
-</div>
+<!-- Social icons below the card, centered -->
+<div class="hero-social-row">{% include social-icons.html %}</div>
 
 <div class="homepage-sections">{% include bio-section.html %}</div>
 
@@ -54,6 +46,109 @@ header:
 </section>
 
 <style>
+  .hero-card {
+    max-width: 1400px;
+    margin: 2.5em auto 1.2em auto;
+    padding: 0;
+    background: #fff;
+    border-radius: 1.2em;
+    box-shadow: 0 4px 32px rgba(42, 122, 226, 0.11);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: 420px;
+  }
+  .hero-card__img-col {
+    flex: 0 0 380px;
+    background: #f7faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 260px;
+    max-width: 420px;
+  }
+  .hero-card__img {
+    width: 96%;
+    height: auto;
+    max-width: 340px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 1.2em;
+    border: none;
+    box-shadow: 0 4px 24px rgba(42, 122, 226, 0.1);
+    background: none;
+    display: block;
+  }
+  .hero-card__content {
+    flex: 1 1 0;
+    padding: 4em 4em 4em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    min-height: 340px;
+  }
+  .hero-card__about {
+    font-size: 1.28em;
+    color: #222;
+    margin-bottom: 0;
+    line-height: 1.8;
+    font-weight: 500;
+  }
+  .hero-card__about p {
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+  .hero-social-row {
+    display: flex;
+    justify-content: center;
+    margin: 1.8em 0 2.2em 0;
+  }
+  @media (max-width: 1200px) {
+    .hero-card {
+      max-width: 99vw;
+    }
+    .hero-card__content {
+      padding: 2.2em 1.2em 2.2em 1.2em;
+    }
+    .hero-card__img-col {
+      flex: 0 0 200px;
+      min-width: 120px;
+      max-width: 240px;
+    }
+    .hero-card__img {
+      max-width: 140px;
+      max-height: 180px;
+    }
+  }
+  @media (max-width: 700px) {
+    .hero-card {
+      flex-direction: column;
+      min-height: unset;
+      max-width: 100vw;
+    }
+    .hero-card__img-col {
+      width: 100%;
+      max-width: 100vw;
+      min-width: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2em 0 0.5em 0;
+    }
+    .hero-card__img {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 50%;
+    }
+    .hero-card__content {
+      padding: 1.2em 1em 1.2em 1em;
+      text-align: center;
+      align-items: center;
+      min-height: unset;
+    }
+  }
+  /* Navigation guide styles */
   .navigation-guide {
     max-width: 700px;
     margin: 3em auto 2em auto;
