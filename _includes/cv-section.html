@@ -1,70 +1,101 @@
 <section class="cv-section">
-  <h2 class="cv-section__title">
+  <h2 class="cv-section__title" id="{{ include.anchor }}">
     <i class="fas fa-{{ include.icon }}"></i>
     {{ include.title }}
   </h2>
   <div class="cv-section__divider"></div>
-  {% for entry in include.entries %} {% if entry.category and entry.skills %}
-  <!-- Technical Skills entry format -->
-  <div class="cv-entry skills-entry cv-section__entry">
-    <div class="cv-skills__content">
-      <h3 class="skill-category">{{ entry.category }}</h3>
-      {{ entry.skills | markdownify }}
-    </div>
-  </div>
-  {% elsif entry.category and entry.details %}
-  <!-- Extracurriculars entry format (with thumbnail if present) -->
-  <div class="cv-entry skills-entry cv-section__entry">
-    <div class="cv-entry__row">
-      {% if entry.image %}
-      <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
-      {% endif %}
-      <div class="cv-skills__content">
-        <h3 class="skill-category">{{ entry.category }}</h3>
-        {{ entry.details | markdownify }}
+  {% for entry in include.entries %}
+    {% assign entry_id = nil %}
+    {% if include.entry_prefix %}
+      {% assign entry_id = include.entry_prefix | append: '-' | append: forloop.index %}
+    {% endif %}
+    {% if entry.projects %}
+      <!-- Handle parent entry with nested projects -->
+      <div class="cv-entry cv-section__entry">
+        <div class="cv-entry__row">
+          {% if entry.image %}
+            <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+          {% endif %}
+          <div class="cv-entry__content">
+            <h3{% if entry_id %} id="{{ entry_id }}"{% endif %}>{{ entry.company | default: entry.institution }}</h3>
+            {% if entry.position %}
+              <div class="cv-entry__position">{{ entry.position }}</div>
+            {% endif %}
+            <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
+            {{ entry.details | markdownify }}
+            <!-- Render nested projects with hierarchical IDs -->
+            {% for project in entry.projects %}
+              {% assign project_id = include.entry_prefix | append: '-' | append: forloop.parentloop.index | append: '-' | append: forloop.index %}
+              <h4 id="{{ project_id }}">{{ project.title }}</h4>
+              <div class="cv-entry__project-details">
+                {{ project.details | markdownify }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  {% elsif entry.title %}
-  <!-- Awards entry format (with thumbnail if present) -->
-  <div class="cv-entry award-entry cv-section__entry">
-    <div class="cv-entry__row">
-      {% if entry.image %}
-      <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
-      {% endif %}
-      <div class="cv-entry__content">
-        <h3>{{ entry.title }}</h3>
-        <p class="meta">
-          {{ entry.organization }} {% if entry.date %}| {{ entry.date }}{% endif
-          %}
-        </p>
-        <p>{{ entry.details }}</p>
+    {% elsif entry.category and entry.skills %}
+      <!-- Technical Skills entry format -->
+      <div class="cv-entry skills-entry cv-section__entry">
+        <div class="cv-skills__content">
+          <h3 class="skill-category"{% if entry_id %} id="{{ entry_id }}"{% endif %}>{{ entry.category }}</h3>
+          {{ entry.skills | markdownify }}
+        </div>
       </div>
-    </div>
-  </div>
-  {% else %}
-  <!-- Experience/Education/Research/International entry format with thumbnail if present -->
-  <div class="cv-entry cv-section__entry">
-    <div class="cv-entry__row">
-      {% if entry.image %}
-      <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
-      {% endif %}
-      <div class="cv-entry__content">
-        <h3>{{ entry.company | default: entry.institution }}</h3>
-        {% if entry.position %}
-        <div class="cv-entry__position">{{ entry.position }}</div>
-        {% endif %}
-        <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
-        {{ entry.details | markdownify }}
+    {% elsif entry.category and entry.details %}
+      <!-- Extracurriculars entry format (with thumbnail if present) -->
+      <div class="cv-entry skills-entry cv-section__entry">
+        <div class="cv-entry__row">
+          {% if entry.image %}
+            <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+          {% endif %}
+          <div class="cv-skills__content">
+            <h3 class="skill-category"{% if entry_id %} id="{{ entry_id }}"{% endif %}>{{ entry.category }}</h3>
+            {{ entry.details | markdownify }}
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  {% endif %} {% endfor %}
+    {% elsif entry.title %}
+      <!-- Awards entry format (with thumbnail if present) -->
+      <div class="cv-entry award-entry cv-section__entry">
+        <div class="cv-entry__row">
+          {% if entry.image %}
+            <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+          {% endif %}
+          <div class="cv-entry__content">
+            <h3{% if entry_id %} id="{{ entry_id }}"{% endif %}>{{ entry.title }}</h3>
+            <p class="meta">
+              {{ entry.organization }} {% if entry.date %}| {{ entry.date }}{% endif %}
+            </p>
+            <p>{{ entry.details }}</p>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <!-- Experience/Education/Research/International entry format with thumbnail if present -->
+      <div class="cv-entry cv-section__entry">
+        <div class="cv-entry__row">
+          {% if entry.image %}
+            <img class="cv-entry__thumb" src="{{ entry.image }}" alt="thumbnail" />
+          {% endif %}
+          <div class="cv-entry__content">
+            <h3{% if entry_id %} id="{{ entry_id }}"{% endif %}>{{ entry.company | default: entry.institution }}</h3>
+            {% if entry.position %}
+              <div class="cv-entry__position">{{ entry.position }}</div>
+            {% endif %}
+            <p class="meta">{{ entry.dates }} | {{ entry.location }}</p>
+            {{ entry.details | markdownify }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </section>
 
 <style>
   body {
     font-size: 0.9em;
+    scroll-behavior: smooth;
   }
   /* Section container styling */
   .cv-section {

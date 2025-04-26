@@ -17,6 +17,7 @@ locale: "en-US"
 # lunr:
 #   search_within_pages: true
 #   search_full_content: true # Search full content of posts and pages
+# Hi
 
 search: false # As per requirements
 
