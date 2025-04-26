@@ -13,23 +13,8 @@ author_profile: true
 - [Education](#section-education)
 - [Scholarships, Medals & Distinctions](#section-awards)
 - [Technical Skills](#section-skills)
-- [Experience](#section-experience)
-  - [AB InBev — Growth Analytics Center (Data Scientist)](#exp-1)
-  - [AB InBev — Growth Analytics Center (Data Science Intern)](#exp-2)
-  - [Glenmark Pharmaceuticals — Demand Planning](#exp-3)
-  - [Growth Source Financial Technologies (Protium)](#exp-4)
-  - [Rephrase.AI](#exp-5)
-- [Research](#section-research)
-  - [Medical Data Science Group, D-INFK, ETH Zurich](#res-1)
-  - [ETH Zurich (Deep Learning Project)](#res-2)
-  - [Chair of Technology and Innovation Management, ETH Zurich](#res-3)
-    - [Enterprise Machine Learning Research](#res-3-1)
-    - [Unicode Technical Consortium](#res-3-2)
-    - [Patent Analysis and Technological Shift Detection](#res-3-3)
-  - [World Bank Group x KPMG India](#res-4)
-  - [Capital Foods Pvt. Ltd.](#res-5)
-  - [Indian School of Business](#res-6)
-  - [Various Institutions](#res-7)
+- [Professional Experience](#section-experience)
+- [Research Experience](#section-research)
 - [Extracurricular Activities](#section-extracurriculars)
 - [International Exposure & Conferences](#section-international)
 
@@ -39,11 +24,15 @@ author_profile: true
    </a>
 </div>
 
+_High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT Bombay (9.6/10 GPA, Gold Medalist), with a strong foundation in machine learning and data-driven problem solving._
+
 {% include cv-section.html
    title="Education"
    icon="graduation-cap"
    anchor="section-education"
    entries=site.data.cv.education %}
+
+_Recognized for academic excellence and leadership through competitive scholarships, awards, and distinctions at national and international levels._
 
 {% include cv-section.html
    title="Scholarships, Medals & Distinctions"
@@ -51,11 +40,15 @@ author_profile: true
    anchor="section-awards"
    entries=site.data.cv.awards %}
 
+_Proficient in modern machine learning, data engineering, and cloud technologies, combining theoretical depth with hands-on implementation across diverse technical stacks._
+
 {% include cv-section.html
    title="Technical Skills"
    icon="laptop-code"
    anchor="section-skills"
    entries=site.data.cv.technical_skills %}
+
+_Experienced in delivering measurable business impact through advanced analytics and machine learning, consistently translating complex challenges into actionable solutions._
 
 {% include cv-section.html
    title="Experience"
@@ -64,6 +57,8 @@ author_profile: true
    entries=site.data.cv.experience
    entry_prefix="exp" %}
 
+_Applied ML researcher at ETH Zurich, leveraging quantitative methods to address real-world challenges across technical standardization, green energy, and epidemiological modeling._
+
 {% include cv-section.html
    title="Research"
    icon="flask"
@@ -71,11 +66,15 @@ author_profile: true
    entries=site.data.cv.research
    entry_prefix="res" %}
 
+_Active student leader and mentor, with a record of impactful contributions in journalism, analytics, and community engagement, alongside creative pursuits and Mensa membership._
+
 {% include cv-section.html
    title="Extracurricular Activities"
    icon="users"
    anchor="section-extracurriculars"
    entries=site.data.cv.extracurriculars %}
+
+_Selected for international exchanges and global conferences at ETH Zurich, Harvard, and Princeton, demonstrating adaptability and a strong cross-cultural perspective._
 
 {% include cv-section.html
    title="International Exposure & Conferences"
