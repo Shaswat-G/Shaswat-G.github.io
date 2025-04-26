@@ -19,13 +19,11 @@ tags:
   - best-practices
 ---
 
-# Python Engineering Mastery
-
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
-
 _A comprehensive, engineering-focused Python course for students and professional developers_
 
-**Link to Course**: [Python Engineering Course](https://github.com/Shaswat-G/python-engineering)
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
+
+<a href="https://github.com/Shaswat-G/python-engineering" class="btn btn--primary" target="_blank" rel="noopener">View Python Engineering Course</a>
 
 ![Python](python_2.jpeg){:height="400"}
 
@@ -135,3 +133,9 @@ By the end, you’ll be able to:
 ## Ready to Transform Your Python Skills?
 
 Join us and evolve from a Python programmer to a Python **engineer**. Let’s build software that doesn’t just _work_, but works _brilliantly_.
+
+<a href="https://github.com/Shaswat-G/python-engineering" class="btn btn--primary" target="_blank" rel="noopener">View Python Engineering Course</a>
+
+## License
+
+Released under the MIT License. See [LICENSE](/assets/files/MIT_License.md) for details.

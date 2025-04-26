@@ -19,14 +19,18 @@ tags:
   - infrastructure
 ---
 
-# Docker & Containerization: The Complete Guide
-
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
 
 _A comprehensive, engineering-focused Docker course for students and professional developers_
 
-**Link to Course**: [Docker Course](https://github.com/Shaswat-G/docker-basics)
+<a href="https://github.com/Shaswat-G/docker-basics" class="btn btn--primary" target="_blank" rel="noopener">View Docker Course</a>
 
 ![Docker](docker.jpeg){:height="400"}
 
 ---
+
+<a href="https://github.com/Shaswat-G/docker-basics" class="btn btn--primary" target="_blank" rel="noopener">View Docker Course</a>
+
+## License
+
+Released under the MIT License. See [LICENSE](/assets/files/MIT_License.md) for details.

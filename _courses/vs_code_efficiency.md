@@ -19,13 +19,11 @@ tags:
   - development-tools
 ---
 
-# VS Code Mastery: Keyboard-Driven Development
+_Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required._
 
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
 
-Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required.
-
-**Link to Course**: [VS Code Basics](https://github.com/Shaswat-G/vs-code-basics)
+<a href="https://github.com/Shaswat-G/vs-code-basics" class="btn btn--primary" target="_blank" rel="noopener">View VS Code Basics Course</a>
 
 ![VSCode](vscode.jpeg)
 
@@ -98,3 +96,9 @@ _Estimated course completion time: 8 hours (spread over 2 weeks for optimal rete
 ---
 
 **P.S.** Keep this repository open in a separate window while practicing. The shortcuts will become second nature before you know it, and you'll wonder how you ever lived without them.
+
+<a href="https://github.com/Shaswat-G/vs-code-basics" class="btn btn--primary" target="_blank" rel="noopener">View VS Code Basics Course</a>
+
+## License
+
+Released under the MIT License. See [LICENSE](/assets/files/MIT_License.md) for details.

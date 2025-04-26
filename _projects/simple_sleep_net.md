@@ -159,7 +159,6 @@ SimpleSleepNet implements 13 EEG-specific augmentations across 5 categories:
 | **Noise/Filtering**  | AverageFiltering, RandomAdditiveGaussianNoise           | Add calibrated noise or smoothing                                      |
 | **Temporal**         | TimeReversal, TimeWarping, Permutation, RandomTimeShift | Apply non-linear temporal transformations                              |
 
-
 ![SSLCRL](/assets/images/projects/SSLCRL.png)
 
 Example implementation of `TailoredMixup` augmentation:
@@ -203,6 +202,7 @@ class TailoredMixup(BaseAugmentation):
 
         return mixed_signal
 ```
+
 ![TailoredMixup](/assets/images/projects/TailoredMixup.png)
 
 ### 2. Neural Architectures
@@ -448,7 +448,6 @@ train_classifier(
 )
 ```
 
-
 ## HPC Deployment
 
 For large-scale experimentation, we provide scripts for running on HPC clusters with Slurm:
@@ -580,8 +579,20 @@ If you use SimpleSleepNet in your research, please cite:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](/assets/files/MIT_License.md).
 
 ## Acknowledgments
 
 This work was conducted as part of a semester project at the [Medical Data Science Group](https://mds.inf.ethz.ch/), D-INFK, ETH Zurich, under the supervision of [Prof. Dr. Julia Vogt](https://mds.inf.ethz.ch/team/detail/julia-vogt).
+
+<div class="page__download" style="text-align:center; margin: 2em 0;">
+  <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet" class="btn btn--primary" target="_blank" rel="noopener">
+    <i class="fab fa-github"></i> View on GitLab
+  </a>
+</div>
+
+<div class="page__download" style="text-align:center; margin: 2em 0;">
+  <a href="/assets/files/SimpleSleepNet-Report.pdf" class="btn btn--primary" download>
+    <i class="fas fa-file-pdf"></i> Download Full Report (PDF)
+  </a>
+</div>

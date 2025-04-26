@@ -21,11 +21,11 @@ tags:
 
 # Git & Version Control: The Complete Developer's Guide
 
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
+_A structured approach to mastering version control for developers at all levels._
 
-A structured approach to mastering version control for developers at all levels.
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
 
-**Link to Course**: [Git and Version Control Course](https://github.com/Shaswat-G/git-and-version-control)
+<a href="https://github.com/Shaswat-G/git-and-version-control" class="btn btn--primary" target="_blank" rel="noopener">View Git and Version Control Course</a>
 
 ![GitHub](mind_map.png)
 
@@ -75,7 +75,9 @@ Your insights can help improve this resource. Open an issue or submit a pull req
 
 ## License
 
-Released under the MIT License. See [LICENSE](LICENSE) for details.
+Released under the MIT License. See [LICENSE](/assets/files/MIT_License.md) for details.
+
+<a href="https://github.com/Shaswat-G/git-and-version-control" class="btn btn--primary" target="_blank" rel="noopener">View Git and Version Control Course</a>
 
 ---
 

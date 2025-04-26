@@ -7,14 +7,13 @@ toc: true
 toc_sticky: true
 header:
   teaser: /assets/images/projects/ethz.jpg
-
 ---
 
 I presently work part-time as a research assistant at the [Chair of Technology and Innovation Management](https://timgroup.ethz.ch/) at ETH Zurich, under the supervision of [Prof. Dr. Stefano Brusoni](https://timgroup.ethz.ch/people/group-leadership/stefano-brusoni.html). My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and enhancing data-driven decision-making processes.
 
 ## Enterprise ML & Technical Analysis Projects
 
-*March 2024 - January 2025*
+_March 2024 - January 2025_
 
 Led the data engineering and analytical components of a large-scale research collaboration between ETH Zurich and Zühlke, investigating machine learning and AI adoption patterns across 600+ enterprises in Europe and North America. This comprehensive study spanned multiple industries including consumer discretionary, IT, manufacturing, financial services, and healthcare sectors.
 
@@ -31,6 +30,7 @@ Led the data engineering and analytical components of a large-scale research col
 </div>
 
 ### Technical Implementation
+
 - **End-to-End Data Pipeline**: Architected a comprehensive data processing framework integrating multiple sources (Prolific survey responses, Qualtrics data, demographics) with robust cleaning, standardization, and anonymization processes
 - **Statistical Analysis Engine**: Developed an automated testing framework executing 10,000+ statistical tests (t-tests, ANOVA, Kruskal-Wallis, Chi-Square, Levene's, Mann-Whitney U) with intelligent test selection based on data characteristics
 - **NLP & AI Integration**: Implemented text classification pipelines utilizing OpenAI's LLM APIs for categorization of free-text responses and sentiment analysis
@@ -38,6 +38,7 @@ Led the data engineering and analytical components of a large-scale research col
 - **Automated Reporting**: Engineered systems to transform complex statistical outputs into business-friendly formats through programmatic Excel reporting
 
 ### Technologies
+
 ```python
 # Core Data Stack
 import pandas as pd
@@ -54,6 +55,7 @@ from openai import OpenAI
 ```
 
 ### Impact & Outcomes
+
 - Reduced manual analysis time by 80% through comprehensive automation workflows
 - Identified statistically significant ML adoption patterns across regions, company sizes, and industry sectors
 - Created a reproducible research framework now used for ongoing studies at the Chair
@@ -72,6 +74,7 @@ Developed a comprehensive system to analyze 20,000+ technical documents from the
 </div>
 
 ### Technical Implementation
+
 - **Scalable Web Crawling**: Engineered concurrent HTTP request handling with automatic retry logic and connection pooling, achieving 94% successful download rate for heterogeneous document sources
 - **Multi-format Document Processing**: Built extraction engines for PDF, HTML, and plaintext documents with format-adaptive parsers handling the evolution of UTC's document repository structure
 - **Document Classification System**: Developed a hierarchical classifier with 30+ document categories using domain-specific keyword patterns and regex-based boundary matching
@@ -79,6 +82,7 @@ Developed a comprehensive system to analyze 20,000+ technical documents from the
 - **LLM Integration**: Engineered configurable OpenAI API client with token optimization techniques reducing API costs by 42% while maintaining extraction quality
 
 ### Technologies
+
 ```python
 # Web Scraping & Document Processing
 import asyncio
@@ -97,6 +101,7 @@ from openai import OpenAI
 ```
 
 ### Impact & Outcomes
+
 - Created a comprehensive emoji reference database mapping 5,000+ emoji representations across different notation systems
 - Enabled identification of cyclical patterns in Unicode standardization process
 - Developed attribution analysis identifying key contributors and their influence over time
@@ -116,14 +121,16 @@ Designed and implemented an advanced system for analyzing patent data from semic
 </div>
 
 ### Technical Implementation
+
 - **High-Performance Data Acquisition**: Built an asyncio-powered concurrent scraping system with intelligent session management, achieving 20x faster processing compared to sequential approaches
 - **Text Optimization Pipeline**: Engineered token optimization for 15,000+ patent documents to fit within embedding windows while preserving critical technical information
 - **Topic Modeling**: Deployed BERTopic with Sentence Transformers embeddings to identify 80+ distinct technology clusters across 20+ years of semiconductor industry patents
-- **Domain-Specific Filtering**: Implemented LLM integration using OpenAI models to distinguish semiconductor-specific patents from general technology with 95% accuracyResearch Assistant at [Chair of Technology and Innovation Management](#) under [Prof. Name](#)*  
-*August 2023 - December 2023*
+- **Domain-Specific Filtering**: Implemented LLM integration using OpenAI models to distinguish semiconductor-specific patents from general technology with 95% accuracyResearch Assistant at [Chair of Technology and Innovation Management](#) under [Prof. Name](#)\*  
+  _August 2023 - December 2023_
 - **Technological Shift Detection**: Created visualization and analysis of topic trends over time, identifying 5 major technological shifts in the semiconductor industry
 
 ### Technologies
+
 ```python
 # Concurrent Processing
 import asyncio
@@ -143,8 +150,15 @@ from openai import OpenAI
 ```
 
 ### Impact & Outcomes
+
 - Enabled identification of emerging technological areas and company-specific innovation patterns
 - Created time-series analysis of patent trends through temporal tracking of topic distributions
 - Developed a modular, configuration-driven pipeline that scaled from single-company to industry-wide analysis
 - Produced visual representations of technological evolution in the semiconductor industry
 - Built a reusable framework for patent analysis that can be applied to other technology sectors
+
+---
+
+## License
+
+This project is licensed under the [MIT License](/assets/files/MIT_License.md).

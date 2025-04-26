@@ -28,3 +28,7 @@ _A comprehensive, engineering-focused Large Scale ML Engineering course for stud
 **Link to Course**: [Large Scale ML Engineering Course](https://github.com/Shaswat-G/large-scale-AI-engg)
 
 ![Large Scale ML Engineering](ml.jpeg){:height="400"}
+
+## License
+
+Released under the MIT License. See [LICENSE](/assets/files/MIT_License.md) for details.
