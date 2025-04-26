@@ -13,23 +13,8 @@ author_profile: true
 - [Education](#section-education)
 - [Scholarships, Medals & Distinctions](#section-awards)
 - [Technical Skills](#section-skills)
-- [Experience](#section-experience)
-  - [AB InBev — Growth Analytics Center (Data Scientist)](#exp-1)
-  - [AB InBev — Growth Analytics Center (Data Science Intern)](#exp-2)
-  - [Glenmark Pharmaceuticals — Demand Planning](#exp-3)
-  - [Growth Source Financial Technologies (Protium)](#exp-4)
-  - [Rephrase.AI](#exp-5)
-- [Research](#section-research)
-  - [Medical Data Science Group, D-INFK, ETH Zurich](#res-1)
-  - [ETH Zurich (Deep Learning Project)](#res-2)
-  - [Chair of Technology and Innovation Management, ETH Zurich](#res-3)
-    - [Enterprise Machine Learning Research](#res-3-1)
-    - [Unicode Technical Consortium](#res-3-2)
-    - [Patent Analysis and Technological Shift Detection](#res-3-3)
-  - [World Bank Group x KPMG India](#res-4)
-  - [Capital Foods Pvt. Ltd.](#res-5)
-  - [Indian School of Business](#res-6)
-  - [Various Institutions](#res-7)
+- [Professional Experience](#section-experience)
+- [Research Experience](#section-research)
 - [Extracurricular Activities](#section-extracurriculars)
 - [International Exposure & Conferences](#section-international)
 
@@ -39,11 +24,29 @@ author_profile: true
    </a>
 </div>
 
+<details id="section-education" open>
+  <summary>
+    <strong>Education</strong>
+    <span class="cv-section-summary">
+      High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT Bombay (9.6/10 GPA, Gold Medalist), with a strong foundation in machine learning and data-driven problem solving.
+    </span>
+  </summary>
+
 {% include cv-section.html
    title="Education"
    icon="graduation-cap"
    anchor="section-education"
    entries=site.data.cv.education %}
+
+</details>
+
+<details id="section-awards">
+  <summary>
+    <strong>Scholarships, Medals & Distinctions</strong>
+    <span class="cv-section-summary">
+      Recognized for academic excellence and leadership through competitive scholarships, awards, and distinctions at national and international levels.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Scholarships, Medals & Distinctions"
@@ -51,11 +54,31 @@ author_profile: true
    anchor="section-awards"
    entries=site.data.cv.awards %}
 
+</details>
+
+<details id="section-skills">
+  <summary>
+    <strong>Technical Skills</strong>
+    <span class="cv-section-summary">
+      Proficient in modern machine learning, data engineering, and cloud technologies, combining theoretical depth with hands-on implementation across diverse technical stacks.
+    </span>
+  </summary>
+
 {% include cv-section.html
    title="Technical Skills"
    icon="laptop-code"
    anchor="section-skills"
    entries=site.data.cv.technical_skills %}
+
+</details>
+
+<details id="section-experience">
+  <summary>
+    <strong>Professional Experience</strong>
+    <span class="cv-section-summary">
+      Experienced in delivering measurable business impact through advanced analytics and machine learning, consistently translating complex challenges into actionable solutions.
+    </span>
+  </summary>
 
 {% include cv-section.html
    title="Experience"
@@ -64,6 +87,16 @@ author_profile: true
    entries=site.data.cv.experience
    entry_prefix="exp" %}
 
+</details>
+
+<details id="section-research">
+  <summary>
+    <strong>Research Experience</strong>
+    <span class="cv-section-summary">
+      Applied ML researcher at ETH Zurich, leveraging quantitative methods to address real-world challenges across technical standardization, green energy, and epidemiological modeling.
+    </span>
+  </summary>
+
 {% include cv-section.html
    title="Research"
    icon="flask"
@@ -71,14 +104,36 @@ author_profile: true
    entries=site.data.cv.research
    entry_prefix="res" %}
 
+</details>
+
+<details id="section-extracurriculars">
+  <summary>
+    <strong>Extracurricular Activities</strong>
+    <span class="cv-section-summary">
+      Active student leader and mentor, with a record of impactful contributions in journalism, analytics, and community engagement, alongside creative pursuits and Mensa membership.
+    </span>
+  </summary>
+
 {% include cv-section.html
    title="Extracurricular Activities"
    icon="users"
    anchor="section-extracurriculars"
    entries=site.data.cv.extracurriculars %}
 
+</details>
+
+<details id="section-international">
+  <summary>
+    <strong>International Exposure & Conferences</strong>
+    <span class="cv-section-summary">
+      Selected for international exchanges and global conferences at ETH Zurich, Harvard, and Princeton, demonstrating adaptability and a strong cross-cultural perspective.
+    </span>
+  </summary>
+
 {% include cv-section.html
    title="International Exposure & Conferences"
    icon="globe"
    anchor="section-international"
    entries=site.data.cv.international %}
+
+</details>
