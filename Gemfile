@@ -11,3 +11,9 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-sitemap"
 end
+
+# Windows-specific optimization
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+# Optional: Better retry handling for HTTP (Faraday)
+gem 'faraday-retry'
