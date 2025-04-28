@@ -17,6 +17,20 @@ tags:
   - version-control
   - collaboration
   - github
+# SEO meta tags
+meta:
+  title: "Git and Version Control Course | Collaboration, Code Management"
+  description: "Master Git for effective collaboration and code management. A structured guide for developers at all levels."
+  keywords: "git, version control, github, collaboration, code management, course"
+  author: "Shaswat Gupta"
+  og:title: "Git and Version Control Course"
+  og:description: "Master Git for collaboration and code management. Structured guide for developers."
+  og:image: "/assets/images/courses/github.jpeg"
+  og:type: "website"
+  twitter:card: "summary_large_image"
+  twitter:title: "Git and Version Control Course"
+  twitter:description: "Comprehensive Git course for developers and students."
+  twitter:image: "/assets/images/courses/github.jpeg"
 ---
 
 # Git & Version Control: The Complete Developer's Guide

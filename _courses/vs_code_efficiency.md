@@ -17,6 +17,20 @@ tags:
   - productivity
   - ide
   - development-tools
+# SEO meta tags
+meta:
+  title: "VS Code Mastery Course | Productivity, Shortcuts, IDE"
+  description: "Definitive guide to becoming productive with Visual Studio Code. Learn keyboard shortcuts, advanced techniques, and best practices."
+  keywords: "vs code, vscode, productivity, ide, keyboard shortcuts, development tools, course"
+  author: "Shaswat Gupta"
+  og:title: "VS Code Mastery Course"
+  og:description: "Transform your coding with keyboard shortcuts and advanced VS Code techniques."
+  og:image: "/assets/images/courses/vscode.jpeg"
+  og:type: "website"
+  twitter:card: "summary_large_image"
+  twitter:title: "VS Code Mastery Course"
+  twitter:description: "Become a VS Code power user with this productivity-focused course."
+  twitter:image: "/assets/images/courses/vscode.jpeg"
 ---
 
 _Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required._

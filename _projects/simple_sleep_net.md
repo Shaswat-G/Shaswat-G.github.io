@@ -7,7 +7,40 @@ toc: true
 toc_sticky: true
 header:
   teaser: /assets/images/projects/dnn.jpg
+# SEO meta
+description: "SimpleSleepNet: Lightweight self-supervised deep learning for EEG-based sleep stage classification. Achieve 80%+ accuracy with minimal labeled data. Open-source, modular, and edge-deployable."
+author: "Shaswat Gupta"
+image: /assets/images/projects/dnn.jpg
+keywords:
+  [
+    "SimpleSleepNet",
+    "EEG",
+    "Sleep Stage Classification",
+    "Self-Supervised Learning",
+    "Contrastive Learning",
+    "Deep Learning",
+    "PyTorch",
+    "ETH Zurich",
+    "AI Research",
+    "Edge AI",
+    "Data Science",
+    "Machine Learning",
+    "Open Source",
+  ]
 ---
+
+<!-- SEO meta tags -->
+<meta name="description" content="SimpleSleepNet: Lightweight self-supervised deep learning for EEG-based sleep stage classification. Achieve 80%+ accuracy with minimal labeled data. Open-source, modular, and edge-deployable.">
+<meta name="keywords" content="SimpleSleepNet, EEG, Sleep Stage Classification, Self-Supervised Learning, Contrastive Learning, Deep Learning, PyTorch, ETH Zurich, AI Research, Edge AI, Data Science, Machine Learning, Open Source">
+<meta name="author" content="Shaswat Gupta">
+<meta property="og:title" content="SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification">
+<meta property="og:description" content="Lightweight self-supervised deep learning for EEG-based sleep stage classification. Achieve 80%+ accuracy with minimal labeled data. Open-source, modular, and edge-deployable.">
+<meta property="og:image" content="/assets/images/projects/dnn.jpg">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification">
+<meta name="twitter:description" content="Lightweight self-supervised deep learning for EEG-based sleep stage classification. Achieve 80%+ accuracy with minimal labeled data. Open-source, modular, and edge-deployable.">
+<meta name="twitter:image" content="/assets/images/projects/dnn.jpg">
 
 ![Project Demo](/assets/images/projects/simplesleepnet-architecture.svg)
 

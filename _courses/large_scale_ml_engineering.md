@@ -17,6 +17,20 @@ tags:
   - pytorch
   - deep-learning
   - scalability
+# SEO meta tags
+meta:
+  title: "Large Scale ML Engineering Course | Deep Learning, Scalability"
+  description: "Comprehensive, engineering-focused Large Scale ML Engineering course for students and professional developers. Learn deep learning, PyTorch, and scalable ML systems."
+  keywords: "ml engineering, deep learning, pytorch, scalability, machine learning, course"
+  author: "Shaswat Gupta"
+  og:title: "Large Scale ML Engineering Course"
+  og:description: "Engineering-focused ML Engineering course for students and professionals. Learn scalable deep learning."
+  og:image: "/assets/images/courses/pytorch.jpeg"
+  og:type: "website"
+  twitter:card: "summary_large_image"
+  twitter:title: "Large Scale ML Engineering Course"
+  twitter:description: "Comprehensive ML Engineering course for developers and students."
+  twitter:image: "/assets/images/courses/pytorch.jpeg"
 ---
 
 # Large Scale ML Engineering: The Complete Guide

@@ -7,7 +7,43 @@ toc: true
 toc_sticky: true
 header:
   teaser: /assets/images/projects/latent.jpg
+# SEO meta
+description: "DeepSleepBench: Benchmarking neural latent representations and self-supervised learning paradigms for EEG-based sleep stage classification. Comprehensive evaluation of SSL, CNN, Transformer, and attention architectures."
+author: "Shaswat Gupta"
+image: /assets/images/projects/latent.jpg
+keywords:
+  [
+    "DeepSleepBench",
+    "EEG",
+    "Sleep Stage Classification",
+    "Self-Supervised Learning",
+    "Contrastive Learning",
+    "Masked Prediction",
+    "Hybrid Learning",
+    "Deep Learning",
+    "PyTorch",
+    "Benchmark",
+    "Latent Space",
+    "Cluster Metrics",
+    "Transformer",
+    "CNN",
+    "Attention",
+    "ETH Zurich",
+  ]
 ---
+
+<!-- SEO meta tags -->
+<meta name="description" content="DeepSleepBench: Benchmarking neural latent representations and self-supervised learning paradigms for EEG-based sleep stage classification. Comprehensive evaluation of SSL, CNN, Transformer, and attention architectures.">
+<meta name="keywords" content="DeepSleepBench, EEG, Sleep Stage Classification, Self-Supervised Learning, Contrastive Learning, Masked Prediction, Hybrid Learning, Deep Learning, PyTorch, Benchmark, Latent Space, Cluster Metrics, Transformer, CNN, Attention, ETH Zurich">
+<meta name="author" content="Shaswat Gupta">
+<meta property="og:title" content="DeepSleepBench: Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification">
+<meta property="og:description" content="Comprehensive evaluation of self-supervised learning paradigms and neural architectures for EEG-based sleep stage classification.">
+<meta property="og:image" content="/assets/images/projects/latent.jpg">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeepSleepBench: Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification">
+<meta name="twitter:description" content="Comprehensive evaluation of self-supervised learning paradigms and neural architectures for EEG-based sleep stage classification.">
+<meta name="twitter:image" content="/assets/images/projects/latent.jpg">
 
 ![DeepSleepBench Framework](/assets/images/projects/bench-framework-diagram.svg)
 

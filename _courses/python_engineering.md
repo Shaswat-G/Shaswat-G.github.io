@@ -17,6 +17,20 @@ tags:
   - software-development
   - engineering
   - best-practices
+# SEO meta tags
+meta:
+  title: "Python Engineering Mastery Course | Software Development, Best Practices"
+  description: "Comprehensive, engineering-focused Python course for students and professional developers. Learn Python fundamentals, advanced topics, and best practices."
+  keywords: "python, software engineering, best practices, programming, course"
+  author: "Shaswat Gupta"
+  og:title: "Python Engineering Mastery Course"
+  og:description: "Engineering-focused Python course for students and professionals. Learn Python for real-world engineering."
+  og:image: "/assets/images/courses/python.jpeg"
+  og:type: "website"
+  twitter:card: "summary_large_image"
+  twitter:title: "Python Engineering Mastery Course"
+  twitter:description: "Comprehensive Python course for developers and students."
+  twitter:image: "/assets/images/courses/python.jpeg"
 ---
 
 _A comprehensive, engineering-focused Python course for students and professional developers_

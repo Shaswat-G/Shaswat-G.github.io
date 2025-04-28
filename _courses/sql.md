@@ -17,6 +17,20 @@ tags:
   - database
   - data-management
   - query-language
+# SEO meta tags
+meta:
+  title: "SQL Course | Database, Query Language, Data Management"
+  description: "Comprehensive, engineering-focused SQL course for students and professional developers. Learn database management and query language."
+  keywords: "sql, database, data management, query language, course"
+  author: "Shaswat Gupta"
+  og:title: "SQL Course"
+  og:description: "Engineering-focused SQL course for students and professionals. Learn database and query language."
+  og:image: "/assets/images/courses/sql.jpeg"
+  og:type: "website"
+  twitter:card: "summary_large_image"
+  twitter:title: "SQL Course"
+  twitter:description: "Comprehensive SQL course for developers and students."
+  twitter:image: "/assets/images/courses/sql.jpeg"
 ---
 
 **By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**

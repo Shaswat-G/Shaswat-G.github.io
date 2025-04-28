@@ -17,6 +17,20 @@ tags:
   - algorithms
   - problem-solving
   - interview-prep
+# SEO meta tags
+meta:
+  title: "DSA Course | Data Structures, Algorithms, Interview Prep"
+  description: "Comprehensive, engineering-focused DSA course for students and professional developers. Learn data structures, algorithms, and problem-solving."
+  keywords: "dsa, data structures, algorithms, problem solving, interview prep, course"
+  author: "Shaswat Gupta"
+  og:title: "DSA Course"
+  og:description: "Engineering-focused DSA course for students and professionals. Learn data structures and algorithms."
+  og:image: "/assets/images/courses/dsa.jpeg"
+  og:type: "website"
+  twitter:card: "summary_large_image"
+  twitter:title: "DSA Course"
+  twitter:description: "Comprehensive DSA course for developers and students."
+  twitter:image: "/assets/images/courses/dsa.jpeg"
 ---
 
 **By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**

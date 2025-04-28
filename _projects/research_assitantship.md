@@ -7,7 +7,42 @@ toc: true
 toc_sticky: true
 header:
   teaser: /assets/images/projects/ethz.jpg
+# SEO meta
+description: "Research assistantship at ETH Zurich: Large-scale enterprise ML adoption, Unicode document analysis, and patent analytics. Data engineering, NLP, visualization, and automation for impactful research."
+author: "Shaswat Gupta"
+image: /assets/images/projects/ethz.jpg
+keywords:
+  [
+    "ETH Zurich",
+    "Research Assistant",
+    "Machine Learning",
+    "Data Engineering",
+    "Enterprise AI",
+    "Unicode Analysis",
+    "Patent Analytics",
+    "NLP",
+    "Visualization",
+    "Automation",
+    "Python",
+    "OpenAI",
+    "Data Science",
+    "Innovation",
+    "Technology Management",
+  ]
 ---
+
+<!-- SEO meta tags -->
+<meta name="description" content="Research assistantship at ETH Zurich: Large-scale enterprise ML adoption, Unicode document analysis, and patent analytics. Data engineering, NLP, visualization, and automation for impactful research.">
+<meta name="keywords" content="ETH Zurich, Research Assistant, Machine Learning, Data Engineering, Enterprise AI, Unicode Analysis, Patent Analytics, NLP, Visualization, Automation, Python, OpenAI, Data Science, Innovation, Technology Management">
+<meta name="author" content="Shaswat Gupta">
+<meta property="og:title" content="Research at ETH Zurich: Data Engineering, ML, and Innovation Analytics">
+<meta property="og:description" content="Large-scale enterprise ML adoption, Unicode document analysis, and patent analytics. Data engineering, NLP, visualization, and automation for impactful research.">
+<meta property="og:image" content="/assets/images/projects/ethz.jpg">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Research at ETH Zurich: Data Engineering, ML, and Innovation Analytics">
+<meta name="twitter:description" content="Large-scale enterprise ML adoption, Unicode document analysis, and patent analytics. Data engineering, NLP, visualization, and automation for impactful research.">
+<meta name="twitter:image" content="/assets/images/projects/ethz.jpg">
 
 I presently work part-time as a research assistant at the [Chair of Technology and Innovation Management](https://timgroup.ethz.ch/) at ETH Zurich, under the supervision of [Prof. Dr. Stefano Brusoni](https://timgroup.ethz.ch/people/group-leadership/stefano-brusoni.html). My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and enhancing data-driven decision-making processes.
 

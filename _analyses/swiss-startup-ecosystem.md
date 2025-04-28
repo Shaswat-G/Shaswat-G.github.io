@@ -1,6 +1,23 @@
 ---
 title: "Switzerland’s AI Engine: How ETH Zurich Became Europe’s Deeptech Powerhouse"
 excerpt: "An in-depth exploration of Switzerland’s AI ecosystem and ETH Zurich’s outsized role in it—where research excellence, entrepreneurial density, and investor discipline converge to build Europe's most resilient startup engine."
+# SEO meta tags
+description: "Shaswat Gupta explores Switzerland's AI ecosystem and ETH Zurich's leadership in deeptech startups, funding, and innovation. The definitive guide to Europe's AI powerhouse."
+keywords: "Shaswat Gupta, Switzerland AI, ETH Zurich, Swiss startups, AI ecosystem, deeptech, AI funding, AI innovation, AI research, AI entrepreneurship, Swiss AI, startup survival, AI trends, Europe AI"
+author: "Shaswat Gupta"
+canonical: "https://shaswat-g.github.io/analyses/swiss-startup-ecosystem"
+# Open Graph
+og:title: "Switzerland’s AI Engine: How ETH Zurich Became Europe’s Deeptech Powerhouse"
+og:description: "In-depth analysis by Shaswat Gupta (ETH Zurich) of Switzerland's AI ecosystem, startup funding, and ETH Zurich's role as Europe's deeptech leader."
+og:type: "article"
+og:url: "https://shaswat-g.github.io/analyses/swiss-startup-ecosystem"
+og:image: "https://shaswat-g.github.io/_analyses/smol_profile_picture.png"
+# Twitter Card
+twitter:card: "summary_large_image"
+twitter:title: "Switzerland’s AI Engine: How ETH Zurich Became Europe’s Deeptech Powerhouse"
+twitter:description: "Shaswat Gupta (ETH Zurich) details Switzerland's AI startup ecosystem, ETH Zurich's impact, and deeptech innovation."
+twitter:image: "https://shaswat-g.github.io/_analyses/smol_profile_picture.png"
+twitter:creator: "@shaswatgupta"
 ---
 
 **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
@@ -12,7 +29,7 @@ excerpt: "An in-depth exploration of Switzerland’s AI ecosystem and ETH Zurich
 Switzerland's startup ecosystem—particularly around ETH Zurich—has emerged as Europe's most resilient innovation engine. With AI at its core, ETH Zurich's spin-offs now enjoy a **remarkable 93% five-year survival rate**, underpinned by deep research foundations and a uniquely dense entrepreneurial infrastructure.
 
 > **Important:** Switzerland isn't just incubating AI startups—it's creating sustainable businesses solving tangible problems across sectors.
-{: .notice--primary}
+> {: .notice--primary}
 
 ## Key Trends Reshaping the Landscape
 
@@ -42,7 +59,7 @@ While overall Swiss startup funding declined to **CHF 2.3B in 2024** (−15% YoY
 - **Calvin Risk** (ETH spin-off)—Raised **$4M seed** to expand AI governance tools
 
 > **New:** The ETH ecosystem increasingly produces startups solving "wicked problems"—combining deeptech with global relevance and impact.
-{: .notice--info}
+> {: .notice--info}
 
 ## Why This Matters Now
 
