@@ -15,7 +15,7 @@ minimal_mistakes_skin: "air" # "default" # "air", "aqua", "contrast", "dark", "d
 locale: "en-US"
 
 webmaster_verifications:
-  google: "GOOGLE-TOKEN"
+  google: "8KmInNt_zsNgi5gfqrJNAtBQ-9ZYQAzBtpgENM8uk0c"
   bing: "BING-TOKEN"
   yandex: "YANDEX-TOKEN"
 # leave any you don’t use blank
