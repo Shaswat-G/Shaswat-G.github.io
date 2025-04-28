@@ -17,7 +17,7 @@ locale: "en-US"
 webmaster_verifications:
   google: "8KmInNt_zsNgi5gfqrJNAtBQ-9ZYQAzBtpgENM8uk0c"
   bing: "1FAD5D5861CA832168BF74E203F5FFB3"
-  yandex: "YANDEX-TOKEN"
+  yandex: "73c468755162809a"
 # leave any you don’t use blank
 
 # lunr:
