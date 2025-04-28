@@ -14,6 +14,12 @@ minimal_mistakes_skin: "air" # "default" # "air", "aqua", "contrast", "dark", "d
 # Site settings
 locale: "en-US"
 
+webmaster_verifications:
+  google: "GOOGLE-TOKEN"
+  bing: "BING-TOKEN"
+  yandex: "YANDEX-TOKEN"
+# leave any you don’t use blank
+
 # lunr:
 #   search_within_pages: true
 #   search_full_content: true # Search full content of posts and pages
@@ -94,6 +100,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
   - jekyll-sitemap
+
+sitemap: true
 
 # Content settings
 include:

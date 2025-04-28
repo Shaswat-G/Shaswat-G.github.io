@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shaswat-g.github.io/sitemap.xml
