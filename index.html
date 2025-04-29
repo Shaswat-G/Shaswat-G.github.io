@@ -19,30 +19,124 @@ excerpt: >
 
 <div class="homepage-sections">{% include bio-section.html %}</div>
 
-<section class="navigation-guide">
+<!-- Endorsements / Testimonials Section -->
+<section class="endorsements-section">
+  <h2 class="endorsements-title">Endorsements</h2>
+  <div class="endorsements-list">
+    <!-- Tomoko -->
+    <div class="endorsement-card">
+      <div class="endorsement-img-col">
+        <img
+          src="/assets/endorsements/tomoko.jpg"
+          alt="Tomoko Yokoi"
+          class="endorsement-img"
+        />
+      </div>
+      <div class="endorsement-content">
+        <div class="endorsement-author">
+          <a
+            href="https://www.linkedin.com/in/tomokoyokoi/"
+            target="_blank"
+            rel="noopener"
+            class="endorsement-name"
+            >Tomoko Yokoi</a
+          >
+        </div>
+        <div class="endorsement-role">AI & Digital Transformation</div>
+        <div class="endorsement-text">
+          <span class="endorsement-preview">
+            "Consistently impressed by his technical depth and problem-solving
+            skills. Shaswat takes full ownership and communicates with
+            clarity—always looking to add the most value."
+          </span>
+          <span class="endorsement-full" style="display: none">
+            I had the opportunity to work closely with Shaswat and was
+            consistently impressed by his technical depth and problem-solving
+            skills. He takes full ownership of his work and communicates with
+            clarity—whether explaining technical concepts to non-experts or
+            keeping stakeholders updated on progress. What I appreciated most is
+            how he approaches each task as a collaborative problem to solve,
+            always looking for where he can add the most value. I'm confident he
+            will make a strong impact in any ML or research-driven engineering
+            role, and be a thoughtful, reliable collaborator on any team.
+          </span>
+          <button class="endorsement-toggle" onclick="toggleEndorsement(this)">
+            Show more
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Alex -->
+    <div class="endorsement-card">
+      <div class="endorsement-img-col">
+        <img
+          src="/assets/endorsements/alex.jpeg"
+          alt="Alex Biermann"
+          class="endorsement-img"
+        />
+      </div>
+      <div class="endorsement-content">
+        <div class="endorsement-author">
+          <a
+            href="https://www.linkedin.com/in/alex-biermann-013b30208/"
+            target="_blank"
+            rel="noopener"
+            class="endorsement-name"
+            >Alex Biermann</a
+          >
+        </div>
+        <div class="endorsement-role">
+          Senior Manager - Supply Chain Transformation
+        </div>
+        <div class="endorsement-text">
+          <span class="endorsement-preview">
+            "Ability to dissect and solve complex problems is second to none.
+            Exceptional communication skills and efficiency—highly recommended."
+          </span>
+          <span class="endorsement-full" style="display: none">
+            I've had the privilege of working closely with Shaswat and can
+            unequivocally state that his ability to dissect and solve complex
+            problems is second to none. Not only does he approach challenges
+            with a keen analytical mind, but his exceptional communication
+            skills ensure that solutions are conveyed clearly and effectively.
+            His efficiency in crafting solutions is a testament to his expertise
+            and commitment. I wholeheartedly recommend Shaswat to any
+            organization seeking a blend of problem-solving excellence paired
+            with impeccable communication.
+          </span>
+          <button class="endorsement-toggle" onclick="toggleEndorsement(this)">
+            Show more
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Simple navigation guide section, styled -->
+<section class="navigation-guide-wide">
   <h2>How to navigate Shazz's digital home?</h2>
-  <p>
-    Wondering where to start? You’ll find the following on the navigation bar:
-  </p>
   <ul>
     <li>
-      <strong>About Me</strong>: Get to know my journey, background, and what
-      drives me. Essentially, my digital resume.
+      <a href="/about/">About Me</a> — Who is Shaswat? Uncover the story, the
+      quirks, and the journey so far.
     </li>
     <li>
-      <strong>Executive Theses</strong>: Dive into strategic essays and
-      research-backed perspectives on AI, startups, and deep tech.
+      <a href="/theses/">Executive Theses</a> — Bold ideas, sharp essays, and AI
+      musings. Ready to challenge your thinking?
     </li>
     <li>
-      <strong>Projects</strong>: Explore selected projects that showcase my
-      technical expertise and creative problem-solving.
+      <a href="/projects/">Projects</a> — Dive into a showcase of code,
+      creativity, and a few delightful surprises.
     </li>
     <li>
-      <strong>Intellectual Vaults</strong>: Access curated notes, course
-      materials, and resources—my way of giving back to the community.
+      <a href="/vaults/">Intellectual Vaults</a> — Secret stash of notes and
+      resources. Curiosity is not just welcomed—it's required.
     </li>
   </ul>
-  <p>Feel free to wander, discover, and connect. Happy exploring!</p>
+  <p style="margin-top: 1.2em">
+    Curious? Click around and see where your wonder leads you.
+  </p>
 </section>
 
 <style>
@@ -151,28 +245,216 @@ excerpt: >
       min-height: unset;
     }
   }
-  /* Navigation guide styles */
-  .navigation-guide {
-    max-width: 700px;
+  /* Endorsements styles */
+  .endorsements-section {
+    max-width: 1200px;
     margin: 3em auto 2em auto;
-    padding: 2em 2em 1.5em 2em;
-    background: #f7faff;
+    padding: 2.5em 2.5em 2em 2.5em;
+    background: #f8fafd;
     border-radius: 1em;
-    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.07);
+    box-shadow: 0 2px 12px rgba(42, 122, 226, 0.06);
+  }
+  .endorsements-title {
+    color: #2a7ae2;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 1.2em;
+    text-align: left;
+    letter-spacing: 0.01em;
+  }
+  .endorsements-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .endorsement-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.8em;
+    box-shadow: 0 1px 8px rgba(42, 122, 226, 0.04);
+    padding: 1.6em 2em;
+    border: 1px solid #e7eaf1;
+    width: 440px;
+    min-width: 260px;
+    max-width: 480px;
+    margin-bottom: 0.5em;
+  }
+  .endorsement-img-col {
+    margin-bottom: 0.9em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .endorsement-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e7eaf1;
+    background: #f0f2f5;
+  }
+  .endorsement-content {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    text-align: justify;
+    width: 100%;
+  }
+  .endorsement-author {
+    font-weight: 600;
+    color: #2a7ae2;
+    margin-bottom: 0.1em;
+    text-align: left;
+    font-size: 1.08em;
+  }
+  .endorsement-name {
+    color: #2a7ae2;
+    text-decoration: none;
+    margin-right: 0.5em;
+  }
+  .endorsement-name:hover {
+    text-decoration: underline;
+  }
+  .endorsement-role {
+    font-size: 0.97em;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+    text-align: left;
+  }
+  .endorsement-text {
+    font-size: 0.97em;
+    color: #222;
+    line-height: 1.6;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    min-height: 70px;
+    position: relative;
+    text-align: justify;
+  }
+  .endorsement-preview {
+    display: inline;
+  }
+  .endorsement-full {
+    display: block;
+    margin-top: 0.5em;
+  }
+  .endorsement-toggle {
+    background: none;
+    border: none;
+    color: #2a7ae2;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.4em;
+    font-size: 0.97em;
+    padding: 0;
+    outline: none;
+    transition: color 0.2s;
+    text-align: left;
+  }
+  .endorsement-toggle:hover {
+    text-decoration: underline;
+    color: #174a8b;
+  }
+  @media (max-width: 1300px) {
+    .endorsements-section {
+      max-width: 99vw;
+      padding: 1.5em 0.5em 1em 0.5em;
+    }
+    .endorsement-card {
+      width: 98%;
+      max-width: 520px;
+    }
+  }
+  @media (max-width: 900px) {
+    .endorsements-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+    }
+    .endorsement-card {
+      width: 98%;
+      max-width: 520px;
+    }
+  }
+  @media (max-width: 700px) {
+    .endorsements-section {
+      padding: 1.2em 0.5em 1em 0.5em;
+    }
+    .endorsement-card {
+      width: 100%;
+      max-width: 100vw;
+      padding: 1em 0.7em;
+    }
+    .endorsement-img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  /* Navigation guide wide styles */
+  .navigation-guide-wide {
+    max-width: 1000px;
+    margin: 2.5em auto 2em auto;
+    padding: 2em 3em;
+    background: #f8fafd;
+    border-radius: 1em;
+    box-shadow: 0 2px 14px rgba(42, 122, 226, 0.07);
     font-size: 1.13em;
   }
-  .navigation-guide h2 {
+  .navigation-guide-wide h2 {
     color: #2a7ae2;
-    font-size: 1.35em;
-    margin-bottom: 0.7em;
-    font-weight: 600;
+    font-size: 1.28em;
+    margin-bottom: 0.8em;
+    font-weight: 700;
+    text-align: left;
   }
-  .navigation-guide ul {
-    margin: 1em 0 1em 1.2em;
+  .navigation-guide-wide ul {
+    margin: 0.7em 0 0 1.3em;
     padding: 0;
+    list-style: disc;
   }
-  .navigation-guide li {
-    margin-bottom: 0.7em;
-    line-height: 1.6;
+  .navigation-guide-wide li {
+    margin-bottom: 0.8em;
+    line-height: 1.7;
+  }
+  .navigation-guide-wide a {
+    color: #2a7ae2;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.18s;
+  }
+  .navigation-guide-wide a:hover {
+    text-decoration: underline;
+    color: #174a8b;
+  }
+  @media (max-width: 900px) {
+    .navigation-guide-wide {
+      max-width: 99vw;
+      padding: 1.2em 0.7em;
+      font-size: 1em;
+    }
   }
 </style>
+<script>
+  // Simple toggle for endorsement preview/full text
+  function toggleEndorsement(btn) {
+    var card = btn.closest(".endorsement-text");
+    var preview = card.querySelector(".endorsement-preview");
+    var full = card.querySelector(".endorsement-full");
+    if (full.style.display === "none" || full.style.display === "") {
+      full.style.display = "block";
+      preview.style.display = "none";
+      btn.textContent = "Show less";
+    } else {
+      full.style.display = "none";
+      preview.style.display = "inline";
+      btn.textContent = "Show more";
+    }
+  }
+</script>
