@@ -17,7 +17,7 @@ jobs:
           git config --global user.email "shagupta@ethz.ch"
           git config --global user.name "Shaswat-G"
 
-      - name: Check for commits today
+      - name: Check infra status
         id: check_commits
         run: |
           if git log --since=midnight --oneline | grep .; then
@@ -25,7 +25,7 @@ jobs:
             exit 0
           fi
 
-      - name: Make empty commit with random message
+      - name: sync infra
         run: |
           messages=(
             "chore: routine maintenance"
