@@ -55,15 +55,15 @@ keywords:
 **Group:** Medical Data Science, D-INFK, ETH Zurich  
 **Supervisor:** Prof. Dr. Julia Vogt  
 **Contact:** [shagupta@ethz.ch](mailto:shagupta@ethz.ch)  
-**Project Repository:** [SimpleSleepNet](https://gitlab.ethz.ch/shagupta/simplesleepnet)
+**Project Repository:** [SimpleSleepNet](https://github.com/Shaswat-G/SimpleSleepNet)
 
 ## Overview
 
 SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-based sleep stage classification using self-supervised contrastive representation learning achieving 80%+ accuracy with minimal labeled data and a remarkably compact architecture (~200K parameters).
 
 <div class="page__download" style="text-align:center; margin: 2em 0;">
-  <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet" class="btn btn--primary" target="_blank" rel="noopener">
-    <i class="fab fa-github"></i> View on GitLab
+  <a href="https://github.com/Shaswat-G/SimpleSleepNet" class="btn btn--primary" target="_blank" rel="noopener">
+    <i class="fab fa-github"></i> View on GitHub
   </a>
 </div>
 
@@ -98,7 +98,7 @@ SimpleSleepNet is a lightweight self-supervised deep-learning framework for EEG-
 
 ```bash
 # Clone the repository
-git clone https://gitlab.ethz.ch/shagupta/simplesleepnet.git
+git clone https://github.com/Shaswat-G/SimpleSleepNet
 cd simplesleepnet
 
 # Create and activate conda environment
@@ -606,7 +606,7 @@ If you use SimpleSleepNet in your research, please cite:
   author={Gupta, Shaswat},
   year={2025},
   publisher={ETH Zurich},
-  howpublished={\url{https://gitlab.ethz.ch/shagupta/simplesleepnet}}
+  howpublished={\url{https://github.com/Shaswat-G/SimpleSleepNet}}
 }
 ```
 
@@ -619,8 +619,8 @@ This project is licensed under the [MIT License](/assets/files/MIT_License.md).
 This work was conducted as part of a semester project at the [Medical Data Science Group](https://mds.inf.ethz.ch/), D-INFK, ETH Zurich, under the supervision of [Prof. Dr. Julia Vogt](https://mds.inf.ethz.ch/team/detail/julia-vogt).
 
 <div class="page__download" style="text-align:center; margin: 2em 0;">
-  <a href="https://gitlab.ethz.ch/shagupta/simplesleepnet" class="btn btn--primary" target="_blank" rel="noopener">
-    <i class="fab fa-github"></i> View on GitLab
+  <a href="https://github.com/Shaswat-G/SimpleSleepNet" class="btn btn--primary" target="_blank" rel="noopener">
+    <i class="fab fa-github"></i> View on GitHub
   </a>
 </div>
 
