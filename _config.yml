@@ -2,7 +2,8 @@ title: Shaswat Gupta
 # subtitle: MSc CS ETH Zurich | IIT Bombay (Rank 1, Gold Medalist) | ML Engineer | Ex-World Bank, Budweiser
 subtitle: ETH Zurich | IIT Bombay Rank 1, Gold Medalist | ML Engineer
 description: Professional portfolio and curated course notes
-url: https://Shaswat-G.github.io
+url: https://shaswat.dev
+baseurl: ""
 repository: Shaswat-G/Shaswat-G.github.io
 logo: /assets/images/logo.png
 
