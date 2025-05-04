@@ -5,18 +5,18 @@ excerpt: "From GPUs to GPTs - A full-stack, forward-looking thesis on where AI i
 description: "Shaswat Gupta's full-stack thesis on the AI revolution to 2030: compute, models, agents, and industry disruption. ETH Zurich expertise on AI trends, strategy, and innovation."
 keywords: "Shaswat Gupta, AI stack, AI 2030, AI agents, AI compute, AI models, AI infrastructure, ETH Zurich, AI trends, AI strategy, AI industry, AI future, AI applications, AI research, AI startups"
 author: "Shaswat Gupta"
-canonical: "https://shaswat-g.github.io/analyses/full-stack-trajectory"
+canonical: "https://shaswat.dev/analyses/full-stack-trajectory"
 # Open Graph
 og:title: "The AI Stack 2030: From Silicon to AI Agents"
 og:description: "A forward-looking thesis by Shaswat Gupta (ETH Zurich) on the AI stack: compute, models, agents, and industry disruption through 2030."
 og:type: "article"
-og:url: "https://shaswat-g.github.io/analyses/full-stack-trajectory"
-og:image: "https://shaswat-g.github.io/_analyses/smol_profile_picture.jpg"
+og:url: "https://shaswat.dev/analyses/full-stack-trajectory"
+og:image: "https://shaswat.dev/_analyses/smol_profile_picture.jpg"
 # Twitter Card
 twitter:card: "summary_large_image"
 twitter:title: "The AI Stack 2030: From Silicon to AI Agents"
 twitter:description: "Shaswat Gupta (ETH Zurich) maps the future of AI: compute, models, agents, and industry disruption to 2030."
-twitter:image: "https://shaswat-g.github.io/_analyses/smol_profile_picture.jpg"
+twitter:image: "https://shaswat.dev/_analyses/smol_profile_picture.jpg"
 twitter:creator: "@shaswatgupta"
 ---
 

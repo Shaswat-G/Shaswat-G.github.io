@@ -5,18 +5,18 @@ excerpt: "Benchmark breakthroughs, investment surges, global policy shifts, and 
 description: "Shaswat Gupta analyzes the 2025 Stanford AI Index: AI benchmarks, investment, global policy, responsible AI, and the future of intelligence. Insights from ETH Zurich's top AI expert."
 keywords: "Shaswat Gupta, AI Index, Stanford AI, ETH Zurich, AI benchmarks, AI investment, responsible AI, AI policy, AI trends, AI research, AI productivity, AI models, AI ecosystem, AI report, AI leadership, AI innovation"
 author: "Shaswat Gupta"
-canonical: "https://shaswat-g.github.io/analyses/ai_ecosystem"
+canonical: "https://shaswat.dev/analyses/ai_ecosystem"
 # Open Graph
 og:title: "AI at the Helm: Strategic Signals from the 2025 Stanford Index"
 og:description: "In-depth analysis of the 2025 Stanford AI Index by Shaswat Gupta, ETH Zurich. Covers AI benchmarks, investment, global policy, responsible AI, and future trends."
 og:type: "article"
-og:url: "https://shaswat-g.github.io/analyses/ai_ecosystem"
-og:image: "https://shaswat-g.github.io/_analyses/smol_profile_picture.jpg"
+og:url: "https://shaswat.dev/analyses/ai_ecosystem"
+og:image: "https://shaswat.dev/_analyses/smol_profile_picture.jpg"
 # Twitter Card
 twitter:card: "summary_large_image"
 twitter:title: "AI at the Helm: Strategic Signals from the 2025 Stanford Index"
 twitter:description: "Shaswat Gupta (ETH Zurich) breaks down the 2025 Stanford AI Index: benchmarks, investment, policy, and the future of AI."
-twitter:image: "https://shaswat-g.github.io/_analyses/smol_profile_picture.jpg"
+twitter:image: "https://shaswat.dev/_analyses/smol_profile_picture.jpg"
 twitter:creator: "@shaswatgupta"
 ---
 
