@@ -28,7 +28,7 @@ author_profile: true
   <summary>
     <strong>Education</strong>
     <span class="cv-section-summary">
-      High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT Bombay (9.6/10 GPA, Gold Medalist), with a strong foundation in machine learning and data-driven problem solving.
+      High-achieving computer science graduate from ETH Zürich (5.25/6 GPA) and IIT Bombay (9.6/10 GPA, Gold Medalist)
     </span>
   </summary>
 
@@ -44,7 +44,7 @@ author_profile: true
   <summary>
     <strong>Scholarships, Medals & Distinctions</strong>
     <span class="cv-section-summary">
-      Recognized for academic excellence and leadership through competitive scholarships, awards, and distinctions at national and international levels.
+      Recognized for academic excellence and leadership through multiple awards and scholarships
     </span>
   </summary>
 
@@ -60,7 +60,7 @@ author_profile: true
   <summary>
     <strong>Technical Skills</strong>
     <span class="cv-section-summary">
-      Proficient in modern machine learning, data engineering, and cloud technologies, combining theoretical depth with hands-on implementation across diverse technical stacks.
+      Proficient in machine learning, data engineering, and cloud technologies
     </span>
   </summary>
 
@@ -76,7 +76,7 @@ author_profile: true
   <summary>
     <strong>Professional Experience</strong>
     <span class="cv-section-summary">
-      Experienced in delivering measurable business impact through advanced analytics and machine learning, consistently translating complex challenges into actionable solutions.
+      Experienced in delivering business impact through advanced machine learning
     </span>
   </summary>
 
@@ -93,7 +93,7 @@ author_profile: true
   <summary>
     <strong>Research Experience</strong>
     <span class="cv-section-summary">
-      Applied ML researcher at ETH Zurich, leveraging quantitative methods to address real-world challenges across technical standardization, green energy, and epidemiological modeling.
+      Applied ML researcher at ETH Zurich
     </span>
   </summary>
 
@@ -110,7 +110,7 @@ author_profile: true
   <summary>
     <strong>Extracurricular Activities</strong>
     <span class="cv-section-summary">
-      Active student leader and mentor, with a record of impactful contributions in journalism, analytics, and community engagement, alongside creative pursuits and Mensa membership.
+      Active student leader across journalism, analytics, with creative pursuits and Mensa membership.
     </span>
   </summary>
 
@@ -126,7 +126,7 @@ author_profile: true
   <summary>
     <strong>International Exposure & Conferences</strong>
     <span class="cv-section-summary">
-      Selected for international exchanges and global conferences at ETH Zurich, Harvard, and Princeton, demonstrating adaptability and a strong cross-cultural perspective.
+      Handpicked for international exchanges and global conferences
     </span>
   </summary>
 
