@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /_analyses/
+Disallow: /_courses/
+Disallow: /_projects/
+Disallow: /assets/
 Sitemap: https://shaswat.dev/sitemap.xml
