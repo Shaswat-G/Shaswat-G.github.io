@@ -20,7 +20,7 @@ twitter:image: "https://shaswat.dev/_analyses/smol_profile_picture.png"
 twitter:creator: "@shaswatgupta"
 ---
 
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
+**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Contact](/contact/)
 
 ![Your professional headshot](smol_profile_picture.png){:height="400"}
 

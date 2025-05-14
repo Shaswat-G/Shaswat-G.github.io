@@ -63,7 +63,7 @@ author:
       url: "https://shazzgo.substack.com/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:shagupta@ethz.ch"
+      url: "/contact/"
 
 # Social profiles for search engines
 social:
@@ -92,7 +92,7 @@ footer:
       url: "https://shazzgo.substack.com/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:shagupta@ethz.ch"
+      url: "/contact/"
 
 # Plugins
 plugins:

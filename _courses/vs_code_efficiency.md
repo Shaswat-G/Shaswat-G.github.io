@@ -35,7 +35,7 @@ meta:
 
 _Welcome to the definitive guide for becoming ridiculously productive with Visual Studio Code. No mouse required._
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
 
 <a href="https://github.com/Shaswat-G/vs-code-basics" class="btn btn--primary" target="_blank" rel="noopener">View VS Code Basics Course</a>
 

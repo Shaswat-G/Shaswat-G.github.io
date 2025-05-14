@@ -33,7 +33,7 @@ meta:
   twitter:image: "/assets/images/courses/sql.jpeg"
 ---
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
 
 _A comprehensive, engineering-focused SQL course for students and professional developers_
 

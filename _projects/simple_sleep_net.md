@@ -54,7 +54,7 @@ keywords:
 **Author:** Shaswat Gupta  
 **Group:** Medical Data Science, D-INFK, ETH Zurich  
 **Supervisor:** Prof. Dr. Julia Vogt  
-**Contact:** [shagupta@ethz.ch](mailto:shagupta@ethz.ch)  
+**Contact:** [Email](/contact/)
 **Project Repository:** [SimpleSleepNet](https://github.com/Shaswat-G/SimpleSleepNet)
 
 ## Overview

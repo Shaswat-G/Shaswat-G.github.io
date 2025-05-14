@@ -33,7 +33,7 @@ meta:
   twitter:image: "/assets/images/courses/docker.jpeg"
 ---
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](mailto:shagupta@ethz.ch)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Contact Form](/contact/)**
 
 _A comprehensive, engineering-focused Docker course for students and professional developers_
 

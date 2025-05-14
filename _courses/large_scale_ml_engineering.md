@@ -35,7 +35,7 @@ meta:
 
 # Large Scale ML Engineering: The Complete Guide
 
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](mailto:shagupta@ethz.ch)
+**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Email](/contact/)
 
 _A comprehensive, engineering-focused Large Scale ML Engineering course for students and professional developers_
 
