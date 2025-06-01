@@ -3,7 +3,7 @@ title: "Large Scale ML Engineering"
 status: "upcoming"
 excerpt: "In development — coming soon!"
 header:
-  teaser: /assets/images/courses/pytorch.jpeg
+  teaser: /assets/images/courses/nvidia.png
 sidebar:
   nav: "large-scale-ml-engineering"
 toc: true
@@ -25,12 +25,12 @@ meta:
   author: "Shaswat Gupta"
   og:title: "Large Scale ML Engineering Course"
   og:description: "Engineering-focused ML Engineering course for students and professionals. Learn scalable deep learning."
-  og:image: "/assets/images/courses/pytorch.jpeg"
+  og:image: "/assets/images/courses/nvidia.png"
   og:type: "website"
   twitter:card: "summary_large_image"
   twitter:title: "Large Scale ML Engineering Course"
   twitter:description: "Comprehensive ML Engineering course for developers and students."
-  twitter:image: "/assets/images/courses/pytorch.jpeg"
+  twitter:image: "/assets/images/courses/nvidia.png"
 ---
 
 # Large Scale ML Engineering: The Complete Guide
