@@ -49,7 +49,7 @@ enable_comments: true
 author:
   name: "Shaswat Gupta"
   avatar: "/assets/images/shaswat.png"
-  bio: "ML Engineer | MSc CS, ETH Zurich | IIT Bombay Gold Medalist"
+  bio: "Software and ML Engineer <br> MSc CS, ETH Zurich <br> IIT Bombay Gold Medalist"
   location: "Zurich, Switzerland"
   links:
     - label: "GitHub"
