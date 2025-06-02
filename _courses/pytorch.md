@@ -1,11 +1,11 @@
 ---
-title: "PyTorch: Zero to Hero"
+title: "Deep Learning with PyTorch"
 status: "published"
-excerpt: "Master PyTorch and deep learning fundamentals with a hands-on, production-focused curriculum."
+excerpt: "Production-ready Pytorch framework for research and engineering."
 header:
   teaser: /assets/images/courses/pytorch.jpeg
 sidebar:
-  nav: "pytorch-zero-to-hero"
+  nav: "deep-learning-with-pytorch"
 toc: true
 toc_sticky: true
 related: true
@@ -19,27 +19,27 @@ tags:
   - ai
 # SEO meta tags
 meta:
-  title: "PyTorch: Zero to Hero | Deep Learning Course"
+  title: "Deep Learning with PyTorch | Deep Learning Course"
   description: "Master PyTorch and deep learning from fundamentals to production. Hands-on curriculum for engineers, researchers, and students."
   keywords: "pytorch, deep learning, neural networks, ai, machine learning, course"
   author: "Shaswat Gupta"
-  og:title: "PyTorch: Zero to Hero"
+  og:title: "Deep Learning with PyTorch"
   og:description: "Comprehensive PyTorch course for practical deep learning mastery."
   og:image: "/assets/images/courses/pytorch.jpeg"
   og:type: "website"
   twitter:card: "summary_large_image"
-  twitter:title: "PyTorch: Zero to Hero"
+  twitter:title: "Deep Learning with PyTorch"
   twitter:description: "Hands-on PyTorch course for engineers and students."
   twitter:image: "/assets/images/courses/pytorch.jpeg"
 ---
 
-# PyTorch: Zero to Hero
+# Deep Learning with PyTorch
 
 _A comprehensive, hands-on curriculum for mastering PyTorch and deep learning fundamentals._
 
 **By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
 
-<a href="https://github.com/Shaswat-G/pytorch-zero-to-hero" class="btn btn--primary" target="_blank" rel="noopener">View PyTorch: Zero to Hero Course</a>
+<a href="https://github.com/Shaswat-G/PyTorch" class="btn btn--primary" target="_blank" rel="noopener">View Deep Learning with PyTorch Course</a>
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org)
