@@ -1,7 +1,7 @@
 ---
-title: "DSA"
-status: "upcoming"
-excerpt: "In development — coming soon!"
+title: "Data Structures and Algorithms"
+status: "published"
+excerpt: "Engineering focussed DSA course - design, implementation and patterns."
 header:
   teaser: /assets/images/courses/dsa.jpeg
 sidebar:
