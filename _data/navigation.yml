@@ -5,9 +5,9 @@ main:
   #   url: /about/
   - title: "About Me"
     url: /cv/
-  - title: "Executive Theses"
-    url: /analyses/
   - title: "Projects"
     url: /projects/
-  - title: "Intellectual Vault"
+  - title: "Courses"
     url: /courses/
+  - title: "Insights"
+    url: /analyses/
