@@ -1,6 +1,6 @@
 title: Shaswat Gupta
 # subtitle: MSc CS ETH Zurich | IIT Bombay (Rank 1, Gold Medalist) | ML Engineer | Ex-World Bank, Budweiser
-subtitle: ETH Zurich | IIT Bombay Rank 1, Gold Medalist | ML Engineer
+subtitle: ML Engineer | ETH Zurich | IIT Bombay Gold Medalist
 description: Professional portfolio and curated course notes
 url: https://shaswat.dev
 baseurl: ""
@@ -49,7 +49,7 @@ enable_comments: true
 author:
   name: "Shaswat Gupta"
   avatar: "/assets/images/shaswat.png"
-  bio: "MSc in Computer Science ETH Zurich<br>IIT Bombay, Rank 1, Gold Medalist<br>ML Engineer, Ex-World Bank, Budweiser"
+  bio: "ML Engineer | MSc CS, ETH Zurich | IIT Bombay Gold Medalist"
   location: "Zurich, Switzerland"
   links:
     - label: "GitHub"
@@ -58,9 +58,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/shaswat-gupta/"
-    - label: "Substack"
-      icon: "fas fa-fw fa-newspaper"
-      url: "https://shazzgo.substack.com/"
+    # - label: "Substack"
+    #   icon: "fas fa-fw fa-newspaper"
+    #   url: "https://shazzgo.substack.com/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "/contact/"
@@ -87,9 +87,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/shaswat-gupta/"
-    - label: "Substack"
-      icon: "fas fa-fw fa-newspaper"
-      url: "https://shazzgo.substack.com/"
+    # - label: "Substack"
+    #   icon: "fas fa-fw fa-newspaper"
+    #   url: "https://shazzgo.substack.com/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "/contact/"
