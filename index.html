@@ -11,6 +11,11 @@ excerpt: >
   Engineering intelligence through code and cognition — turning data into decisions.
 ---
 
+<!--
+  Home page layout with hero card, social icons, bio, endorsements, and navigation guide.
+  Edit this file to update homepage structure, add new sections, or adjust layout.
+-->
+
 <!-- Wide, minimal hero card block -->
 {% include hero-card.html %}
 
@@ -23,6 +28,7 @@ excerpt: >
 <section class="endorsements-section">
   <h2 class="endorsements-title">Endorsements</h2>
   <div class="endorsements-list">
+    <!-- Endorsement cards are rendered here. See assets/endorsements/ for images. -->
     <!-- Tomoko -->
     <div class="endorsement-card">
       <div class="endorsement-img-col">
@@ -140,6 +146,10 @@ excerpt: >
 </section>
 
 <style>
+  /*
+    Homepage and section styles for layout, hero card, endorsements, and navigation guide.
+    Edit this block to adjust homepage appearance and responsiveness.
+  */
   .hero-card {
     max-width: 1400px;
     margin: 2.5em auto 1.2em auto;
@@ -235,8 +245,6 @@ excerpt: >
     .hero-card__img {
       max-width: 100px;
       max-height: 100px;
-      border-radius: 50%;
-      alt: "Descriptive image of Shaswat Gupta";
     }
     .hero-card__content {
       padding: 1.2em 1em 1.2em 1em;
@@ -443,6 +451,7 @@ excerpt: >
 </style>
 <script>
   // Simple toggle for endorsement preview/full text
+  // Used in the endorsements section to expand/collapse testimonials.
   function toggleEndorsement(btn) {
     var card = btn.closest(".endorsement-text");
     var preview = card.querySelector(".endorsement-preview");

@@ -1,3 +1,4 @@
+# Structured CV data used to render the resume sections
 experience:
   - company: "AB InBev — Growth Analytics Center"
     position: "Data Scientist"
