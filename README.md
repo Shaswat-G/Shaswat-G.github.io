@@ -1,4 +1,6 @@
-<h1 align="center">Shaswat Gupta</h1>
+<div style="text-align: center;">
+# Shaswat Gupta
+</div>
 <p align="center">
   <img src="assets/images/profile.png" alt="Shaswat Gupta" width="160" />
 </p>
