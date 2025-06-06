@@ -47,15 +47,15 @@ keywords:
 # SimpleSleepNet: Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/)
-[![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard)
+[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/){:target="_blank" rel="noopener"}
+[![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard){:target="_blank" rel="noopener"}
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 **Author:** Shaswat Gupta  
 **Group:** Medical Data Science, D-INFK, ETH Zurich  
 **Supervisor:** Prof. Dr. Julia Vogt  
 **Contact:** [Email](/contact/)
-**Project Repository:** [SimpleSleepNet](https://github.com/Shaswat-G/SimpleSleepNet)
+**Project Repository:** [SimpleSleepNet](https://github.com/Shaswat-G/SimpleSleepNet){:target="_blank" rel="noopener"}
 
 ## Overview
 
@@ -616,7 +616,7 @@ This project is licensed under the [MIT License](/assets/files/MIT_License.md).
 
 ## Acknowledgments
 
-This work was conducted as part of a semester project at the [Medical Data Science Group](https://mds.inf.ethz.ch/), D-INFK, ETH Zurich, under the supervision of [Prof. Dr. Julia Vogt](https://mds.inf.ethz.ch/team/detail/julia-vogt).
+This work was conducted as part of a semester project at the [Medical Data Science Group](https://mds.inf.ethz.ch/){:target="_blank" rel="noopener"}, D-INFK, ETH Zurich, under the supervision of [Prof. Dr. Julia Vogt](https://mds.inf.ethz.ch/team/detail/julia-vogt){:target="_blank" rel="noopener"}.
 
 <div class="page__download" style="text-align:center; margin: 2em 0;">
   <a href="https://github.com/Shaswat-G/SimpleSleepNet" class="btn btn--primary" target="_blank" rel="noopener">

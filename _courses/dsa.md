@@ -33,9 +33,9 @@ meta:
   twitter:image: "/assets/images/courses/graphs.jpg"
 ---
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"} &mdash; [Email](/contact/)**
 
-[View DSA Course on GitHub](https://github.com/Shaswat-G/dsa)
+[View DSA Course on GitHub](https://github.com/Shaswat-G/dsa){:target="_blank" rel="noopener"}
 
 ![DSA](dsa/graphs.jpg)
 
@@ -141,4 +141,4 @@ Released under the MIT License. See [LICENSE](/assets/files/MIT_License.md) for 
 
 _Ace your interviews. Master the patterns. Write clean code._
 
-[View DSA Course on GitHub](https://github.com/Shaswat-G/dsa)
+[View DSA Course on GitHub](https://github.com/Shaswat-G/dsa){:target="_blank" rel="noopener"}

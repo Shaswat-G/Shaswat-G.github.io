@@ -35,7 +35,7 @@ meta:
 
 _A comprehensive, engineering-focused Python course for students and professional developers_
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"} &mdash; [Email](/contact/)**
 
 <a href="https://github.com/Shaswat-G/python-engineering" class="btn btn--primary" target="_blank" rel="noopener">View Python Engineering Course</a>
 

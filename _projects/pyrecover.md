@@ -30,14 +30,14 @@ keywords:
 
 ![Project Demo](/assets/images/projects/pyrecover.png)
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/){:target="_blank" rel="noopener"}
 ![License](https://img.shields.io/badge/License-MIT-green)
-[![SLURM](https://img.shields.io/badge/SLURM-Compatible-green)](https://slurm.schedmd.com/)
-[![Distributed](https://img.shields.io/badge/Distributed-MultiGPU-blue)](https://pytorch.org/docs/stable/notes/ddp.html)
+[![SLURM](https://img.shields.io/badge/SLURM-Compatible-green)](https://slurm.schedmd.com/){:target="_blank" rel="noopener"}
+[![Distributed](https://img.shields.io/badge/Distributed-MultiGPU-blue)](https://pytorch.org/docs/stable/notes/ddp.html){:target="_blank" rel="noopener"}
 
 **Author:** Shaswat Gupta  
 **Contact:** [Email](/contact/)  
-**Project Repository:** [PyRecover](https://github.com/Shaswat-G/PyRecover)
+**Project Repository:** [PyRecover](https://github.com/Shaswat-G/PyRecover){:target="_blank" rel="noopener"}
 
 [**Download Full Report (PDF)**](/assets/files/PyRecover-Report.pdf)
 
@@ -45,7 +45,7 @@ keywords:
 
 PyRecover is a robust distributed checkpointing and job management system for multi-GPU SLURM workloads. It enables efficient, time-aware checkpointing to maximize cluster utilization and prevent loss of training progress.
 
-[View on GitHub](https://github.com/Shaswat-G/PyRecover)
+[View on GitHub](https://github.com/Shaswat-G/PyRecover){:target="_blank" rel="noopener"}
 
 ## Key Features
 
@@ -175,4 +175,4 @@ This project is licensed under the [MIT License](/assets/files/MIT_License.md).
 
 Developed at ETH Zurich for robust, large-scale deep learning on HPC clusters.
 
-[View on GitHub](https://github.com/Shaswat-G/PyRecover)
+[View on GitHub](https://github.com/Shaswat-G/PyRecover){:target="_blank" rel="noopener"}

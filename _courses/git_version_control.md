@@ -37,7 +37,7 @@ meta:
 
 _A structured approach to mastering version control for developers at all levels._
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"} &mdash; [Email](/contact/)**
 
 <a href="https://github.com/Shaswat-G/git-and-version-control" class="btn btn--primary" target="_blank" rel="noopener">View Git and Version Control Course</a>
 

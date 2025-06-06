@@ -44,7 +44,7 @@ keywords:
 <meta name="twitter:description" content="Large-scale enterprise ML adoption, Unicode document analysis, and patent analytics. Data engineering, NLP, visualization, and automation for impactful research.">
 <meta name="twitter:image" content="/assets/images/projects/ethz.jpg">
 
-I presently work part-time as a research assistant at the [Chair of Technology and Innovation Management](https://timgroup.ethz.ch/) at ETH Zurich, under the supervision of [Prof. Dr. Stefano Brusoni](https://timgroup.ethz.ch/people/group-leadership/stefano-brusoni.html). My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and enhancing data-driven decision-making processes.
+I presently work part-time as a research assistant at the [Chair of Technology and Innovation Management](https://timgroup.ethz.ch/){:target="_blank" rel="noopener"} at ETH Zurich, under the supervision of [Prof. Dr. Stefano Brusoni](https://timgroup.ethz.ch/people/group-leadership/stefano-brusoni.html){:target="_blank" rel="noopener"}. My work focuses on the intersection of machine learning, data engineering, and technical analysis, with a strong emphasis on automating complex workflows and enhancing data-driven decision-making processes.
 
 ## Enterprise ML & Technical Analysis Projects
 
@@ -59,7 +59,7 @@ Led the data engineering and analytical components of a large-scale research col
 </div>
 
 <div class="page__download" style="text-align:center; margin: 2em 0;">
-  <a href="https://www.zuehlke.com/system/files/documents/Zuhlke_Whitepaper_AI_impact.pdf" class="btn btn--primary" download>
+  <a href="https://www.zuehlke.com/system/files/documents/Zuhlke_Whitepaper_AI_impact.pdf" class="btn btn--primary" download target="_blank" rel="noopener">
     <i class="fas fa-file-pdf"></i> Download Full Report (PDF)
   </a>
 </div>

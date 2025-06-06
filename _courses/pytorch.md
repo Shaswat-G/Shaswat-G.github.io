@@ -37,12 +37,12 @@ meta:
 
 _A comprehensive, hands-on curriculum for mastering PyTorch and deep learning fundamentals._
 
-**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/) &mdash; [Email](/contact/)**
+**By [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"} &mdash; [Email](/contact/)**
 
 <a href="https://github.com/Shaswat-G/PyTorch" class="btn btn--primary" target="_blank" rel="noopener">View Deep Learning with PyTorch Course</a>
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org){:target="_blank" rel="noopener"}
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org){:target="_blank" rel="noopener"}
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---

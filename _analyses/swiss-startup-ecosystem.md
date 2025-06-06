@@ -20,7 +20,7 @@ twitter:image: "https://shaswat.dev/_analyses/swiss-startup-ecosystem/smol_profi
 twitter:creator: "@shaswatgupta"
 ---
 
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Contact](/contact/)
+**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"} | [Contact](/contact/)
 
 ![Your professional headshot](swiss-startup-ecosystem/smol_profile_picture.png){:height="400"}
 
