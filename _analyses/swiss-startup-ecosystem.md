@@ -11,18 +11,18 @@ og:title: "Switzerland’s AI Engine: How ETH Zurich Became Europe’s Deeptech 
 og:description: "In-depth analysis by Shaswat Gupta (ETH Zurich) of Switzerland's AI ecosystem, startup funding, and ETH Zurich's role as Europe's deeptech leader."
 og:type: "article"
 og:url: "https://shaswat.dev/analyses/swiss-startup-ecosystem"
-og:image: "https://shaswat.dev/_analyses/smol_profile_picture.png"
+og:image: "https://shaswat.dev/_analyses/swiss-startup-ecosystem/smol_profile_picture.png"
 # Twitter Card
 twitter:card: "summary_large_image"
 twitter:title: "Switzerland’s AI Engine: How ETH Zurich Became Europe’s Deeptech Powerhouse"
 twitter:description: "Shaswat Gupta (ETH Zurich) details Switzerland's AI startup ecosystem, ETH Zurich's impact, and deeptech innovation."
-twitter:image: "https://shaswat.dev/_analyses/smol_profile_picture.png"
+twitter:image: "https://shaswat.dev/_analyses/swiss-startup-ecosystem/smol_profile_picture.png"
 twitter:creator: "@shaswatgupta"
 ---
 
 **By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Contact](/contact/)
 
-![Your professional headshot](smol_profile_picture.png){:height="400"}
+![Your professional headshot](swiss-startup-ecosystem/smol_profile_picture.png){:height="400"}
 
 ## Switzerland's AI Revolution: From Research to Reality
 
