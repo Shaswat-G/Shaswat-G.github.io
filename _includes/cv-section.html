@@ -1,4 +1,8 @@
-<!-- Generic section for CV page; loops over YAML entries -->
+<!--
+  Generic section for CV page; loops over YAML entries.
+  Handles rendering of experience, education, skills, awards, and projects.
+  Edit this file to update the CV section rendering logic and styles.
+-->
 <section class="cv-section">
   <h2 class="cv-section__title" id="{{ include.anchor }}">
     <i class="fas fa-{{ include.icon }}"></i>
@@ -94,6 +98,11 @@
 </section>
 
 <style>
+  /*
+    Styles for the CV section and entries.
+    Adjust layout, spacing, and visual hierarchy for clarity and polish.
+    Edit this block to customize the CV page appearance.
+  */
   body {
     font-size: 0.9em;
     scroll-behavior: smooth;
