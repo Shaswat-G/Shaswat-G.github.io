@@ -1,3 +1,4 @@
+# Navigation menu links shown in header
 main:
   - title: "Home"
     url: /

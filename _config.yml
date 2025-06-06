@@ -1,3 +1,4 @@
+# Jekyll configuration: site metadata, theme options, and plugins
 title: Shaswat Gupta
 # subtitle: MSc CS ETH Zurich | IIT Bombay (Rank 1, Gold Medalist) | ML Engineer | Ex-World Bank, Budweiser
 subtitle: ML Engineer | ETH Zurich | IIT Bombay Gold Medalist
@@ -94,7 +95,7 @@ footer:
       icon: "fas fa-fw fa-envelope"
       url: "/contact/"
 
-# Plugins
+# Plugins used during site build
 plugins:
   - jekyll-feed
   - jekyll-include-cache
@@ -113,6 +114,7 @@ include:
 
 # Content folders
 collections:
+  # custom content types rendered as pages
   courses:
     output: true
     permalink: /:collection/:path/
