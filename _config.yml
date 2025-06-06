@@ -26,7 +26,7 @@ webmaster_verifications:
 #   search_full_content: true # Search full content of posts and pages
 # Hi
 
-search: false # As per requirements
+search: true
 
 atom_feed:
   hide: true # Hide RSS feed links
