@@ -49,10 +49,10 @@ keywords:
 
 # Benchmarking Neural Latent Representations for EEG-based Sleep Stage Classification
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/)
-[![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT){:target="_blank" rel="noopener"}
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/){:target="_blank" rel="noopener"}
+[![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0.0+-red.svg)](https://pytorch.org/){:target="_blank" rel="noopener"}
+[![TensorBoard](https://img.shields.io/badge/TensorBoard-Enabled-green.svg)](https://www.tensorflow.org/tensorboard){:target="_blank" rel="noopener"}
 
 ## Overview
 
@@ -431,9 +431,9 @@ is set in the dataset configuration block.
 
 This project builds upon several excellent works in the field of sleep stage classification:
 
-- SleePyCo ([Lee et al., 2024](https://doi.org/10.1016/j.eswa.2023.122551))
-- MAEEG ([Chien et al., 2022](https://arxiv.org/abs/2211.02625))
-- NeuroNet ([Lee et al., 2024](https://arxiv.org/abs/2404.17585))
+- SleePyCo ([Lee et al., 2024](https://doi.org/10.1016/j.eswa.2023.122551)){:target="_blank" rel="noopener"}
+- MAEEG ([Chien et al., 2022](https://arxiv.org/abs/2211.02625)){:target="_blank" rel="noopener"}
+- NeuroNet ([Lee et al., 2024](https://arxiv.org/abs/2404.17585)){:target="_blank" rel="noopener"}
 
 We thank the authors of these papers for making their research accessible.
 

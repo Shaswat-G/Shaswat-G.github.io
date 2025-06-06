@@ -20,7 +20,7 @@ twitter:image: "https://shaswat.dev/_analyses/smol_profile_picture.jpg"
 twitter:creator: "@shaswatgupta"
 ---
 
-**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/) | [Contact Form](/contact/)
+**By Shaswat Gupta** | [LinkedIn](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"} | [Contact Form](/contact/)
 
 ![Your professional headshot](smol_profile_picture.jpg){:height="400"}
 
@@ -84,7 +84,7 @@ Shaswat Gupta is an MS Computer Science student at ETH Zurich, and a rank 1 gold
 
 **Connect with me:**
 
-- LinkedIn: [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/)
+- LinkedIn: [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"}
 - Email: [Contact Form](/contact/)
 
 ---
@@ -167,7 +167,7 @@ Shaswat Gupta is an MS Computer Science student at ETH Zurich, and a rank 1 gold
 
 **Connect with me:**
 
-- LinkedIn: [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/)
+- LinkedIn: [Shaswat Gupta](https://www.linkedin.com/in/shaswat-gupta/){:target="_blank" rel="noopener"}
 - Email: [Contact Form](/contact/)
 
 ---
