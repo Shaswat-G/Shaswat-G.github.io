@@ -1,5 +1,13 @@
 # Structured CV data used to render the resume sections
 experience:
+  - company: "IBM Research Zürich"
+    position: "Software Developer"
+    dates: "June 2026 - Present"
+    location: "Zurich, Switzerland"
+    details: |
+      Research-facing software development role working across data systems, ML systems, and applied machine learning.
+    image: /assets/images/cv/ibm.png
+
   - company: "AB InBev — Growth Analytics Center"
     position: "Data Scientist"
     dates: "Aug 2022 - Aug 2023"
@@ -77,10 +85,11 @@ experience:
 education:
   - institution: "ETH Zürich"
     degree: "MSc Computer Science"
-    dates: "Sept 2023 - Present"
+    dates: "Sept 2023 - March 2026"
     location: "Zurich, Switzerland"
     details: |
-      - **GPA:** 5.25/6
+      - **GPA:** 5.44/6; **Thesis:** 6/6
+      - **Thesis:** Provisioning-aware query routing for heterogeneous lakehouse engines
       - **Major:** Machine Intelligence
       - **Minor:** Data Management Systems
       - **Courses:** Large Scale AI Engineering, Cloud Computing Architecture, Big Data, Machine Learning, Deep Learning, Machine Perception, Computational Intelligence Lab, System Security
@@ -96,6 +105,12 @@ education:
     image: /assets/images/cv/iitb.png
 
 awards:
+  - title: "Letter of Distinction, Large Scale AI Engineering"
+    organization: "ETH AI Center"
+    date: "2025"
+    details: "Recognized for the ETH Large-Scale AI Engineering course, involving hands-on distributed training on CSCS Alps."
+    image: /assets/images/cv/ethaicenter.jpg
+
   - title: "Department Rank 1 & Gold Medalist"
     organization: "IIT Bombay"
     date: "2022"
@@ -166,7 +181,27 @@ international:
       - AUA and ICGS Academic Conference
     image: /assets/images/cv/harvard.png
 
-research:
+research: 
+  - institution: "IBM Research Zürich / ETH Zürich"
+    position: "Master's Thesis"
+    project: "Provisioning-Aware Query Routing for Lakehouse Engines"
+    dates: "2025 - Sept 2025"
+    location: "Zurich, Switzerland"
+    details: |
+      Built a cost-aware routing framework for heterogeneous lakehouse engines, combining query latency prediction with spill-free memory estimation.
+
+      **Key Contributions:**
+      - Developed a provisioning-aware query router for heterogeneous lakehouse deployments, routing queries across Spark and PrestoDB under latency, memory, and cloud-cost constraints
+      - Achieved 22-70% cost reduction over best fixed-engine baselines by combining learned latency prediction with spill-free memory prediction
+      - Introduced the spill-free memory threshold, a cross-engine abstraction that maps heterogeneous memory telemetry into a billing-aligned provisioning unit
+      - Built deterministic telemetry-inversion adapters for Spark and PrestoDB to reconstruct query-level memory requirements from engine-internal execution signals
+      - Implemented a GNN-based learned cost model with a shared query-plan encoder and engine-specific heads, jointly predicting execution time and peak memory with median Q-error ≈ 1.1 at 10–20 ms inference latency
+      
+      **Technologies:** Data Systems, ML Systems, Query Optimization, Machine Learning, Performance Modeling, Python, Graph Neural Networks, XGBoost, Cloud Computing, Spark, PrestoDB
+
+      **Recognition:** Thesis graded 6/6; related workshop paper accepted at SIGMOD and extended version under review at a database systems venue.
+    image: /assets/images/cv/ibm.png
+
   - institution: "Medical Data Science Group, D-INFK, ETH Zurich"
     position: "Semester Thesis"
     project: "Self-Supervised Contrastive Learning for EEG-Based Sleep Stage Classification"
